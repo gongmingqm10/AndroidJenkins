@@ -1,0 +1,14 @@
+commit f458c63512a10cb286b85b84e51ae683deff3447
+tree 084bf1afbb9b9593acc541fc164085f8588c6cf2
+parent 72e15d91e813362ce6d2c30b79554d295cf3166f
+author gongming <gongmingqm10@foxmail.com> 1427600312 -0500
+committer gongming <gongmingqm10@foxmail.com> 1427600312 -0500
+
+    add dev, qa and production flavor
+
+:100644 100644 adb165f64fa56305fb66fb7955a9881e6bcb8653 44d24c059107a4ec97e063c63ce2c887e6ffbe81 M	app/build.gradle
+:000000 100644 0000000000000000000000000000000000000000 f55017738706202a449ee495e4e3224081991a2b A	app/src/dev/java/com/tarcle/moment/utils/ApiEnvironment.java
+:100644 100644 0093e30a80ca6f6e76c8deb273697e05c948a403 24999a281d42c86f575699e6cf2c7690b9be03cd M	app/src/main/AndroidManifest.xml
+:100644 100644 dc80736c17b4753d5dff34afb88c7e1e22dfd830 5b5fff56c193ecb972d9e0dbf8943d567b0fb20b M	app/src/main/java/com/tarcle/moment/retrofit/RestClient.java
+:000000 100644 0000000000000000000000000000000000000000 ef73c5f0b7f443b49e5cb4b974b4ae27d36f89cc A	app/src/production/java/com.tarcle.moment.utils/ApiEnvironment.java
+:000000 100644 0000000000000000000000000000000000000000 6cd783af2bb83bb12e1d1b6d91eb892967c25991 A	app/src/qa/java/com.tarcle.moment.utils/ApiEnvironment.java

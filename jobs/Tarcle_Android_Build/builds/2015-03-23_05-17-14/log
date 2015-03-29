@@ -1,0 +1,140 @@
+Started by user [8mha:AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAxOoBn6pcWpRfrp+XnpuUADCnMNDQAICJNKxwAAAA==[0mMing Gong
+Building in workspace /var/jenkins_home/jobs/Tarcle Android Build/workspace
+Cloning the remote Git repository
+Cloning repository https://github.com/gongmingqm10/tarcle-tdd
+ > git init /var/jenkins_home/jobs/Tarcle Android Build/workspace # timeout=10
+Fetching upstream changes from https://github.com/gongmingqm10/tarcle-tdd
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.helper store --file=/tmp/git4406047390866078743.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/gongmingqm10/tarcle-tdd +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git config remote.origin.url https://github.com/gongmingqm10/tarcle-tdd # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/gongmingqm10/tarcle-tdd # timeout=10
+Fetching upstream changes from https://github.com/gongmingqm10/tarcle-tdd
+using .gitcredentials to set credentials
+ > git config --local credential.helper store --file=/tmp/git5327421860794503038.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/gongmingqm10/tarcle-tdd +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 21a059de2985533836340973fd42ee1df5f75710 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 21a059de2985533836340973fd42ee1df5f75710
+First time build. Skipping changelog.
+[workspace] $ /bin/sh -xe /tmp/hudson355730043671469234.sh
++ ./gradlew clean test
+Downloading https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+..................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Unzipping /root/.gradle/wrapper/dists/gradle-2.2.1-all/6dibv5rcnnqlfbq9klf8imrndn/gradle-2.2.1-all.zip to /root/.gradle/wrapper/dists/gradle-2.2.1-all/6dibv5rcnnqlfbq9klf8imrndn
+Set executable permissions for: /root/.gradle/wrapper/dists/gradle-2.2.1-all/6dibv5rcnnqlfbq9klf8imrndn/gradle-2.2.1/bin/gradle
+Download https://jcenter.bintray.com/com/android/tools/build/gradle/1.1.0-rc1/gradle-1.1.0-rc1.pom
+Download https://jcenter.bintray.com/com/github/jcandksolutions/gradle/android-unit-test/2.1.1/android-unit-test-2.1.1.pom
+Download https://jcenter.bintray.com/com/android/tools/build/gradle-core/1.1.0-rc1/gradle-core-1.1.0-rc1.pom
+Download https://jcenter.bintray.com/com/android/tools/build/builder/1.1.0-rc1/builder-1.1.0-rc1.pom
+Download https://jcenter.bintray.com/com/android/tools/lint/lint/24.1.0-rc1/lint-24.1.0-rc1.pom
+Download https://jcenter.bintray.com/net/sf/proguard/proguard-gradle/5.1/proguard-gradle-5.1.pom
+Download https://jcenter.bintray.com/net/sf/proguard/proguard-parent/5.1/proguard-parent-5.1.pom
+Download https://jcenter.bintray.com/com/android/tools/build/builder-model/1.1.0-rc1/builder-model-1.1.0-rc1.pom
+Download https://jcenter.bintray.com/com/android/tools/build/builder-test-api/1.1.0-rc1/builder-test-api-1.1.0-rc1.pom
+Download https://jcenter.bintray.com/com/android/tools/sdklib/24.1.0-rc1/sdklib-24.1.0-rc1.pom
+Download https://jcenter.bintray.com/com/android/tools/sdk-common/24.1.0-rc1/sdk-common-24.1.0-rc1.pom
+Download https://jcenter.bintray.com/com/android/tools/common/24.1.0-rc1/common-24.1.0-rc1.pom
+Download https://jcenter.bintray.com/com/android/tools/build/manifest-merger/24.1.0-rc1/manifest-merger-24.1.0-rc1.pom
+Download https://jcenter.bintray.com/com/android/tools/ddms/ddmlib/24.1.0-rc1/ddmlib-24.1.0-rc1.pom
+Download https://jcenter.bintray.com/com/squareup/javawriter/2.5.0/javawriter-2.5.0.pom
+Download https://jcenter.bintray.com/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+Download https://jcenter.bintray.com/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.pom
+Download https://jcenter.bintray.com/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm/5.0.3/asm-5.0.3.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom
+Download https://jcenter.bintray.com/org/ow2/ow2/1.3/ow2-1.3.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.pom
+Download https://jcenter.bintray.com/com/android/tools/lint/lint-checks/24.1.0-rc1/lint-checks-24.1.0-rc1.pom
+Download https://jcenter.bintray.com/org/eclipse/jdt/core/compiler/ecj/4.4/ecj-4.4.pom
+Download https://jcenter.bintray.com/net/sf/proguard/proguard-base/5.1/proguard-base-5.1.pom
+Download https://jcenter.bintray.com/com/android/tools/annotations/24.1.0-rc1/annotations-24.1.0-rc1.pom
+Download https://jcenter.bintray.com/com/android/tools/layoutlib/layoutlib-api/24.1.0-rc1/layoutlib-api-24.1.0-rc1.pom
+Download https://jcenter.bintray.com/com/android/tools/dvlib/24.1.0-rc1/dvlib-24.1.0-rc1.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-parent/33/commons-parent-33.pom
+Download https://jcenter.bintray.com/org/apache/apache/13/apache-13.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-client/4.1.1/httpcomponents-client-4.1.1.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/project/4.1.1/project-4.1.1.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-client/4.1/httpcomponents-client-4.1.pom
+Download https://jcenter.bintray.com/com/google/code/gson/gson/2.2.4/gson-2.2.4.pom
+Download https://jcenter.bintray.com/com/google/guava/guava/17.0/guava-17.0.pom
+Download https://jcenter.bintray.com/com/google/guava/guava-parent/17.0/guava-parent-17.0.pom
+Download https://jcenter.bintray.com/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.pom
+Download https://jcenter.bintray.com/com/android/tools/lint/lint-api/24.1.0-rc1/lint-api-24.1.0-rc1.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-core/4.1/httpcomponents-core-4.1.pom
+Download https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-parent/5/commons-parent-5.pom
+Download https://jcenter.bintray.com/org/apache/apache/4/apache-4.pom
+Download https://jcenter.bintray.com/commons-codec/commons-codec/1.4/commons-codec-1.4.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-parent/11/commons-parent-11.pom
+Download https://jcenter.bintray.com/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.pom
+Download https://jcenter.bintray.com/com/android/tools/build/gradle/1.1.0-rc1/gradle-1.1.0-rc1.jar
+Download https://jcenter.bintray.com/com/github/jcandksolutions/gradle/android-unit-test/2.1.1/android-unit-test-2.1.1.jar
+Download https://jcenter.bintray.com/com/android/tools/build/gradle-core/1.1.0-rc1/gradle-core-1.1.0-rc1.jar
+Download https://jcenter.bintray.com/com/android/tools/build/builder/1.1.0-rc1/builder-1.1.0-rc1.jar
+Download https://jcenter.bintray.com/com/android/tools/lint/lint/24.1.0-rc1/lint-24.1.0-rc1.jar
+Download https://jcenter.bintray.com/net/sf/proguard/proguard-gradle/5.1/proguard-gradle-5.1.jar
+Download https://jcenter.bintray.com/com/android/tools/build/builder-model/1.1.0-rc1/builder-model-1.1.0-rc1.jar
+Download https://jcenter.bintray.com/com/android/tools/build/builder-test-api/1.1.0-rc1/builder-test-api-1.1.0-rc1.jar
+Download https://jcenter.bintray.com/com/android/tools/sdklib/24.1.0-rc1/sdklib-24.1.0-rc1.jar
+Download https://jcenter.bintray.com/com/android/tools/sdk-common/24.1.0-rc1/sdk-common-24.1.0-rc1.jar
+Download https://jcenter.bintray.com/com/android/tools/common/24.1.0-rc1/common-24.1.0-rc1.jar
+Download https://jcenter.bintray.com/com/android/tools/build/manifest-merger/24.1.0-rc1/manifest-merger-24.1.0-rc1.jar
+Download https://jcenter.bintray.com/com/android/tools/ddms/ddmlib/24.1.0-rc1/ddmlib-24.1.0-rc1.jar
+Download https://jcenter.bintray.com/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar
+Download https://jcenter.bintray.com/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar
+Download https://jcenter.bintray.com/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar
+Download https://jcenter.bintray.com/com/android/tools/lint/lint-checks/24.1.0-rc1/lint-checks-24.1.0-rc1.jar
+Download https://jcenter.bintray.com/org/eclipse/jdt/core/compiler/ecj/4.4/ecj-4.4.jar
+Download https://jcenter.bintray.com/net/sf/proguard/proguard-base/5.1/proguard-base-5.1.jar
+Download https://jcenter.bintray.com/com/android/tools/annotations/24.1.0-rc1/annotations-24.1.0-rc1.jar
+Download https://jcenter.bintray.com/com/android/tools/layoutlib/layoutlib-api/24.1.0-rc1/layoutlib-api-24.1.0-rc1.jar
+Download https://jcenter.bintray.com/com/android/tools/dvlib/24.1.0-rc1/dvlib-24.1.0-rc1.jar
+Download https://jcenter.bintray.com/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.jar
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar
+Download https://jcenter.bintray.com/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar
+Download https://jcenter.bintray.com/com/google/guava/guava/17.0/guava-17.0.jar
+Download https://jcenter.bintray.com/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar
+Download https://jcenter.bintray.com/com/android/tools/lint/lint-api/24.1.0-rc1/lint-api-24.1.0-rc1.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.jar
+Download https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+Download https://jcenter.bintray.com/commons-codec/commons-codec/1.4/commons-codec-1.4.jar
+Download https://jcenter.bintray.com/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar
+
+                    Plugin is too old, please update to a more recent version,
+                    or set ANDROID_DAILY_OVERRIDE environment variable to
+                    "374a18736d5f8e842840c00c827ab637d5363d91"
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/build.gradle' line: 1
+
+* What went wrong:
+A problem occurred evaluating project ':app'.
+> Failed to apply plugin [id 'com.android.application']
+   > Could not create plugin of type 'AppPlugin'.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 50.45 secs
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

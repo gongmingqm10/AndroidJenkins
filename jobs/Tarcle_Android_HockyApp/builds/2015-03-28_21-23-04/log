@@ -1,0 +1,29 @@
+Started by user [8mha:AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAxOoBn6pcWpRfrp+XnpuUADCnMNDQAICJNKxwAAAA==[0mMing Gong
+Building in workspace /var/jenkins_home/jobs/Tarcle_Android_HockyApp/workspace
+Cloning the remote Git repository
+Cloning repository https://github.com/gongmingqm10/tarcle-tdd
+ > git init /var/jenkins_home/jobs/Tarcle_Android_HockyApp/workspace # timeout=10
+Fetching upstream changes from https://github.com/gongmingqm10/tarcle-tdd
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.helper store --file=/tmp/git4653923870980567289.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/gongmingqm10/tarcle-tdd +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git config remote.origin.url https://github.com/gongmingqm10/tarcle-tdd # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/gongmingqm10/tarcle-tdd # timeout=10
+Fetching upstream changes from https://github.com/gongmingqm10/tarcle-tdd
+using .gitcredentials to set credentials
+ > git config --local credential.helper store --file=/tmp/git5707647840343543909.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/gongmingqm10/tarcle-tdd +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 72e15d91e813362ce6d2c30b79554d295cf3166f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 72e15d91e813362ce6d2c30b79554d295cf3166f
+First time build. Skipping changelog.
+Uploading to HockeyApp...
+No IPA/APK found to upload in: *.apk
+Build step 'Upload to HockeyApp' marked build as failure
+Finished: FAILURE

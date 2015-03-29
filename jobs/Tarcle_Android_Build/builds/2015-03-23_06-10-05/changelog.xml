@@ -1,0 +1,37 @@
+commit d09ec8dd516a206b69d45b629bb79cdb5f799bfe
+tree 8008492ae130423e5588583dcb5ba930a921dcaa
+parent cea2126ba0ac5a82d0507561ab4cb39e800f5b71
+author gongming <gongmingqm10@foxmail.com> 1427090940 -0500
+committer gongming <gongmingqm10@foxmail.com> 1427090940 -0500
+
+    Config ci for jenkins
+
+:100644 000000 33a450183a77f262c18cf858e19351597c13bb42 0000000000000000000000000000000000000000 D	app/src/main/java/com/tarcle/moment/event/RestEvent.java
+:000000 100644 0000000000000000000000000000000000000000 4d17a5e4ed82b524c7fd08d747e43936f5441d91 A	ci/.vagrant/machines/default/virtualbox/action_provision
+:000000 100644 0000000000000000000000000000000000000000 4d17a5e4ed82b524c7fd08d747e43936f5441d91 A	ci/.vagrant/machines/default/virtualbox/action_set_name
+:000000 100644 0000000000000000000000000000000000000000 782772889f1f9b54c2870edb45707dc07e128027 A	ci/.vagrant/machines/default/virtualbox/id
+:000000 100644 0000000000000000000000000000000000000000 e46c381510cdede5566a7ad0cdb523b44e51dbbc A	ci/Vagrantfile
+
+commit cea2126ba0ac5a82d0507561ab4cb39e800f5b71
+tree b6418a601f54e45238287773bec64bbae802648d
+parent 8f48dc0507f3ffad44c9735a5ed9eacd45b55358
+author gongming <gongmingqm10@foxmail.com> 1426639737 -0500
+committer gongming <gongmingqm10@foxmail.com> 1426639737 -0500
+
+    gongming - Rename RetroEvent to BaseCallback
+
+:100644 100644 2ae3d56804a91e843b000ef75aac1bcb9b3caf5b 4320a26410a5f595846f26e5a7067b878ba2ba3f M	app/src/main/java/com/tarcle/moment/fragment/CircleFragment.java
+:100644 100644 bfa9bf945b3e73bfe0e72f4e3539e04f17c9803b 6b8926ed21cb556d68eeb5fa509e502b13c309ba M	app/src/main/java/com/tarcle/moment/fragment/TopicFragment.java
+:000000 100644 0000000000000000000000000000000000000000 9a727b95d7c81b6208ed6521e2268a1d7e073a64 A	app/src/main/java/com/tarcle/moment/retrofit/BaseCallBack.java
+
+commit 8f48dc0507f3ffad44c9735a5ed9eacd45b55358
+tree 00e305fdc874747f8abda0050dc069fac8d125f0
+parent 21a059de2985533836340973fd42ee1df5f75710
+author gongming <gongmingqm10@foxmail.com> 1425794068 -0600
+committer gongming <gongmingqm10@foxmail.com> 1425794068 -0600
+
+    Integrate hockey app
+
+:100644 100644 4c089d969b94de4792fcf064c493cfea97ac19a2 45b7d4250e49f9b2def444333117c1b64147cefb M	app/build.gradle
+:100644 100644 7988ca243e76a0cd060666a0b7dd93a3d71da644 0093e30a80ca6f6e76c8deb273697e05c948a403 M	app/src/main/AndroidManifest.xml
+:100644 100644 3f23bc7a9aac77537e4ccecc682681052de885be 7fa099f0f90d8dfe364a7520f81d81d926535228 M	app/src/main/java/com/tarcle/moment/activity/RootActivity.java

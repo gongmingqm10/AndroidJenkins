@@ -1,0 +1,766 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<annotation-array>
+  <issue plugin="android-lint@2.2">
+    <message>A newer version of com.android.support:support-v4 than 21.0.0 is available: 22.0.0</message>
+    <priority>NORMAL</priority>
+    <key>1</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>57</start>
+        <end>57</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>57</primaryLineNumber>
+    <fileName>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build.gradle</fileName>
+    <moduleName></moduleName>
+    <category>Correctness</category>
+    <type>GradleDependency</type>
+    <contextHashCode>679592375</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find.</explanation>
+    <errorLines>
+      <string>    compile &amp;apos;com.android.support:support-v4:21.0.0&amp;apos;</string>
+      <string>    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)</message>
+    <priority>NORMAL</priority>
+    <key>0</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>30</start>
+        <end>30</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>30</primaryLineNumber>
+    <fileName>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/java/com/tarcle/moment/view/TopicListAdapter.java</fileName>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Correctness</category>
+    <type>InflateParams</type>
+    <contextHashCode>601236029</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/java/com/tarcle/moment/view</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored.</explanation>
+    <errorLines>
+      <string>            topicCardView = (TopicCardView) inflater.inflate(R.layout.topic_card_layout, null, false);</string>
+      <string>                                                                                         ~~~~</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>[Accessibility] Missing `contentDescription` attribute on image</message>
+    <priority>NORMAL</priority>
+    <key>14</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>8</start>
+        <end>8</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>8</primaryLineNumber>
+    <fileName>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/layout/circle_list_item.xml</fileName>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Accessibility</category>
+    <type>ContentDescription</type>
+    <contextHashCode>1066351958</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/layout</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.  Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&amp;quot;ContentDescription&amp;quot; attribute.  Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases.</explanation>
+    <errorLines>
+      <string>    &amp;lt;ImageView android:layout_height=&amp;quot;@dimen/circle_avatar_size&amp;quot;</string>
+      <string>    ^</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>The resource `R.string.circle_status_formatter` appears to be unused</message>
+    <priority>NORMAL</priority>
+    <key>9</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>17</start>
+        <end>17</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>17</primaryLineNumber>
+    <fileName>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/values/strings.xml</fileName>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Performance</category>
+    <type>UnusedResources</type>
+    <contextHashCode>1622479725</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/values</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations>
+      <location>
+        <filename>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/values-en/strings.xml</filename>
+        <lineNumber>16</lineNumber>
+        <column>13</column>
+      </location>
+    </locations>
+    <explanation>Unused resources make applications larger and slow down builds.</explanation>
+    <errorLines>
+      <string>    &amp;lt;string name=&amp;quot;circle_status_formatter&amp;quot; formatted=&amp;quot;false&amp;quot;&amp;gt;&amp;#20851;&amp;#27880;: %s, &amp;#24086;&amp;#23376;: %s, &amp;#35282;&amp;#33394;: %s&amp;lt;/string&amp;gt;</string>
+      <string>            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>The resource `R.drawable.ic_drawer` appears to be unused</message>
+    <priority>NORMAL</priority>
+    <key>7</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>0</start>
+        <end>0</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>0</primaryLineNumber>
+    <fileName>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-hdpi/ic_drawer.png</fileName>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Performance</category>
+    <type>UnusedResources</type>
+    <contextHashCode>1080565561</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/drawable-hdpi</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations>
+      <location>
+        <filename>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-xxhdpi/ic_drawer.png</filename>
+        <lineNumber>0</lineNumber>
+        <column>0</column>
+      </location>
+      <location>
+        <filename>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-xhdpi/ic_drawer.png</filename>
+        <lineNumber>0</lineNumber>
+        <column>0</column>
+      </location>
+      <location>
+        <filename>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-mdpi/ic_drawer.png</filename>
+        <lineNumber>0</lineNumber>
+        <column>0</column>
+      </location>
+    </locations>
+    <explanation>Unused resources make applications larger and slow down builds.</explanation>
+    <errorLines/>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>Missing the following drawables in `drawable-xhdpi`: tarcle_icon.png (found in drawable-hdpi)</message>
+    <priority>NORMAL</priority>
+    <key>11</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>0</start>
+        <end>0</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>0</primaryLineNumber>
+    <fileName>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-xhdpi</fileName>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Usability:Icons</category>
+    <type>IconDensities</type>
+    <contextHashCode>19425715</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.  Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html</explanation>
+    <errorLines/>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>The resource `R.color.light_gray` appears to be unused</message>
+    <priority>NORMAL</priority>
+    <key>5</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>8</start>
+        <end>8</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>8</primaryLineNumber>
+    <fileName>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/values/colors.xml</fileName>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Performance</category>
+    <type>UnusedResources</type>
+    <contextHashCode>-281812128</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/values</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Unused resources make applications larger and slow down builds.</explanation>
+    <errorLines>
+      <string>    &amp;lt;color name=&amp;quot;light_gray&amp;quot;&amp;gt;#ccc&amp;lt;/color&amp;gt;</string>
+      <string>           ~~~~~~~~~~~~~~~~~</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>Consider adding `android:layout_alignStart=&quot;@id/formatted_time&quot;` to better support right-to-left layouts</message>
+    <priority>NORMAL</priority>
+    <key>26</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>74</start>
+        <end>74</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>74</primaryLineNumber>
+    <fileName>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/layout/topic_card_layout.xml</fileName>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Bi-directional Text</category>
+    <type>RtlHardcoded</type>
+    <contextHashCode>-457678644</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/layout</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`. For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error. (Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&amp;quot;start&amp;quot;` rather than `gravity=&amp;quot;left|start&amp;quot;`.)</explanation>
+    <errorLines>
+      <string>        android:layout_alignLeft=&amp;quot;@id/formatted_time&amp;quot;</string>
+      <string>        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>Consider adding `android:layout_toEndOf=&quot;@id/user_avatar&quot;` to better support right-to-left layouts</message>
+    <priority>NORMAL</priority>
+    <key>18</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>17</start>
+        <end>17</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>17</primaryLineNumber>
+    <fileName reference="../../issue[8]/fileName"/>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Bi-directional Text</category>
+    <type>RtlHardcoded</type>
+    <contextHashCode>1307150650</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/layout</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`. For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error. (Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&amp;quot;start&amp;quot;` rather than `gravity=&amp;quot;left|start&amp;quot;`.)</explanation>
+    <errorLines>
+      <string>        android:layout_toRightOf=&amp;quot;@id/user_avatar&amp;quot;</string>
+      <string>        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>Missing the following drawables in `drawable-xxhdpi`: tarcle_icon.png (found in drawable-hdpi)</message>
+    <priority>NORMAL</priority>
+    <key>12</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>0</start>
+        <end>0</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>0</primaryLineNumber>
+    <fileName>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-xxhdpi</fileName>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Usability:Icons</category>
+    <type>IconDensities</type>
+    <contextHashCode>246422133</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.  Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html</explanation>
+    <errorLines/>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>Missing density variation folders in `src/main/res`: drawable-xxxhdpi</message>
+    <priority>NORMAL</priority>
+    <key>13</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>0</start>
+        <end>0</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>0</primaryLineNumber>
+    <fileName>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res</fileName>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Usability:Icons</category>
+    <type>IconMissingDensityFolder</type>
+    <contextHashCode>759215286</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra-high, extra-extra-high). This lint check identifies folders which are missing, such as `drawable-hdpi`. Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html</explanation>
+    <errorLines/>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>Consider adding `android:layout_alignStart=&quot;@id/images_container&quot;` to better support right-to-left layouts</message>
+    <priority>NORMAL</priority>
+    <key>22</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>43</start>
+        <end>43</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>43</primaryLineNumber>
+    <fileName reference="../../issue[8]/fileName"/>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Bi-directional Text</category>
+    <type>RtlHardcoded</type>
+    <contextHashCode>-1197921352</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/layout</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`. For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error. (Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&amp;quot;start&amp;quot;` rather than `gravity=&amp;quot;left|start&amp;quot;`.)</explanation>
+    <errorLines>
+      <string>        android:layout_alignLeft=&amp;quot;@id/images_container&amp;quot;</string>
+      <string>        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>The resource `R.string.action_example` appears to be unused</message>
+    <priority>NORMAL</priority>
+    <key>8</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>12</start>
+        <end>12</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>12</primaryLineNumber>
+    <fileName reference="../../issue[4]/fileName"/>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Performance</category>
+    <type>UnusedResources</type>
+    <contextHashCode>671000416</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/values</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations>
+      <location>
+        <filename>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/values-en/strings.xml</filename>
+        <lineNumber>11</lineNumber>
+        <column>13</column>
+      </location>
+    </locations>
+    <explanation>Unused resources make applications larger and slow down builds.</explanation>
+    <errorLines>
+      <string>    &amp;lt;string name=&amp;quot;action_example&amp;quot;&amp;gt;Example action&amp;lt;/string&amp;gt;</string>
+      <string>            ~~~~~~~~~~~~~~~~~~~~~</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>The resource `R.color.white` appears to be unused</message>
+    <priority>NORMAL</priority>
+    <key>4</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>6</start>
+        <end>6</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>6</primaryLineNumber>
+    <fileName reference="../../issue[7]/fileName"/>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Performance</category>
+    <type>UnusedResources</type>
+    <contextHashCode>-1830697735</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/values</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Unused resources make applications larger and slow down builds.</explanation>
+    <errorLines>
+      <string>    &amp;lt;color name=&amp;quot;white&amp;quot;&amp;gt;#FFFFFF&amp;lt;/color&amp;gt;</string>
+      <string>           ~~~~~~~~~~~~</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>Consider adding `android:layout_alignStart=&quot;@id/content&quot;` to better support right-to-left layouts</message>
+    <priority>NORMAL</priority>
+    <key>20</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>30</start>
+        <end>30</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>30</primaryLineNumber>
+    <fileName reference="../../issue[8]/fileName"/>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Bi-directional Text</category>
+    <type>RtlHardcoded</type>
+    <contextHashCode>551228225</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/layout</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`. For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error. (Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&amp;quot;start&amp;quot;` rather than `gravity=&amp;quot;left|start&amp;quot;`.)</explanation>
+    <errorLines>
+      <string>        android:layout_alignLeft=&amp;quot;@id/content&amp;quot;</string>
+      <string>        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>The project references RTL attributes, but does not explicitly enable or disable RTL support with `android:supportsRtl` in the manifest</message>
+    <priority>NORMAL</priority>
+    <key>27</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>0</start>
+        <end>0</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>0</primaryLineNumber>
+    <fileName>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/AndroidManifest.xml</fileName>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Bi-directional Text</category>
+    <type>RtlEnabled</type>
+    <contextHashCode>-838312035</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>To enable right-to-left support, when running on API 17 and higher, you must set the `android:supportsRtl` attribute in the manifest `&amp;lt;application&amp;gt;` element. If you have started adding RTL attributes, but have not yet finished the migration, you can set the attribute to false to satisfy this lint check.</explanation>
+    <errorLines/>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message reference="../../issue[3]/message"/>
+    <priority>NORMAL</priority>
+    <key>15</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>8</start>
+        <end>8</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>8</primaryLineNumber>
+    <fileName reference="../../issue[8]/fileName"/>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Accessibility</category>
+    <type>ContentDescription</type>
+    <contextHashCode>-1071010869</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/layout</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.  Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&amp;quot;ContentDescription&amp;quot; attribute.  Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases.</explanation>
+    <errorLines>
+      <string>    &amp;lt;ImageView</string>
+      <string>    ^</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>Consider adding `android:layout_marginEnd=&quot;@dimen/text_margin&quot;` to better support right-to-left layouts</message>
+    <priority>NORMAL</priority>
+    <key>17</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>11</start>
+        <end>11</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>11</primaryLineNumber>
+    <fileName reference="../../issue[3]/fileName"/>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Bi-directional Text</category>
+    <type>RtlHardcoded</type>
+    <contextHashCode>741834454</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/layout</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`. For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error. (Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&amp;quot;start&amp;quot;` rather than `gravity=&amp;quot;left|start&amp;quot;`.)</explanation>
+    <errorLines>
+      <string>        android:layout_marginRight=&amp;quot;@dimen/text_margin&amp;quot;</string>
+      <string>        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>A newer version of com.android.support:appcompat-v7 than 21.0.3 is available: 22.0.0</message>
+    <priority>NORMAL</priority>
+    <key>2</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>58</start>
+        <end>58</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>58</primaryLineNumber>
+    <fileName reference="../../issue/fileName"/>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Correctness</category>
+    <type>GradleDependency</type>
+    <contextHashCode>-1982458450</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find.</explanation>
+    <errorLines>
+      <string>    compile &amp;apos;com.android.support:appcompat-v7:21.0.3&amp;apos;</string>
+      <string>    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>[I18N] Hardcoded string &quot;New Button&quot;, should use `@string` resource</message>
+    <priority>NORMAL</priority>
+    <key>16</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>15</start>
+        <end>15</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>15</primaryLineNumber>
+    <fileName>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/layout/fragment_root.xml</fileName>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Internationalization</category>
+    <type>HardcodedText</type>
+    <contextHashCode>-1260041686</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/layout</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Hardcoding text attributes directly in layout files is bad for several reasons:  * When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)  * The application cannot be translated to other languages by just adding new translations for existing string resources.  In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup.</explanation>
+    <errorLines>
+      <string>        android:text=&amp;quot;New Button&amp;quot;</string>
+      <string>        ~~~~~~~~~~~~~~~~~~~~~~~~~</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>The resource `R.layout.fragment_root` appears to be unused</message>
+    <priority>NORMAL</priority>
+    <key>6</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>0</start>
+        <end>0</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>0</primaryLineNumber>
+    <fileName reference="../../issue[20]/fileName"/>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Performance</category>
+    <type>UnusedResources</type>
+    <contextHashCode>-1915538036</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/layout</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Unused resources make applications larger and slow down builds.</explanation>
+    <errorLines/>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>Use &quot;`start`&quot; instead of &quot;`left`&quot; to ensure correct behavior in right-to-left locales</message>
+    <priority>NORMAL</priority>
+    <key>21</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>36</start>
+        <end>36</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>36</primaryLineNumber>
+    <fileName reference="../../issue[8]/fileName"/>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Bi-directional Text</category>
+    <type>RtlHardcoded</type>
+    <contextHashCode>-591908033</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/layout</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`. For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error. (Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&amp;quot;start&amp;quot;` rather than `gravity=&amp;quot;left|start&amp;quot;`.)</explanation>
+    <errorLines>
+      <string>        android:gravity=&amp;quot;left&amp;quot;</string>
+      <string>        ~~~~~~~~~~~~~~~~~~~~~~</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>Consider adding `android:layout_marginEnd=&quot;16dp&quot;` to better support right-to-left layouts</message>
+    <priority>NORMAL</priority>
+    <key>25</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>63</start>
+        <end>63</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>63</primaryLineNumber>
+    <fileName reference="../../issue[8]/fileName"/>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Bi-directional Text</category>
+    <type>RtlHardcoded</type>
+    <contextHashCode>-953158258</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/layout</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`. For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error. (Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&amp;quot;start&amp;quot;` rather than `gravity=&amp;quot;left|start&amp;quot;`.)</explanation>
+    <errorLines>
+      <string>        android:layout_marginRight=&amp;quot;16dp&amp;quot;</string>
+      <string>        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>Possible overdraw: Root element paints background `#fff` with a theme that also paints a background (inferred theme is `@style/Theme.TarcleTheme`)</message>
+    <priority>NORMAL</priority>
+    <key>3</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>8</start>
+        <end>8</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>8</primaryLineNumber>
+    <fileName>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/layout/fragment_navigation_drawer.xml</fileName>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Performance</category>
+    <type>Overdraw</type>
+    <contextHashCode>366889126</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/layout</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &amp;quot;overdraw&amp;quot;.  NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&amp;apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.  If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.  Of course it&amp;apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead. </explanation>
+    <errorLines>
+      <string>    android:background=&amp;quot;#fff&amp;quot; </string>
+      <string>    ~~~~~~~~~~~~~~~~~~~~~~~~~</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>Consider adding `android:layout_toStartOf=&quot;@id/like&quot;` to better support right-to-left layouts</message>
+    <priority>NORMAL</priority>
+    <key>24</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>62</start>
+        <end>62</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>62</primaryLineNumber>
+    <fileName reference="../../issue[8]/fileName"/>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Bi-directional Text</category>
+    <type>RtlHardcoded</type>
+    <contextHashCode>-793263416</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/layout</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`. For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error. (Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&amp;quot;start&amp;quot;` rather than `gravity=&amp;quot;left|start&amp;quot;`.)</explanation>
+    <errorLines>
+      <string>        android:layout_toLeftOf=&amp;quot;@id/like&amp;quot;</string>
+      <string>        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>Consider adding `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts</message>
+    <priority>NORMAL</priority>
+    <key>23</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>54</start>
+        <end>54</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>54</primaryLineNumber>
+    <fileName reference="../../issue[8]/fileName"/>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Bi-directional Text</category>
+    <type>RtlHardcoded</type>
+    <contextHashCode>56143985</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/layout</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`. For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error. (Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&amp;quot;start&amp;quot;` rather than `gravity=&amp;quot;left|start&amp;quot;`.)</explanation>
+    <errorLines>
+      <string>        android:layout_alignParentRight=&amp;quot;true&amp;quot;</string>
+      <string>        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</string>
+    </errorLines>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>Missing the following drawables in `drawable-mdpi`: tarcle_icon.png (found in drawable-hdpi)</message>
+    <priority>NORMAL</priority>
+    <key>10</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>0</start>
+        <end>0</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>0</primaryLineNumber>
+    <fileName>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-mdpi</fileName>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Usability:Icons</category>
+    <type>IconDensities</type>
+    <contextHashCode>-1648122544</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.  Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html</explanation>
+    <errorLines/>
+  </issue>
+  <issue plugin="android-lint@2.2">
+    <message>Consider adding `android:layout_alignStart=&quot;@id/role_name&quot;` to better support right-to-left layouts</message>
+    <priority>NORMAL</priority>
+    <key>19</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.71">
+        <start>23</start>
+        <end>23</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>23</primaryLineNumber>
+    <fileName reference="../../issue[8]/fileName"/>
+    <moduleName reference="../../issue/moduleName"/>
+    <category>Bi-directional Text</category>
+    <type>RtlHardcoded</type>
+    <contextHashCode>1127745536</contextHashCode>
+    <origin>android-lint</origin>
+    <pathName>app/src/main/res/layout</pathName>
+    <primaryColumnStart>0</primaryColumnStart>
+    <primaryColumnEnd>0</primaryColumnEnd>
+    <locations/>
+    <explanation>Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`. For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error. (Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&amp;quot;start&amp;quot;` rather than `gravity=&amp;quot;left|start&amp;quot;`.)</explanation>
+    <errorLines>
+      <string>        android:layout_alignLeft=&amp;quot;@id/role_name&amp;quot;</string>
+      <string>        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</string>
+    </errorLines>
+  </issue>
+</annotation-array>

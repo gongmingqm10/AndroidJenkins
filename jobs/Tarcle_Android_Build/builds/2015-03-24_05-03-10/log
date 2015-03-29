@@ -1,0 +1,392 @@
+Started by an SCM change
+Started by an SCM change
+Building in workspace /var/jenkins_home/jobs/Tarcle Android Build/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/gongmingqm10/tarcle-tdd # timeout=10
+Fetching upstream changes from https://github.com/gongmingqm10/tarcle-tdd
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.helper store --file=/tmp/git6574351604903050001.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/gongmingqm10/tarcle-tdd +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 57c92d3bd2bdb2f25fa542f2854e66e291b4d526 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 57c92d3bd2bdb2f25fa542f2854e66e291b4d526
+ > git rev-list d84edb487b4d8505d45f41f949c129274c3a991b # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson2240358023675622026.sh
++ ./gradlew build --stacktrace
+Downloading https://services.gradle.org/distributions/gradle-2.3-all.zip
+............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Unzipping /root/.gradle/wrapper/dists/gradle-2.3-all/f0fc9b9umg4mbsdj4rl7skilb/gradle-2.3-all.zip to /root/.gradle/wrapper/dists/gradle-2.3-all/f0fc9b9umg4mbsdj4rl7skilb
+Set executable permissions for: /root/.gradle/wrapper/dists/gradle-2.3-all/f0fc9b9umg4mbsdj4rl7skilb/gradle-2.3/bin/gradle
+Download https://jcenter.bintray.com/com/android/tools/build/gradle/1.1.3/gradle-1.1.3.pom
+Download https://jcenter.bintray.com/com/android/tools/build/gradle-core/1.1.3/gradle-core-1.1.3.pom
+Download https://jcenter.bintray.com/com/android/tools/build/builder/1.1.3/builder-1.1.3.pom
+Download https://jcenter.bintray.com/com/android/tools/lint/lint/24.1.3/lint-24.1.3.pom
+Download https://jcenter.bintray.com/net/sf/proguard/proguard-gradle/5.1/proguard-gradle-5.1.pom
+Download https://jcenter.bintray.com/net/sf/proguard/proguard-parent/5.1/proguard-parent-5.1.pom
+Download https://jcenter.bintray.com/com/android/tools/build/builder-model/1.1.3/builder-model-1.1.3.pom
+Download https://jcenter.bintray.com/com/android/tools/build/builder-test-api/1.1.3/builder-test-api-1.1.3.pom
+Download https://jcenter.bintray.com/com/android/tools/sdklib/24.1.3/sdklib-24.1.3.pom
+Download https://jcenter.bintray.com/com/android/tools/sdk-common/24.1.3/sdk-common-24.1.3.pom
+Download https://jcenter.bintray.com/com/android/tools/common/24.1.3/common-24.1.3.pom
+Download https://jcenter.bintray.com/com/android/tools/build/manifest-merger/24.1.3/manifest-merger-24.1.3.pom
+Download https://jcenter.bintray.com/com/android/tools/ddms/ddmlib/24.1.3/ddmlib-24.1.3.pom
+Download https://jcenter.bintray.com/com/squareup/javawriter/2.5.0/javawriter-2.5.0.pom
+Download https://jcenter.bintray.com/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+Download https://jcenter.bintray.com/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.pom
+Download https://jcenter.bintray.com/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm/5.0.3/asm-5.0.3.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom
+Download https://jcenter.bintray.com/org/ow2/ow2/1.3/ow2-1.3.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.pom
+Download https://jcenter.bintray.com/com/android/tools/lint/lint-checks/24.1.3/lint-checks-24.1.3.pom
+Download https://jcenter.bintray.com/org/eclipse/jdt/core/compiler/ecj/4.4/ecj-4.4.pom
+Download https://jcenter.bintray.com/net/sf/proguard/proguard-base/5.1/proguard-base-5.1.pom
+Download https://jcenter.bintray.com/com/android/tools/annotations/24.1.3/annotations-24.1.3.pom
+Download https://jcenter.bintray.com/com/android/tools/layoutlib/layoutlib-api/24.1.3/layoutlib-api-24.1.3.pom
+Download https://jcenter.bintray.com/com/android/tools/dvlib/24.1.3/dvlib-24.1.3.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-parent/33/commons-parent-33.pom
+Download https://jcenter.bintray.com/org/apache/apache/13/apache-13.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-client/4.1.1/httpcomponents-client-4.1.1.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/project/4.1.1/project-4.1.1.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-client/4.1/httpcomponents-client-4.1.pom
+Download https://jcenter.bintray.com/com/google/code/gson/gson/2.2.4/gson-2.2.4.pom
+Download https://jcenter.bintray.com/com/google/guava/guava/17.0/guava-17.0.pom
+Download https://jcenter.bintray.com/com/google/guava/guava-parent/17.0/guava-parent-17.0.pom
+Download https://jcenter.bintray.com/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.pom
+Download https://jcenter.bintray.com/com/android/tools/lint/lint-api/24.1.3/lint-api-24.1.3.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-core/4.1/httpcomponents-core-4.1.pom
+Download https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-parent/5/commons-parent-5.pom
+Download https://jcenter.bintray.com/org/apache/apache/4/apache-4.pom
+Download https://jcenter.bintray.com/commons-codec/commons-codec/1.4/commons-codec-1.4.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-parent/11/commons-parent-11.pom
+Download https://jcenter.bintray.com/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.pom
+Download https://jcenter.bintray.com/com/android/tools/build/gradle/1.1.3/gradle-1.1.3.jar
+Download https://jcenter.bintray.com/com/android/tools/build/gradle-core/1.1.3/gradle-core-1.1.3.jar
+Download https://jcenter.bintray.com/com/android/tools/build/builder/1.1.3/builder-1.1.3.jar
+Download https://jcenter.bintray.com/com/android/tools/lint/lint/24.1.3/lint-24.1.3.jar
+Download https://jcenter.bintray.com/net/sf/proguard/proguard-gradle/5.1/proguard-gradle-5.1.jar
+Download https://jcenter.bintray.com/com/android/tools/build/builder-model/1.1.3/builder-model-1.1.3.jar
+Download https://jcenter.bintray.com/com/android/tools/build/builder-test-api/1.1.3/builder-test-api-1.1.3.jar
+Download https://jcenter.bintray.com/com/android/tools/sdklib/24.1.3/sdklib-24.1.3.jar
+Download https://jcenter.bintray.com/com/android/tools/sdk-common/24.1.3/sdk-common-24.1.3.jar
+Download https://jcenter.bintray.com/com/android/tools/common/24.1.3/common-24.1.3.jar
+Download https://jcenter.bintray.com/com/android/tools/build/manifest-merger/24.1.3/manifest-merger-24.1.3.jar
+Download https://jcenter.bintray.com/com/android/tools/ddms/ddmlib/24.1.3/ddmlib-24.1.3.jar
+Download https://jcenter.bintray.com/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar
+Download https://jcenter.bintray.com/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar
+Download https://jcenter.bintray.com/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar
+Download https://jcenter.bintray.com/com/android/tools/lint/lint-checks/24.1.3/lint-checks-24.1.3.jar
+Download https://jcenter.bintray.com/org/eclipse/jdt/core/compiler/ecj/4.4/ecj-4.4.jar
+Download https://jcenter.bintray.com/net/sf/proguard/proguard-base/5.1/proguard-base-5.1.jar
+Download https://jcenter.bintray.com/com/android/tools/annotations/24.1.3/annotations-24.1.3.jar
+Download https://jcenter.bintray.com/com/android/tools/layoutlib/layoutlib-api/24.1.3/layoutlib-api-24.1.3.jar
+Download https://jcenter.bintray.com/com/android/tools/dvlib/24.1.3/dvlib-24.1.3.jar
+Download https://jcenter.bintray.com/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.jar
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar
+Download https://jcenter.bintray.com/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar
+Download https://jcenter.bintray.com/com/google/guava/guava/17.0/guava-17.0.jar
+Download https://jcenter.bintray.com/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar
+Download https://jcenter.bintray.com/com/android/tools/lint/lint-api/24.1.3/lint-api-24.1.3.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.jar
+Download https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+Download https://jcenter.bintray.com/commons-codec/commons-codec/1.4/commons-codec-1.4.jar
+Download https://jcenter.bintray.com/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar
+Download https://jcenter.bintray.com/com/squareup/retrofit/retrofit/1.9.0/retrofit-1.9.0.pom
+Download https://jcenter.bintray.com/com/squareup/retrofit/parent/1.9.0/parent-1.9.0.pom
+Download https://jcenter.bintray.com/com/squareup/otto/1.3.6/otto-1.3.6.pom
+Download https://jcenter.bintray.com/com/squareup/otto-parent/1.3.6/otto-parent-1.3.6.pom
+Download https://jcenter.bintray.com/com/jakewharton/butterknife/6.1.0/butterknife-6.1.0.pom
+Download https://jcenter.bintray.com/com/jakewharton/butterknife-parent/6.1.0/butterknife-parent-6.1.0.pom
+Download https://jcenter.bintray.com/com/squareup/picasso/picasso/2.5.0/picasso-2.5.0.pom
+Download https://jcenter.bintray.com/com/squareup/picasso/picasso-parent/2.5.0/picasso-parent-2.5.0.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.pom
+Download https://jcenter.bintray.com/net/hockeyapp/android/HockeySDK/3.5.0/HockeySDK-3.5.0.pom
+Download https://jcenter.bintray.com/com/google/code/gson/gson/2.3.1/gson-2.3.1.pom
+Download https://jcenter.bintray.com/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+Download https://jcenter.bintray.com/com/google/code/gson/gson/2.3.1/gson-2.3.1.jar
+Download https://jcenter.bintray.com/com/squareup/retrofit/retrofit/1.9.0/retrofit-1.9.0.jar
+Download https://jcenter.bintray.com/com/squareup/otto/1.3.6/otto-1.3.6.jar
+Download https://jcenter.bintray.com/com/jakewharton/butterknife/6.1.0/butterknife-6.1.0.jar
+Download https://jcenter.bintray.com/com/squareup/picasso/picasso/2.5.0/picasso-2.5.0.jar
+Download https://jcenter.bintray.com/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar
+Download https://jcenter.bintray.com/net/hockeyapp/android/HockeySDK/3.5.0/HockeySDK-3.5.0.jar
+Download https://jcenter.bintray.com/junit/junit/4.12/junit-4.12.pom
+Download https://jcenter.bintray.com/org/apache/maven/maven-ant-tasks/2.1.3/maven-ant-tasks-2.1.3.pom
+Download https://jcenter.bintray.com/org/apache/maven/maven-parent/19/maven-parent-19.pom
+Download https://jcenter.bintray.com/org/apache/apache/9/apache-9.pom
+Download https://jcenter.bintray.com/org/mockito/mockito-all/1.8.4/mockito-all-1.8.4.pom
+Download https://jcenter.bintray.com/org/assertj/assertj-core/1.7.1/assertj-core-1.7.1.pom
+Download https://jcenter.bintray.com/org/assertj/assertj-parent-pom/1.2.6/assertj-parent-pom-1.2.6.pom
+Download https://jcenter.bintray.com/com/google/guava/guava/18.0/guava-18.0.pom
+Download https://jcenter.bintray.com/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-library/1.1/hamcrest-library-1.1.pom
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-integration/1.1/hamcrest-integration-1.1.pom
+Download https://jcenter.bintray.com/org/robolectric/robolectric/2.4/robolectric-2.4.pom
+Download https://jcenter.bintray.com/org/robolectric/robolectric-parent/2.4/robolectric-parent-2.4.pom
+Download https://jcenter.bintray.com/org/apache/ant/ant/1.8.0/ant-1.8.0.pom
+Download https://jcenter.bintray.com/org/apache/ant/ant-parent/1.8.0/ant-parent-1.8.0.pom
+Download https://jcenter.bintray.com/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom
+Download https://jcenter.bintray.com/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom
+Download https://jcenter.bintray.com/org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3.pom
+Download https://jcenter.bintray.com/org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4.pom
+Download https://jcenter.bintray.com/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.pom
+Download https://jcenter.bintray.com/org/codehaus/plexus/plexus/2.0.2/plexus-2.0.2.pom
+Download https://jcenter.bintray.com/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.pom
+Download https://jcenter.bintray.com/org/codehaus/plexus/plexus-components/1.1.14/plexus-components-1.1.14.pom
+Download https://jcenter.bintray.com/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom
+Download https://jcenter.bintray.com/org/apache/maven/maven/2.2.1/maven-2.2.1.pom
+Download https://jcenter.bintray.com/org/apache/maven/maven-parent/11/maven-parent-11.pom
+Download https://jcenter.bintray.com/org/apache/apache/5/apache-5.pom
+Download https://jcenter.bintray.com/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom
+Download https://jcenter.bintray.com/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom
+Download https://jcenter.bintray.com/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom
+Download https://jcenter.bintray.com/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom
+Download https://jcenter.bintray.com/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom
+Download https://jcenter.bintray.com/org/apache/maven/wagon/wagon-file/1.0-beta-6/wagon-file-1.0-beta-6.pom
+Download https://jcenter.bintray.com/org/apache/maven/wagon/wagon-providers/1.0-beta-6/wagon-providers-1.0-beta-6.pom
+Download https://jcenter.bintray.com/org/apache/maven/wagon/wagon/1.0-beta-6/wagon-1.0-beta-6.pom
+Download https://jcenter.bintray.com/org/apache/maven/wagon/wagon-http-lightweight/1.0-beta-6/wagon-http-lightweight-1.0-beta-6.pom
+Download https://jcenter.bintray.com/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.pom
+Download https://jcenter.bintray.com/org/robolectric/robolectric-annotations/2.4/robolectric-annotations-2.4.pom
+Download https://jcenter.bintray.com/org/objenesis/objenesis/1.3/objenesis-1.3.pom
+Download https://jcenter.bintray.com/org/objenesis/objenesis-parent/1.3/objenesis-parent-1.3.pom
+Download https://jcenter.bintray.com/com/almworks/sqlite4java/sqlite4java/0.282/sqlite4java-0.282.pom
+Download https://jcenter.bintray.com/org/sonatype/oss/oss-parent/4/oss-parent-4.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm/5.0.1/asm-5.0.1.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-parent/5.0.1/asm-parent-5.0.1.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-commons/5.0.1/asm-commons-5.0.1.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-util/5.0.1/asm-util-5.0.1.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-analysis/5.0.1/asm-analysis-5.0.1.pom
+Download https://jcenter.bintray.com/commons-codec/commons-codec/1.3/commons-codec-1.3.pom
+Download https://jcenter.bintray.com/com/ximpleware/vtd-xml/2.11/vtd-xml-2.11.pom
+Download https://jcenter.bintray.com/org/apache/ant/ant-launcher/1.8.0/ant-launcher-1.8.0.pom
+Download https://jcenter.bintray.com/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom
+Download https://jcenter.bintray.com/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.pom
+Download https://jcenter.bintray.com/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom
+Download https://jcenter.bintray.com/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom
+Download https://jcenter.bintray.com/org/apache/maven/wagon/wagon-http-shared/1.0-beta-6/wagon-http-shared-1.0-beta-6.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-tree/5.0.1/asm-tree-5.0.1.pom
+Download https://jcenter.bintray.com/nekohtml/xercesMinimal/1.9.6.2/xercesMinimal-1.9.6.2.pom
+Download https://jcenter.bintray.com/nekohtml/nekohtml/1.9.6.2/nekohtml-1.9.6.2.pom
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+Download https://jcenter.bintray.com/junit/junit/4.12/junit-4.12.jar
+Download https://jcenter.bintray.com/org/apache/ant/ant-launcher/1.8.0/ant-launcher-1.8.0.jar
+Download https://jcenter.bintray.com/org/apache/ant/ant/1.8.0/ant-1.8.0.jar
+Download https://jcenter.bintray.com/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar
+Download https://jcenter.bintray.com/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.jar
+Download https://jcenter.bintray.com/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar
+Download https://jcenter.bintray.com/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar
+Download https://jcenter.bintray.com/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar
+Download https://jcenter.bintray.com/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.jar
+Download https://jcenter.bintray.com/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.jar
+Download https://jcenter.bintray.com/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar
+Download https://jcenter.bintray.com/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar
+Download https://jcenter.bintray.com/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.jar
+Download https://jcenter.bintray.com/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.jar
+Download https://jcenter.bintray.com/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar
+Download https://jcenter.bintray.com/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar
+Download https://jcenter.bintray.com/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar
+Download https://jcenter.bintray.com/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar
+Download https://jcenter.bintray.com/org/apache/maven/wagon/wagon-file/1.0-beta-6/wagon-file-1.0-beta-6.jar
+Download https://jcenter.bintray.com/nekohtml/xercesMinimal/1.9.6.2/xercesMinimal-1.9.6.2.jar
+Download https://jcenter.bintray.com/nekohtml/nekohtml/1.9.6.2/nekohtml-1.9.6.2.jar
+Download https://jcenter.bintray.com/org/apache/maven/wagon/wagon-http-shared/1.0-beta-6/wagon-http-shared-1.0-beta-6.jar
+Download https://jcenter.bintray.com/org/apache/maven/wagon/wagon-http-lightweight/1.0-beta-6/wagon-http-lightweight-1.0-beta-6.jar
+Download https://jcenter.bintray.com/org/apache/maven/maven-ant-tasks/2.1.3/maven-ant-tasks-2.1.3.jar
+Download https://jcenter.bintray.com/org/mockito/mockito-all/1.8.4/mockito-all-1.8.4.jar
+Download https://jcenter.bintray.com/org/assertj/assertj-core/1.7.1/assertj-core-1.7.1.jar
+Download https://jcenter.bintray.com/com/google/guava/guava/18.0/guava-18.0.jar
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-library/1.1/hamcrest-library-1.1.jar
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-integration/1.1/hamcrest-integration-1.1.jar
+Download https://jcenter.bintray.com/org/robolectric/robolectric-annotations/2.4/robolectric-annotations-2.4.jar
+Download https://jcenter.bintray.com/org/objenesis/objenesis/1.3/objenesis-1.3.jar
+Download https://jcenter.bintray.com/com/almworks/sqlite4java/sqlite4java/0.282/sqlite4java-0.282.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm/5.0.1/asm-5.0.1.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm-tree/5.0.1/asm-tree-5.0.1.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm-commons/5.0.1/asm-commons-5.0.1.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm-util/5.0.1/asm-util-5.0.1.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm-analysis/5.0.1/asm-analysis-5.0.1.jar
+Download https://jcenter.bintray.com/commons-codec/commons-codec/1.3/commons-codec-1.3.jar
+Download https://jcenter.bintray.com/com/ximpleware/vtd-xml/2.11/vtd-xml-2.11.jar
+Download https://jcenter.bintray.com/org/robolectric/robolectric/2.4/robolectric-2.4.jar
+Download https://jcenter.bintray.com/com/squareup/javawriter/2.1.1/javawriter-2.1.1.pom
+Download https://jcenter.bintray.com/javax/inject/javax.inject/1/javax.inject-1.pom
+Download https://jcenter.bintray.com/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom
+Download https://jcenter.bintray.com/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.pom
+Download https://jcenter.bintray.com/net/java/jvnet-parent/3/jvnet-parent-3.pom
+Download https://jcenter.bintray.com/junit/junit-dep/4.10/junit-dep-4.10.pom
+Download https://jcenter.bintray.com/com/squareup/javawriter/2.1.1/javawriter-2.1.1.jar
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar
+Download https://jcenter.bintray.com/javax/inject/javax.inject/1/javax.inject-1.jar
+Download https://jcenter.bintray.com/junit/junit-dep/4.10/junit-dep-4.10.jar
+Download https://jcenter.bintray.com/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar
+Download https://jcenter.bintray.com/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72103Library
+:app:prepareComAndroidSupportSupportV42103Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/src/main/res/drawable-hdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/src/main/res/drawable-xhdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/src/main/res/drawable-mdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/src/main/res/drawable-hdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/src/main/res/drawable-xhdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/src/main/res/drawable-mdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:lintVitalRelease SKIPPED
+:app:compileReleaseNdk UP-TO-DATE
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:validateReleaseSigning
+:app:packageRelease FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem was found with the configuration of task ':app:packageRelease'.
+> File '/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/my-release-key.keystore' specified for property 'signingConfig.storeFile' does not exist.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskValidationException: A problem was found with the configuration of task ':app:packageRelease'.
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:306)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.InvalidUserDataException: File '/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/my-release-key.keystore' specified for property 'signingConfig.storeFile' does not exist.
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:47)
+	... 43 more
+
+
+BUILD FAILED
+
+Total time: 2 mins 33.494 secs
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

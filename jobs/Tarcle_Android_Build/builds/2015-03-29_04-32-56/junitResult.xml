@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<result plugin="junit@1.0">
+  <suites>
+    <suite>
+      <file>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/test-results/devDebug/TEST-com.tarcle.moment.TarcleAppTest.xml</file>
+      <name>com.tarcle.moment.TarcleAppTest</name>
+      <stdout></stdout>
+      <stderr>WARNING: no system properties value for ro.build.date.utc
+</stderr>
+      <duration>3.72</duration>
+      <timestamp>2015-03-29T04:35:14</timestamp>
+      <cases>
+        <case>
+          <duration>3.72</duration>
+          <className>com.tarcle.moment.TarcleAppTest</className>
+          <testName>shouldGetInstance</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/test-results/devDebug/TEST-com.tarcle.moment.activity.RootActivityTest.xml</file>
+      <name>com.tarcle.moment.activity.RootActivityTest</name>
+      <stdout>DEBUG: Loading resources for com.tarcle.moment from ./src/main/res...
+DEBUG: Loading resources for android from jar:/root/.m2/repository/org/robolectric/android-all/4.3_r2-robolectric-0/android-all-4.3_r2-robolectric-0.jar!/res...
+</stdout>
+      <stderr>Unexpected HTTP call GET http://192.168.0.9:9090/topics HTTP/1.1
+</stderr>
+      <duration>16.662</duration>
+      <timestamp>2015-03-29T04:35:18</timestamp>
+      <cases>
+        <case>
+          <duration>13.896</duration>
+          <className>com.tarcle.moment.activity.RootActivityTest</className>
+          <testName>shouldUpdateTitleWhenMineFragmentShows</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>1.069</duration>
+          <className>com.tarcle.moment.activity.RootActivityTest</className>
+          <testName>shouldCreateRootActivity</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.769</duration>
+          <className>com.tarcle.moment.activity.RootActivityTest</className>
+          <testName>shouldUpdateTitleWhenTopicFragmentShows</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.928</duration>
+          <className>com.tarcle.moment.activity.RootActivityTest</className>
+          <testName>shouldUpdtaeTitleWhenCircleFragmentShows</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/test-results/devDebug/TEST-com.tarcle.moment.fragment.CircleFragmentTest.xml</file>
+      <name>com.tarcle.moment.fragment.CircleFragmentTest</name>
+      <stdout></stdout>
+      <stderr>Unexpected HTTP call GET http://192.168.0.9:9090/topics HTTP/1.1
+Unexpected HTTP call GET http://192.168.0.9:9090/circles HTTP/1.1
+Unexpected HTTP call GET http://192.168.0.9:9090/topics HTTP/1.1
+Unexpected HTTP call GET http://192.168.0.9:9090/circles HTTP/1.1
+Unexpected HTTP call GET http://192.168.0.9:9090/topics HTTP/1.1
+Unexpected HTTP call GET http://192.168.0.9:9090/circles HTTP/1.1
+</stderr>
+      <duration>3.352</duration>
+      <timestamp>2015-03-29T04:35:35</timestamp>
+      <cases>
+        <case>
+          <duration>1.643</duration>
+          <className>com.tarcle.moment.fragment.CircleFragmentTest</className>
+          <testName>shouldShowCirclesInListView</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.867</duration>
+          <className>com.tarcle.moment.fragment.CircleFragmentTest</className>
+          <testName>shouldRegisterOrUnregisterBusOnFragmentLifeCycle</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.842</duration>
+          <className>com.tarcle.moment.fragment.CircleFragmentTest</className>
+          <testName>shouldShowCircleNameInListItem</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/test-results/devDebug/TEST-com.tarcle.moment.fragment.NavigationDrawerFragmentTest.xml</file>
+      <name>com.tarcle.moment.fragment.NavigationDrawerFragmentTest</name>
+      <stdout></stdout>
+      <stderr>Unexpected HTTP call GET http://192.168.0.9:9090/topics HTTP/1.1
+Unexpected HTTP call GET http://192.168.0.9:9090/topics HTTP/1.1
+Unexpected HTTP call GET http://192.168.0.9:9090/topics HTTP/1.1
+Unexpected HTTP call GET http://192.168.0.9:9090/topics HTTP/1.1
+</stderr>
+      <duration>3.571</duration>
+      <timestamp>2015-03-29T04:35:38</timestamp>
+      <cases>
+        <case>
+          <duration>1.884</duration>
+          <className>com.tarcle.moment.fragment.NavigationDrawerFragmentTest</className>
+          <testName>shouldInvokeCallbackWhenItemIsClicked</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.958</duration>
+          <className>com.tarcle.moment.fragment.NavigationDrawerFragmentTest</className>
+          <testName>shouldCreateListView</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.729</duration>
+          <className>com.tarcle.moment.fragment.NavigationDrawerFragmentTest</className>
+          <testName>shouldContainsThreeItems</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/test-results/devDebug/TEST-com.tarcle.moment.fragment.TopicFragmentTest.xml</file>
+      <name>com.tarcle.moment.fragment.TopicFragmentTest</name>
+      <stdout></stdout>
+      <stderr>Unexpected HTTP call GET http://192.168.0.9:9090/topics HTTP/1.1
+Unexpected HTTP call GET http://192.168.0.9:9090/topics HTTP/1.1
+Unexpected HTTP call GET http://192.168.0.9:9090/topics HTTP/1.1
+Unexpected HTTP call GET http://192.168.0.9:9090/topics HTTP/1.1
+Unexpected HTTP call GET http://192.168.0.9:9090/topics HTTP/1.1
+Unexpected HTTP call GET http://192.168.0.9:9090/topics HTTP/1.1
+</stderr>
+      <duration>2.6739998</duration>
+      <timestamp>2015-03-29T04:35:41</timestamp>
+      <cases>
+        <case>
+          <duration>0.819</duration>
+          <className>com.tarcle.moment.fragment.TopicFragmentTest</className>
+          <testName>shouldRegisterOrUnregisterOnFragmentLifecycle</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.84</duration>
+          <className>com.tarcle.moment.fragment.TopicFragmentTest</className>
+          <testName>shouldInflateDataToAdapter</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>1.015</duration>
+          <className>com.tarcle.moment.fragment.TopicFragmentTest</className>
+          <testName>shouldShowContentInListView</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/test-results/devDebug/TEST-com.tarcle.moment.retrofit.RestClientTest.xml</file>
+      <name>com.tarcle.moment.retrofit.RestClientTest</name>
+      <stdout></stdout>
+      <stderr></stderr>
+      <duration>0.13000001</duration>
+      <timestamp>2015-03-29T04:35:18</timestamp>
+      <cases>
+        <case>
+          <duration>0.126</duration>
+          <className>com.tarcle.moment.retrofit.RestClientTest</className>
+          <testName>shouldGetCircleService</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>com.tarcle.moment.retrofit.RestClientTest</className>
+          <testName>shouldGetInstance</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.003</duration>
+          <className>com.tarcle.moment.retrofit.RestClientTest</className>
+          <testName>shouldGetTopicService</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+    <suite>
+      <file>/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/test-results/devDebug/TEST-com.tarcle.moment.view.CircleListAdapterTest.xml</file>
+      <name>com.tarcle.moment.view.CircleListAdapterTest</name>
+      <stdout></stdout>
+      <stderr></stderr>
+      <duration>0.107999995</duration>
+      <timestamp>2015-03-29T04:35:44</timestamp>
+      <cases>
+        <case>
+          <duration>0.04</duration>
+          <className>com.tarcle.moment.view.CircleListAdapterTest</className>
+          <testName>shouldShowDesc</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.037</duration>
+          <className>com.tarcle.moment.view.CircleListAdapterTest</className>
+          <testName>shouldShowFormattedStatus</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.031</duration>
+          <className>com.tarcle.moment.view.CircleListAdapterTest</className>
+          <testName>shouldShowGroupName</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>30.217</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>

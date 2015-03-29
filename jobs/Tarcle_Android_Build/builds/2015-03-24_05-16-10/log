@@ -1,0 +1,95 @@
+Started by an SCM change
+Building in workspace /var/jenkins_home/jobs/Tarcle Android Build/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/gongmingqm10/tarcle-tdd # timeout=10
+Fetching upstream changes from https://github.com/gongmingqm10/tarcle-tdd
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.helper store --file=/tmp/git1096949391488430869.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/gongmingqm10/tarcle-tdd +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 72e15d91e813362ce6d2c30b79554d295cf3166f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 72e15d91e813362ce6d2c30b79554d295cf3166f
+ > git rev-list 57c92d3bd2bdb2f25fa542f2854e66e291b4d526 # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson1519282587399037391.sh
++ ./gradlew build --stacktrace
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72103Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42103Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug UP-TO-DATE
+:app:zipalignDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl UP-TO-DATE
+:app:compileReleaseRenderscript UP-TO-DATE
+:app:generateReleaseBuildConfig UP-TO-DATE
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets UP-TO-DATE
+:app:generateReleaseResValues UP-TO-DATE
+:app:generateReleaseResources UP-TO-DATE
+:app:mergeReleaseResources UP-TO-DATE
+:app:processReleaseManifest UP-TO-DATE
+:app:processReleaseResources UP-TO-DATE
+:app:generateReleaseSources UP-TO-DATE
+:app:compileReleaseJava UP-TO-DATE
+:app:lintVitalRelease SKIPPED
+:app:compileReleaseNdk UP-TO-DATE
+:app:preDexRelease UP-TO-DATE
+:app:dexRelease UP-TO-DATE
+:app:processReleaseJavaRes UP-TO-DATE
+:app:validateReleaseSigning
+:app:packageRelease
+:app:zipalignRelease
+:app:assembleRelease
+:app:assemble
+:app:compileLint
+:app:lint
+Ran lint on variant release: 30 issues found
+Ran lint on variant debug: 30 issues found
+Wrote HTML report to file:/var/jenkins_home/jobs/Tarcle%20Android%20Build/workspace/app/build/outputs/lint-results.html
+Wrote XML report to /var/jenkins_home/jobs/Tarcle Android Build/workspace/app/build/outputs/lint-results.xml
+:app:preCompileDebugUnitTestJava
+:app:compileDebugUnitTestJava
+:app:compileDebugUnitTestSources
+:app:mockableAndroidJar
+:app:assembleDebugUnitTest
+:app:testDebug
+:app:preCompileReleaseUnitTestJava
+:app:compileReleaseUnitTestJava
+:app:compileReleaseUnitTestSources
+:app:assembleReleaseUnitTest
+:app:testRelease
+:app:test
+:app:check
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 2 mins 3.803 secs
+Finished: SUCCESS

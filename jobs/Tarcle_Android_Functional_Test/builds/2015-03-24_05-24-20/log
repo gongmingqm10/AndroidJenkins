@@ -1,0 +1,43 @@
+Started by upstream project "[8mha:AAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/az8JP2QxKLknFRVIwPHvJSi/MwUIMupNDMnRR8AdnKKONMAAAA=[0mTarcle Android Build" build number [8mha:AAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBnn9rPwk/ZDEouScVFUjA8e8lKL8zBQgy6k0MydF3xIAdTx9zdQAAAA=[0m9
+originally caused by:
+ Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /var/jenkins_home/jobs/Tarcle Android Functional Test/workspace
+Cloning the remote Git repository
+Cloning repository https://github.com/gongmingqm10/tarcle-tdd
+ > git init /var/jenkins_home/jobs/Tarcle Android Functional Test/workspace # timeout=10
+Fetching upstream changes from https://github.com/gongmingqm10/tarcle-tdd
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.helper store --file=/tmp/git1351417360695396362.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/gongmingqm10/tarcle-tdd +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git config remote.origin.url https://github.com/gongmingqm10/tarcle-tdd # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/gongmingqm10/tarcle-tdd # timeout=10
+Fetching upstream changes from https://github.com/gongmingqm10/tarcle-tdd
+using .gitcredentials to set credentials
+ > git config --local credential.helper store --file=/tmp/git5607515153769424191.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/gongmingqm10/tarcle-tdd +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 72e15d91e813362ce6d2c30b79554d295cf3166f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 72e15d91e813362ce6d2c30b79554d295cf3166f
+First time build. Skipping changelog.
+[workspace] $ /bin/sh -xe /tmp/hudson9127935256641676363.sh
++ ./gradlew clean functionalTest
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'functionalTest' not found in root project 'workspace'.
+
+* Try:
+Run gradlew tasks to get a list of available tasks. Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 15.411 secs
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

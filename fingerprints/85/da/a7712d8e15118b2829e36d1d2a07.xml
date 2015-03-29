@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2015-03-29 04:44:33.794 UTC</timestamp>
+  <original>
+    <name>Tarcle_Android_Build</name>
+    <number>17</number>
+  </original>
+  <md5sum>85daa7712d8e15118b2829e36d1d2a07</md5sum>
+  <fileName>app-dev-release.apk</fileName>
+  <usages>
+    <entry>
+      <string>Tarcle_Android_Build</string>
+      <ranges>17</ranges>
+    </entry>
+    <entry>
+      <string>Tarcle_Android_HockyApp</string>
+      <ranges>11-13</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

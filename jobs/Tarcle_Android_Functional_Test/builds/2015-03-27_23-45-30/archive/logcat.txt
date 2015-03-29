@@ -1,0 +1,1012 @@
+--------- beginning of main
+03-27 23:45:51.926 I/qemu-props(    0): connected to 'boot-properties' qemud service.
+01-01 00:00:00.300 W/auditd  (   49): type=2000 audit(0.0:1): initialized
+03-27 23:45:49.650 I/auditd  (   49): type=1403 audit(0.0:2): policy loaded auid=4294967295 ses=4294967295
+03-27 23:45:49.680 W/auditd  (   49): type=1404 audit(0.0:3): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+03-27 23:45:51.930 I/qemu-props(    0): receiving..
+03-27 23:45:51.930 I/qemu-props(    0): received: persist.sys.language=en
+03-27 23:45:52.183 I/qemu-props(    0): receiving..
+03-27 23:45:52.183 I/qemu-props(    0): received: persist.sys.country=US
+03-27 23:45:52.314 I/qemu-props(    0): receiving..
+03-27 23:45:52.314 I/qemu-props(    0): received: dalvik.vm.heapsize=48m
+03-27 23:45:52.341 I/qemu-props(    0): receiving..
+03-27 23:45:52.341 I/qemu-props(    0): received: ro.config.low_ram=true
+03-27 23:45:52.385 I/lowmemorykiller(    0): Using in-kernel low memory killer interface
+03-27 23:45:52.406 I/qemu-props(    0): receiving..
+03-27 23:45:52.407 I/qemu-props(    0): received: qemu.sf.lcd_density=160
+03-27 23:45:52.435 I/qemu-props(    0): receiving..
+03-27 23:45:52.435 I/qemu-props(    0): received: qemu.hw.mainkeys=1
+03-27 23:45:52.444 I/qemu-props(    0): receiving..
+03-27 23:45:52.444 I/qemu-props(    0): received: qemu.sf.fake_camera=back
+03-27 23:45:52.445 I/qemu-props(    0): receiving..
+03-27 23:45:52.445 I/qemu-props(    0): exiting (7 properties set).
+03-27 23:45:52.449 I/installd(    0): installd firing up
+03-27 23:45:52.450 E/cutils  (    0): Failed to read /data/.layout_version: No such file or directory
+03-27 23:45:52.452 D/installd(    0): Upgrading /data/media for multi-user
+03-27 23:45:52.597 I/SELinux (    0): SELinux: Loaded file_contexts from /file_contexts
+03-27 23:45:52.619 D/installd(    0): Upgrading to shared /data/media/obb
+03-27 23:45:52.634 D/installd(    0): Upgrading to /data/misc/user directories
+03-27 23:45:54.330 I/        (   62): debuggerd: Oct 10 2014 00:56:28
+03-27 23:45:54.513 I/Netd    (   61): Netd 1.0 starting
+--------- beginning of system
+03-27 23:45:55.506 I/Vold    (   53): Vold 2.1 (the revenge) firing up
+03-27 23:45:55.512 D/Vold    (   53): Volume sdcard state changing -1 (Initializing) -> 0 (No-Media)
+03-27 23:45:56.357 I/SurfaceFlinger(   54): SurfaceFlinger is starting
+03-27 23:45:56.374 I/SurfaceFlinger(   54): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+03-27 23:45:56.374 D/libEGL  (   54): Emulator without GPU support detected. Fallback to software renderer.
+03-27 23:45:56.768 D/libEGL  (   54): loaded /system/lib/egl/libGLES_android.so
+03-27 23:45:59.014 D/gralloc_goldfish(   54): Emulator without GPU emulation detected.
+03-27 23:45:59.121 I/gralloc (   54): using (fd=11)
+03-27 23:45:59.121 I/gralloc (   54): id           = 
+03-27 23:45:59.121 I/gralloc (   54): xres         = 1080 px
+03-27 23:45:59.121 I/gralloc (   54): yres         = 1920 px
+03-27 23:45:59.121 I/gralloc (   54): xres_virtual = 1080 px
+03-27 23:45:59.121 I/gralloc (   54): yres_virtual = 3840 px
+03-27 23:45:59.121 I/gralloc (   54): bpp          = 16
+03-27 23:45:59.121 I/gralloc (   54): r            = 11:5
+03-27 23:45:59.121 I/gralloc (   54): g            =  5:6
+03-27 23:45:59.121 I/gralloc (   54): b            =  0:5
+03-27 23:45:59.175 I/gralloc (   54): width        = 166 mm (165.253006 dpi)
+03-27 23:45:59.175 I/gralloc (   54): height       = 296 mm (164.756760 dpi)
+03-27 23:45:59.175 I/gralloc (   54): refresh rate = 48.22 Hz
+03-27 23:45:59.511 E/SurfaceFlinger(   54): hwcomposer module not found
+03-27 23:45:59.556 W/SurfaceFlinger(   54): no suitable EGLConfig found, trying a simpler query
+03-27 23:45:59.557 W/SurfaceFlinger(   54): EGL_SLOW_CONFIG selected!
+03-27 23:45:59.557 I/SurfaceFlinger(   54): EGL information:
+03-27 23:45:59.557 I/SurfaceFlinger(   54): vendor    : Android
+03-27 23:45:59.558 I/SurfaceFlinger(   54): version   : 1.4 Android META-EGL
+03-27 23:45:59.558 I/SurfaceFlinger(   54): extensions: EGL_KHR_get_all_proc_addresses EGL_ANDROID_presentation_time EGL_KHR_image_base EGL_KHR_fence_sync EGL_ANDROID_image_native_buffer 
+03-27 23:45:59.559 I/SurfaceFlinger(   54): Client API: OpenGL_ES
+03-27 23:45:59.559 I/SurfaceFlinger(   54): EGLSurface: 5-6-5-0, config=0x0
+03-27 23:45:59.614 W/SurfaceFlinger(   54): no suitable EGLConfig found, trying a simpler query
+03-27 23:45:59.615 W/SurfaceFlinger(   54): EGL_SLOW_CONFIG selected!
+03-27 23:45:59.615 I/SurfaceFlinger(   54): EGL information:
+03-27 23:45:59.616 I/SurfaceFlinger(   54): vendor    : Android
+03-27 23:45:59.616 I/SurfaceFlinger(   54): version   : 1.4 Android META-EGL
+03-27 23:45:59.616 I/SurfaceFlinger(   54): extensions: EGL_KHR_get_all_proc_addresses EGL_ANDROID_presentation_time EGL_KHR_image_base EGL_KHR_fence_sync EGL_ANDROID_image_native_buffer 
+03-27 23:45:59.616 I/SurfaceFlinger(   54): Client API: OpenGL_ES
+03-27 23:45:59.616 I/SurfaceFlinger(   54): EGLSurface: 5-6-5-0, config=0x0
+03-27 23:45:59.656 I/SurfaceFlinger(   54): OpenGL ES informations:
+03-27 23:45:59.656 I/SurfaceFlinger(   54): vendor    : Android
+03-27 23:45:59.656 I/SurfaceFlinger(   54): renderer  : Android PixelFlinger 1.4
+03-27 23:45:59.656 I/SurfaceFlinger(   54): version   : OpenGL ES-CM 1.0
+03-27 23:45:59.657 I/SurfaceFlinger(   54): extensions: GL_EXT_debug_marker GL_OES_byte_coordinates GL_OES_fixed_point GL_OES_single_precision GL_OES_read_format GL_OES_compressed_paletted_texture GL_OES_draw_texture GL_OES_matrix_get GL_OES_query_matrix GL_OES_EGL_image GL_OES_EGL_sync GL_OES_compressed_ETC1_RGB8_texture GL_ARB_texture_compression GL_ARB_texture_non_power_of_two GL_ANDROID_user_clip_plane GL_ANDROID_vertex_buffer_object GL_ANDROID_generate_mipmap 
+03-27 23:45:59.657 I/SurfaceFlinger(   54): GL_MAX_TEXTURE_SIZE = 4096
+03-27 23:45:59.657 I/SurfaceFlinger(   54): GL_MAX_VIEWPORT_DIMS = 4096
+03-27 23:45:59.718 W/SurfaceFlinger(   54): no suitable EGLConfig found, trying a simpler query
+03-27 23:45:59.719 W/SurfaceFlinger(   54): EGL_SLOW_CONFIG selected!
+03-27 23:45:59.719 I/SurfaceFlinger(   54): EGL information:
+03-27 23:45:59.719 I/SurfaceFlinger(   54): vendor    : Android
+03-27 23:45:59.719 I/SurfaceFlinger(   54): version   : 1.4 Android META-EGL
+03-27 23:45:59.719 I/SurfaceFlinger(   54): extensions: EGL_KHR_get_all_proc_addresses EGL_ANDROID_presentation_time EGL_KHR_image_base EGL_KHR_fence_sync EGL_ANDROID_image_native_buffer 
+03-27 23:45:59.720 I/SurfaceFlinger(   54): Client API: OpenGL_ES
+03-27 23:45:59.721 I/SurfaceFlinger(   54): EGLSurface: 5-6-5-0, config=0x0
+03-27 23:46:00.051 D/SurfaceFlinger(   54): Set power mode=2, type=0 flinger=0xb6962000
+03-27 23:46:01.164 I/mediaserver(   65): ServiceManager: 0xb60500c0
+03-27 23:46:01.166 I/AudioFlinger(   65): Using default 3000 mSec as standby time.
+03-27 23:46:01.180 I/ServiceManager(   65): Waiting for service batterystats...
+03-27 23:46:01.470 I/BootAnimation(  117): boot animation disabled
+03-27 23:46:02.181 D/AndroidRuntime(   70): 
+03-27 23:46:02.181 D/AndroidRuntime(   70): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+03-27 23:46:02.191 I/ServiceManager(   65): Waiting for service batterystats...
+03-27 23:46:02.433 D/AndroidRuntime(   70): CheckJNI is ON
+03-27 23:46:02.588 I/art     (   70): option[0]=-Xzygote
+03-27 23:46:02.588 I/art     (   70): option[1]=-Xcheck:jni
+03-27 23:46:02.589 I/art     (   70): option[2]=-Xjnigreflimit:2000
+03-27 23:46:02.589 I/art     (   70): option[3]=-Xstacktracefile:/data/anr/traces.txt
+03-27 23:46:02.589 I/art     (   70): option[4]=exit
+03-27 23:46:02.589 I/art     (   70): option[5]=vfprintf
+03-27 23:46:02.589 I/art     (   70): option[6]=sensitiveThread
+03-27 23:46:02.589 I/art     (   70): option[7]=-verbose:gc
+03-27 23:46:02.590 I/art     (   70): option[8]=-Xms4m
+03-27 23:46:02.590 I/art     (   70): option[9]=-Xmx48m
+03-27 23:46:02.590 I/art     (   70): option[10]=-XX:mainThreadStackSize=24K
+03-27 23:46:02.590 I/art     (   70): option[11]=-XX:LowMemoryMode
+03-27 23:46:02.590 I/art     (   70): option[12]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+03-27 23:46:02.591 I/art     (   70): option[13]=-Ximage-compiler-option
+03-27 23:46:02.591 I/art     (   70): option[14]=--runtime-arg
+03-27 23:46:02.591 I/art     (   70): option[15]=-Ximage-compiler-option
+03-27 23:46:02.591 I/art     (   70): option[16]=-Xms64m
+03-27 23:46:02.591 I/art     (   70): option[17]=-Ximage-compiler-option
+03-27 23:46:02.591 I/art     (   70): option[18]=--runtime-arg
+03-27 23:46:02.592 I/art     (   70): option[19]=-Ximage-compiler-option
+03-27 23:46:02.592 I/art     (   70): option[20]=-Xmx64m
+03-27 23:46:02.592 I/art     (   70): option[21]=-Ximage-compiler-option
+03-27 23:46:02.592 I/art     (   70): option[22]=--image-classes-zip=/system/framework/framework.jar
+03-27 23:46:02.592 I/art     (   70): option[23]=-Ximage-compiler-option
+03-27 23:46:02.592 I/art     (   70): option[24]=--image-classes=preloaded-classes
+03-27 23:46:02.603 I/art     (   70): option[25]=-Xcompiler-option
+03-27 23:46:02.603 I/art     (   70): option[26]=--runtime-arg
+03-27 23:46:02.603 I/art     (   70): option[27]=-Xcompiler-option
+03-27 23:46:02.604 I/art     (   70): option[28]=-Xms64m
+03-27 23:46:02.604 I/art     (   70): option[29]=-Xcompiler-option
+03-27 23:46:02.604 I/art     (   70): option[30]=--runtime-arg
+03-27 23:46:02.604 I/art     (   70): option[31]=-Xcompiler-option
+03-27 23:46:02.605 I/art     (   70): option[32]=-Xmx512m
+03-27 23:46:02.605 I/art     (   70): option[33]=-Duser.language=en
+03-27 23:46:02.605 I/art     (   70): option[34]=-Duser.region=US
+03-27 23:46:02.724 I/art     (   70): Pruning dalvik-cache since we are relocating an image and will need to recompile
+03-27 23:46:02.729 I/art     (   70): RelocateImage: /system/bin/patchoat --input-image-location=/system/framework/boot.art --output-image-file=/data/dalvik-cache/arm/system@framework@boot.art --input-oat-location=/system/framework/boot.oat --output-oat-file=/data/dalvik-cache/arm/system@framework@boot.oat --instruction-set=arm --base-offset-delta=13062144
+03-27 23:46:03.245 I/ServiceManager(   65): Waiting for service batterystats...
+03-27 23:46:04.247 I/ServiceManager(   65): Waiting for service batterystats...
+03-27 23:46:05.252 I/ServiceManager(   65): Waiting for service batterystats...
+03-27 23:46:06.258 I/CameraService(   65): CameraService started (pid=65)
+03-27 23:46:06.364 D/EmulatedCamera_QemuClient(   65): Emulated camera list: 
+03-27 23:46:06.365 D/EmulatedCamera_FakeCamera(   65): Initialize: Fake camera is facing back
+03-27 23:46:06.369 V/EmulatedCamera_Device(   65): initializeWhiteBalanceModes with auto, 1.000000, 1.000000
+03-27 23:46:06.404 V/EmulatedCamera_Device(   65): initializeWhiteBalanceModes with incandescent, 1.380000, 0.600000
+03-27 23:46:06.404 V/EmulatedCamera_Device(   65): initializeWhiteBalanceModes with daylight, 1.090000, 0.920000
+03-27 23:46:06.404 V/EmulatedCamera_Device(   65): initializeWhiteBalanceModes with twilight, 0.920000, 1.220000
+03-27 23:46:06.405 V/EmulatedCamera_Device(   65): setWhiteBalanceMode with white balance auto
+03-27 23:46:06.451 I/CameraService(   65): Loaded "Emulated Camera Module" camera module
+03-27 23:46:06.476 I/AudioPolicyService(   65): AudioPolicyService CSTOR in new mode
+03-27 23:46:06.498 I/AudioPolicyManager(   65): loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+03-27 23:46:06.526 E/AudioFlinger(   65): int android::load_audio_interface(const char*, audio_hw_device_t**) couldn't open audio hw device in audio.primary (Function not implemented)
+03-27 23:46:06.526 I/AudioFlinger(   65): loadHwModule() error -38 loading module primary 
+03-27 23:46:06.526 W/AudioPolicyManager(   65): could not open HW module primary
+03-27 23:46:06.527 E/AudioFlinger(   65): int android::load_audio_interface(const char*, audio_hw_device_t**) couldn't load audio hw module audio.r_submix (No such file or directory)
+03-27 23:46:06.528 I/AudioFlinger(   65): loadHwModule() error -2 loading module r_submix 
+03-27 23:46:06.528 W/AudioPolicyManager(   65): could not open HW module r_submix
+03-27 23:46:06.528 W/AudioPolicyManager(   65): Input device 00000002 unreachable
+03-27 23:46:06.528 W/AudioPolicyManager(   65): Input device 80000004 unreachable
+03-27 23:46:06.528 W/AudioPolicyManager(   65): Input device 80000100 unreachable
+03-27 23:46:06.529 E/AudioPolicyManager(   65): Default device 00000002 is unreachable
+03-27 23:46:06.529 E/AudioPolicyManager(   65): Failed to open primary output
+03-27 23:46:06.529 E/AudioPolicyManager(   65): getDeviceForStrategy() speaker device not found for STRATEGY_SONIFICATION
+03-27 23:46:06.529 E/AudioPolicyManager(   65): getDeviceForStrategy() speaker device not found for STRATEGY_SONIFICATION
+03-27 23:46:06.563 E/SoundTriggerHwService(   65): couldn't load sound trigger module sound_trigger.primary (No such file or directory)
+03-27 23:46:20.989 V/NatController(   61): runCmd(/system/bin/iptables -F natctrl_FORWARD) res=0
+03-27 23:46:21.125 V/NatController(   61): runCmd(/system/bin/iptables -A natctrl_FORWARD -j DROP) res=0
+03-27 23:46:21.264 V/NatController(   61): runCmd(/system/bin/iptables -t nat -F natctrl_nat_POSTROUTING) res=0
+03-27 23:46:21.395 V/NatController(   61): runCmd(/system/bin/iptables -F natctrl_tether_counters) res=1
+03-27 23:46:21.554 V/NatController(   61): runCmd(/system/bin/iptables -X natctrl_tether_counters) res=1
+03-27 23:46:21.673 V/NatController(   61): runCmd(/system/bin/iptables -N natctrl_tether_counters) res=0
+03-27 23:46:21.755 V/NatController(   61): runCmd(/system/bin/iptables -t mangle -A natctrl_mangle_FORWARD -p tcp --tcp-flags SYN SYN -j TCPMSS --clamp-mss-to-pmtu) res=1
+03-27 23:46:24.396 E/memtrack(   70): Couldn't load memtrack module (No such file or directory)
+03-27 23:46:24.397 E/android.os.Debug(   70): failed to load memtrack module: -2
+03-27 23:46:24.638 I/SamplingProfilerIntegration(   70): Profiling disabled.
+03-27 23:46:24.675 D/Zygote  (   70): begin preload
+03-27 23:46:25.355 I/Zygote  (   70): Preloading classes...
+03-27 23:46:25.549 I/art     (   70): Explicit concurrent mark sweep GC freed 992(55KB) AllocSpace objects, 0(0B) LOS objects, 88% free, 69KB/581KB, paused 2.055ms total 176.297ms
+03-27 23:46:25.580 I/art     (   70): Counter: 1
+03-27 23:46:25.894 I/art     (   70): Explicit concurrent mark sweep GC freed 515(32KB) AllocSpace objects, 0(0B) LOS objects, 85% free, 89KB/601KB, paused 23.596ms total 62.047ms
+03-27 23:46:26.702 I/art     (   70): Explicit concurrent mark sweep GC freed 638(41KB) AllocSpace objects, 0(0B) LOS objects, 84% free, 97KB/609KB, paused 23.096ms total 99.082ms
+03-27 23:46:28.180 I/art     (   70): Explicit concurrent mark sweep GC freed 397(25KB) AllocSpace objects, 0(0B) LOS objects, 80% free, 121KB/633KB, paused 967us total 58.208ms
+03-27 23:46:29.375 E/Minikin (   70): addFont failed to create font /system/fonts/NotoSansGujarati-Regular.ttf
+03-27 23:46:29.377 E/Minikin (   70): addFont failed to create font /system/fonts/NotoSansGujarati-Bold.ttf
+03-27 23:46:29.378 E/Minikin (   70): addFont failed to create font /system/fonts/NotoSansGujaratiUI-Regular.ttf
+03-27 23:46:29.379 E/Minikin (   70): addFont failed to create font /system/fonts/NotoSansGujaratiUI-Bold.ttf
+03-27 23:46:29.379 E/Minikin (   70): addFont failed to create font /system/fonts/NotoSansGurmukhi-Regular.ttf
+03-27 23:46:29.379 E/Minikin (   70): addFont failed to create font /system/fonts/NotoSansGurmukhi-Bold.ttf
+03-27 23:46:29.380 E/Minikin (   70): addFont failed to create font /system/fonts/NotoSansGurmukhiUI-Regular.ttf
+03-27 23:46:29.380 E/Minikin (   70): addFont failed to create font /system/fonts/NotoSansGurmukhiUI-Bold.ttf
+03-27 23:46:29.786 E/Minikin (   70): addFont failed to create font /system/fonts/NotoSansSinhala-Regular.ttf
+03-27 23:46:29.786 E/Minikin (   70): addFont failed to create font /system/fonts/NotoSansSinhala-Bold.ttf
+03-27 23:46:29.947 E/Minikin (   70): addFont failed to create font /system/fonts/NotoSansCherokee-Regular.ttf
+03-27 23:46:29.948 E/Minikin (   70): addFont failed to create font /system/fonts/NotoSansCanadianAboriginal-Regular.ttf
+03-27 23:46:29.948 E/Minikin (   70): addFont failed to create font /system/fonts/NotoSansYi-Regular.ttf
+03-27 23:46:29.949 E/Minikin (   70): addFont failed to create font /system/fonts/NotoSansHans-Regular.otf
+03-27 23:46:29.949 E/Minikin (   70): addFont failed to create font /system/fonts/NotoSansHant-Regular.otf
+03-27 23:46:29.949 E/Minikin (   70): addFont failed to create font /system/fonts/NotoSansJP-Regular.otf
+03-27 23:46:29.950 E/Minikin (   70): addFont failed to create font /system/fonts/NotoSansKR-Regular.otf
+03-27 23:46:32.442 I/art     (   70): Explicit concurrent mark sweep GC freed 1452(106KB) AllocSpace objects, 0(0B) LOS objects, 79% free, 129KB/641KB, paused 1.845ms total 62.112ms
+03-27 23:46:32.642 E/logwrapper(  333): executing /system/bin/ip failed: No such file or directory
+03-27 23:46:32.674 E/Netd    (   61): failed to flush rules
+03-27 23:46:32.675 E/CommandListener(   61): failed to initialize RouteController (Remote I/O error)
+03-27 23:46:32.712 D/MDnsDS  (   61): MDnsSdListener::Hander starting up
+03-27 23:46:32.720 D/MDnsDS  (   61): MDnsSdListener starting to monitor
+03-27 23:46:32.720 D/MDnsDS  (   61): Going to poll with pollCount 1
+03-27 23:46:32.948 I/art     (   70): Explicit concurrent mark sweep GC freed 1938(93KB) AllocSpace objects, 0(0B) LOS objects, 74% free, 174KB/686KB, paused 1.228ms total 58.080ms
+03-27 23:46:33.179 I/art     (   70): Explicit concurrent mark sweep GC freed 1982(88KB) AllocSpace objects, 0(0B) LOS objects, 70% free, 211KB/723KB, paused 1.008ms total 58.730ms
+03-27 23:46:33.325 I/art     (   70): Explicit concurrent mark sweep GC freed 410(29KB) AllocSpace objects, 0(0B) LOS objects, 67% free, 247KB/759KB, paused 3.839ms total 37.447ms
+03-27 23:46:33.663 I/art     (   70): Thread[1,tid=70,WaitingForJniOnLoad,Thread*=0xb5007800,peer=0x12c33140,"main"] recursive attempt to load library "/system/lib/libmedia_jni.so"
+03-27 23:46:33.668 D/MtpDeviceJNI(   70): register_android_mtp_MtpDevice
+03-27 23:46:33.678 I/art     (   70): Thread[1,tid=70,WaitingForJniOnLoad,Thread*=0xb5007800,peer=0x12c33140,"main"] recursive attempt to load library "/system/lib/libmedia_jni.so"
+03-27 23:46:33.681 I/art     (   70): Thread[1,tid=70,WaitingForJniOnLoad,Thread*=0xb5007800,peer=0x12c33140,"main"] recursive attempt to load library "/system/lib/libmedia_jni.so"
+03-27 23:46:33.813 I/art     (   70): Explicit concurrent mark sweep GC freed 668(38KB) AllocSpace objects, 0(0B) LOS objects, 66% free, 258KB/770KB, paused 1.135ms total 28.477ms
+03-27 23:46:34.015 I/art     (   70): Explicit concurrent mark sweep GC freed 531(26KB) AllocSpace objects, 0(0B) LOS objects, 64% free, 287KB/799KB, paused 1.113ms total 22.885ms
+03-27 23:46:34.167 I/art     (   70): Explicit concurrent mark sweep GC freed 564(32KB) AllocSpace objects, 0(0B) LOS objects, 61% free, 314KB/826KB, paused 1.929ms total 28.043ms
+03-27 23:46:34.458 I/art     (   70): Explicit concurrent mark sweep GC freed 1852(109KB) AllocSpace objects, 0(0B) LOS objects, 51% free, 479KB/991KB, paused 1.014ms total 26.314ms
+03-27 23:46:34.522 E/EmojiFactory_jni(   70): Failed to load libemoji.so: dlopen failed: library "libemoji.so" not found
+03-27 23:46:34.838 I/art     (   70): Explicit concurrent mark sweep GC freed 371(46KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 778KB/1290KB, paused 1.172ms total 40.928ms
+03-27 23:46:34.965 I/art     (   70): Explicit concurrent mark sweep GC freed 440(30KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 797KB/1309KB, paused 1.924ms total 31.951ms
+03-27 23:46:35.086 I/art     (   70): Explicit concurrent mark sweep GC freed 778(49KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 797KB/1309KB, paused 1.102ms total 30.952ms
+03-27 23:46:35.361 I/art     (   70): Explicit concurrent mark sweep GC freed 875(101KB) AllocSpace objects, 0(0B) LOS objects, 38% free, 825KB/1337KB, paused 737us total 45.351ms
+03-27 23:46:35.499 I/art     (   70): Explicit concurrent mark sweep GC freed 623(44KB) AllocSpace objects, 0(0B) LOS objects, 38% free, 829KB/1341KB, paused 1.267ms total 29.076ms
+03-27 23:46:35.667 I/art     (   70): Explicit concurrent mark sweep GC freed 259(20KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 858KB/1370KB, paused 1.083ms total 30.185ms
+03-27 23:46:36.093 I/art     (   70): WaitForGcToComplete blocked for 16.098ms for cause Explicit
+03-27 23:46:36.140 I/art     (   70): Explicit concurrent mark sweep GC freed 627(37KB) AllocSpace objects, 0(0B) LOS objects, 29% free, 1242KB/1754KB, paused 1.147ms total 44.767ms
+03-27 23:46:36.258 I/art     (   70): Explicit concurrent mark sweep GC freed 586(34KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 1257KB/1769KB, paused 1.873ms total 38.223ms
+03-27 23:46:36.384 I/art     (   70): Explicit concurrent mark sweep GC freed 744(44KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 1262KB/1774KB, paused 1.330ms total 38.544ms
+03-27 23:46:36.989 I/System  (   70): Loaded time zone names for "" in 543ms (504ms in ICU)
+03-27 23:46:37.321 I/System  (   70): Loaded time zone names for "en_US" in 304ms (274ms in ICU)
+03-27 23:46:37.416 I/art     (   70): Explicit concurrent mark sweep GC freed 2400(181KB) AllocSpace objects, 0(0B) LOS objects, 26% free, 1420KB/1932KB, paused 2.057ms total 59.781ms
+03-27 23:46:37.555 I/art     (   70): Explicit concurrent mark sweep GC freed 136(12KB) AllocSpace objects, 0(0B) LOS objects, 25% free, 1485KB/1997KB, paused 1.806ms total 38.272ms
+03-27 23:46:37.685 I/art     (   70): Explicit concurrent mark sweep GC freed 289(24KB) AllocSpace objects, 0(0B) LOS objects, 24% free, 1537KB/2MB, paused 1.450ms total 44.455ms
+03-27 23:46:37.824 I/art     (   70): Explicit concurrent mark sweep GC freed 678(47KB) AllocSpace objects, 0(0B) LOS objects, 24% free, 1538KB/2MB, paused 3.246ms total 44.254ms
+03-27 23:46:37.837 I/Zygote  (   70): ...preloaded 3005 classes in 12479ms.
+03-27 23:46:37.837 I/art     (   70): VMRuntime.preloadDexCaches starting
+03-27 23:46:38.145 I/art     (   70): VMRuntime.preloadDexCaches strings total=211714 before=38269 after=38269
+03-27 23:46:38.145 I/art     (   70): VMRuntime.preloadDexCaches types total=18312 before=6405 after=6437
+03-27 23:46:38.146 I/art     (   70): VMRuntime.preloadDexCaches fields total=84623 before=32149 after=32474
+03-27 23:46:38.146 I/art     (   70): VMRuntime.preloadDexCaches methods total=149831 before=66179 after=67056
+03-27 23:46:38.146 I/art     (   70): VMRuntime.preloadDexCaches finished
+03-27 23:46:38.150 I/art     (   70): Counter: 0
+03-27 23:46:38.152 I/art     (   70): Counter: 1
+03-27 23:46:38.232 I/art     (   70): Explicit concurrent mark sweep GC freed 71(16KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1524KB/2MB, paused 1.905ms total 77.348ms
+03-27 23:46:38.411 D/idmap   (  342): error: no read access to /vendor/overlay: No such file or directory
+03-27 23:46:38.720 I/Zygote  (   70): Preloading resources...
+03-27 23:46:38.804 W/Resources(   70): Preloaded drawable resource #0x1080096 (android:drawable/toast_frame) that varies with configuration!!
+03-27 23:46:38.830 W/Resources(   70): Preloaded drawable resource #0x1080111 (android:drawable/btn_check_on_pressed_holo_light) that varies with configuration!!
+03-27 23:46:38.842 W/Resources(   70): Preloaded drawable resource #0x1080110 (android:drawable/btn_check_on_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:38.858 W/Resources(   70): Preloaded drawable resource #0x108010d (android:drawable/btn_check_on_holo_light) that varies with configuration!!
+03-27 23:46:38.868 W/Resources(   70): Preloaded drawable resource #0x108010c (android:drawable/btn_check_on_holo_dark) that varies with configuration!!
+03-27 23:46:38.925 I/art     (   70): Explicit concurrent mark sweep GC freed 145(24KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1550KB/3MB, paused 1.275ms total 50.133ms
+03-27 23:46:38.941 W/Resources(   70): Preloaded drawable resource #0x108010a (android:drawable/btn_check_on_focused_holo_light) that varies with configuration!!
+03-27 23:46:38.950 W/Resources(   70): Preloaded drawable resource #0x1080109 (android:drawable/btn_check_on_focused_holo_dark) that varies with configuration!!
+03-27 23:46:38.959 W/Resources(   70): Preloaded drawable resource #0x1080108 (android:drawable/btn_check_on_disabled_holo_light) that varies with configuration!!
+03-27 23:46:38.969 W/Resources(   70): Preloaded drawable resource #0x1080107 (android:drawable/btn_check_on_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:38.973 W/Resources(   70): Preloaded drawable resource #0x1080106 (android:drawable/btn_check_on_disabled_focused_holo_light) that varies with configuration!!
+03-27 23:46:38.984 W/Resources(   70): Preloaded drawable resource #0x1080105 (android:drawable/btn_check_on_disabled_focused_holo_dark) that varies with configuration!!
+03-27 23:46:39.004 W/Resources(   70): Preloaded drawable resource #0x10800fd (android:drawable/btn_check_off_pressed_holo_light) that varies with configuration!!
+03-27 23:46:39.008 W/Resources(   70): Preloaded drawable resource #0x10800fc (android:drawable/btn_check_off_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:39.018 W/Resources(   70): Preloaded drawable resource #0x10800f7 (android:drawable/btn_check_off_holo_light) that varies with configuration!!
+03-27 23:46:39.074 I/art     (   70): Explicit concurrent mark sweep GC freed 232(59KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1544KB/3MB, paused 1.512ms total 52.089ms
+03-27 23:46:39.088 W/Resources(   70): Preloaded drawable resource #0x10800f6 (android:drawable/btn_check_off_holo_dark) that varies with configuration!!
+03-27 23:46:39.091 W/Resources(   70): Preloaded drawable resource #0x10800f4 (android:drawable/btn_check_off_focused_holo_light) that varies with configuration!!
+03-27 23:46:39.100 W/Resources(   70): Preloaded drawable resource #0x10800f3 (android:drawable/btn_check_off_focused_holo_dark) that varies with configuration!!
+03-27 23:46:39.108 W/Resources(   70): Preloaded drawable resource #0x10800f2 (android:drawable/btn_check_off_disabled_holo_light) that varies with configuration!!
+03-27 23:46:39.112 W/Resources(   70): Preloaded drawable resource #0x10800f1 (android:drawable/btn_check_off_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:39.122 W/Resources(   70): Preloaded drawable resource #0x10800f0 (android:drawable/btn_check_off_disabled_focused_holo_light) that varies with configuration!!
+03-27 23:46:39.129 W/Resources(   70): Preloaded drawable resource #0x10800ef (android:drawable/btn_check_off_disabled_focused_holo_dark) that varies with configuration!!
+03-27 23:46:39.158 W/Resources(   70): Preloaded drawable resource #0x108010d (android:drawable/btn_check_on_holo_light) that varies with configuration!!
+03-27 23:46:39.166 W/Resources(   70): Preloaded drawable resource #0x10800f7 (android:drawable/btn_check_off_holo_light) that varies with configuration!!
+03-27 23:46:39.169 W/Resources(   70): Preloaded drawable resource #0x1080111 (android:drawable/btn_check_on_pressed_holo_light) that varies with configuration!!
+03-27 23:46:39.179 W/Resources(   70): Preloaded drawable resource #0x10800fd (android:drawable/btn_check_off_pressed_holo_light) that varies with configuration!!
+03-27 23:46:39.189 W/Resources(   70): Preloaded drawable resource #0x108010a (android:drawable/btn_check_on_focused_holo_light) that varies with configuration!!
+03-27 23:46:39.198 W/Resources(   70): Preloaded drawable resource #0x10800f4 (android:drawable/btn_check_off_focused_holo_light) that varies with configuration!!
+03-27 23:46:39.201 W/Resources(   70): Preloaded drawable resource #0x10800f7 (android:drawable/btn_check_off_holo_light) that varies with configuration!!
+03-27 23:46:39.211 W/Resources(   70): Preloaded drawable resource #0x108010d (android:drawable/btn_check_on_holo_light) that varies with configuration!!
+03-27 23:46:39.219 W/Resources(   70): Preloaded drawable resource #0x1080108 (android:drawable/btn_check_on_disabled_holo_light) that varies with configuration!!
+03-27 23:46:39.222 W/Resources(   70): Preloaded drawable resource #0x10800f2 (android:drawable/btn_check_off_disabled_holo_light) that varies with configuration!!
+03-27 23:46:39.233 W/Resources(   70): Preloaded drawable resource #0x1080106 (android:drawable/btn_check_on_disabled_focused_holo_light) that varies with configuration!!
+03-27 23:46:39.237 W/Resources(   70): Preloaded drawable resource #0x10800f0 (android:drawable/btn_check_off_disabled_focused_holo_light) that varies with configuration!!
+03-27 23:46:39.241 W/Resources(   70): Preloaded drawable resource #0x10800f2 (android:drawable/btn_check_off_disabled_holo_light) that varies with configuration!!
+03-27 23:46:39.251 W/Resources(   70): Preloaded drawable resource #0x1080108 (android:drawable/btn_check_on_disabled_holo_light) that varies with configuration!!
+03-27 23:46:39.259 W/Resources(   70): Preloaded drawable resource #0x10800e5 (android:drawable/btn_check_holo_light) that varies with configuration!!
+03-27 23:46:39.316 I/art     (   70): Explicit concurrent mark sweep GC freed 563(119KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1549KB/3MB, paused 1.057ms total 49.073ms
+03-27 23:46:39.329 W/Resources(   70): Preloaded drawable resource #0x108010c (android:drawable/btn_check_on_holo_dark) that varies with configuration!!
+03-27 23:46:39.338 W/Resources(   70): Preloaded drawable resource #0x10800f6 (android:drawable/btn_check_off_holo_dark) that varies with configuration!!
+03-27 23:46:39.347 W/Resources(   70): Preloaded drawable resource #0x1080110 (android:drawable/btn_check_on_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:39.352 W/Resources(   70): Preloaded drawable resource #0x10800fc (android:drawable/btn_check_off_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:39.362 W/Resources(   70): Preloaded drawable resource #0x1080109 (android:drawable/btn_check_on_focused_holo_dark) that varies with configuration!!
+03-27 23:46:39.372 W/Resources(   70): Preloaded drawable resource #0x10800f3 (android:drawable/btn_check_off_focused_holo_dark) that varies with configuration!!
+03-27 23:46:39.380 W/Resources(   70): Preloaded drawable resource #0x10800f6 (android:drawable/btn_check_off_holo_dark) that varies with configuration!!
+03-27 23:46:39.392 W/Resources(   70): Preloaded drawable resource #0x108010c (android:drawable/btn_check_on_holo_dark) that varies with configuration!!
+03-27 23:46:39.400 W/Resources(   70): Preloaded drawable resource #0x1080107 (android:drawable/btn_check_on_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:39.408 W/Resources(   70): Preloaded drawable resource #0x10800f1 (android:drawable/btn_check_off_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:39.412 W/Resources(   70): Preloaded drawable resource #0x1080105 (android:drawable/btn_check_on_disabled_focused_holo_dark) that varies with configuration!!
+03-27 23:46:39.422 W/Resources(   70): Preloaded drawable resource #0x10800ef (android:drawable/btn_check_off_disabled_focused_holo_dark) that varies with configuration!!
+03-27 23:46:39.430 W/Resources(   70): Preloaded drawable resource #0x10800f1 (android:drawable/btn_check_off_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:39.437 W/Resources(   70): Preloaded drawable resource #0x1080107 (android:drawable/btn_check_on_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:39.439 W/Resources(   70): Preloaded drawable resource #0x10800e4 (android:drawable/btn_check_holo_dark) that varies with configuration!!
+03-27 23:46:39.494 I/art     (   70): Explicit concurrent mark sweep GC freed 492(85KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1548KB/3MB, paused 1.875ms total 48.631ms
+03-27 23:46:39.507 W/Resources(   70): Preloaded drawable resource #0x10801c3 (android:drawable/btn_radio_on_pressed_holo_light) that varies with configuration!!
+03-27 23:46:39.518 W/Resources(   70): Preloaded drawable resource #0x10801c2 (android:drawable/btn_radio_on_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:39.521 W/Resources(   70): Preloaded drawable resource #0x10801bf (android:drawable/btn_radio_on_holo_light) that varies with configuration!!
+03-27 23:46:39.548 W/Resources(   70): Preloaded drawable resource #0x10801be (android:drawable/btn_radio_on_holo_dark) that varies with configuration!!
+03-27 23:46:39.560 W/Resources(   70): Preloaded drawable resource #0x10801bc (android:drawable/btn_radio_on_focused_holo_light) that varies with configuration!!
+03-27 23:46:39.571 W/Resources(   70): Preloaded drawable resource #0x10801bb (android:drawable/btn_radio_on_focused_holo_dark) that varies with configuration!!
+03-27 23:46:39.579 W/Resources(   70): Preloaded drawable resource #0x10801ba (android:drawable/btn_radio_on_disabled_holo_light) that varies with configuration!!
+03-27 23:46:39.590 W/Resources(   70): Preloaded drawable resource #0x10801b9 (android:drawable/btn_radio_on_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:39.599 W/Resources(   70): Preloaded drawable resource #0x10801b8 (android:drawable/btn_radio_on_disabled_focused_holo_light) that varies with configuration!!
+03-27 23:46:39.650 I/art     (   70): Explicit concurrent mark sweep GC freed 284(53KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1548KB/3MB, paused 1.372ms total 46.476ms
+03-27 23:46:39.665 W/Resources(   70): Preloaded drawable resource #0x10801b7 (android:drawable/btn_radio_on_disabled_focused_holo_dark) that varies with configuration!!
+03-27 23:46:39.677 W/Resources(   70): Preloaded drawable resource #0x10801b3 (android:drawable/btn_radio_off_pressed_holo_light) that varies with configuration!!
+03-27 23:46:39.686 W/Resources(   70): Preloaded drawable resource #0x10801b2 (android:drawable/btn_radio_off_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:39.692 W/Resources(   70): Preloaded drawable resource #0x10801af (android:drawable/btn_radio_off_holo_light) that varies with configuration!!
+03-27 23:46:39.700 W/Resources(   70): Preloaded drawable resource #0x10801ae (android:drawable/btn_radio_off_holo_dark) that varies with configuration!!
+03-27 23:46:39.716 W/Resources(   70): Preloaded drawable resource #0x10801ac (android:drawable/btn_radio_off_focused_holo_light) that varies with configuration!!
+03-27 23:46:39.729 W/Resources(   70): Preloaded drawable resource #0x10801ab (android:drawable/btn_radio_off_focused_holo_dark) that varies with configuration!!
+03-27 23:46:39.749 W/Resources(   70): Preloaded drawable resource #0x10801aa (android:drawable/btn_radio_off_disabled_holo_light) that varies with configuration!!
+03-27 23:46:39.760 W/Resources(   70): Preloaded drawable resource #0x10801a9 (android:drawable/btn_radio_off_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:39.768 I/art     (   70): WaitForGcToComplete blocked for 7.458ms for cause Explicit
+03-27 23:46:39.822 I/art     (   70): Explicit concurrent mark sweep GC freed 248(51KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1549KB/3MB, paused 2.456ms total 46.483ms
+03-27 23:46:39.834 W/Resources(   70): Preloaded drawable resource #0x10801a8 (android:drawable/btn_radio_off_disabled_focused_holo_light) that varies with configuration!!
+03-27 23:46:39.845 W/Resources(   70): Preloaded drawable resource #0x10801a7 (android:drawable/btn_radio_off_disabled_focused_holo_dark) that varies with configuration!!
+03-27 23:46:39.855 W/Resources(   70): Preloaded drawable resource #0x1080152 (android:drawable/btn_default_pressed_holo_light) that varies with configuration!!
+03-27 23:46:39.859 W/Resources(   70): Preloaded drawable resource #0x1080151 (android:drawable/btn_default_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:39.862 W/Resources(   70): Preloaded drawable resource #0x108014e (android:drawable/btn_default_normal_holo_light) that varies with configuration!!
+03-27 23:46:39.872 W/Resources(   70): Preloaded drawable resource #0x108014d (android:drawable/btn_default_normal_holo_dark) that varies with configuration!!
+03-27 23:46:39.881 W/Resources(   70): Preloaded drawable resource #0x1080144 (android:drawable/btn_default_focused_holo_light) that varies with configuration!!
+03-27 23:46:39.891 W/Resources(   70): Preloaded drawable resource #0x1080143 (android:drawable/btn_default_focused_holo_dark) that varies with configuration!!
+03-27 23:46:39.899 W/Resources(   70): Preloaded drawable resource #0x1080141 (android:drawable/btn_default_disabled_holo_light) that varies with configuration!!
+03-27 23:46:39.910 W/Resources(   70): Preloaded drawable resource #0x1080140 (android:drawable/btn_default_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:39.967 I/art     (   70): Explicit concurrent mark sweep GC freed 261(24KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1579KB/3MB, paused 4.023ms total 53.362ms
+03-27 23:46:39.980 W/Resources(   70): Preloaded drawable resource #0x108013e (android:drawable/btn_default_disabled_focused_holo_light) that varies with configuration!!
+03-27 23:46:39.988 W/Resources(   70): Preloaded drawable resource #0x108013d (android:drawable/btn_default_disabled_focused_holo_dark) that varies with configuration!!
+03-27 23:46:40.015 W/Resources(   70): Preloaded drawable resource #0x108014d (android:drawable/btn_default_normal_holo_dark) that varies with configuration!!
+03-27 23:46:40.020 W/Resources(   70): Preloaded drawable resource #0x1080140 (android:drawable/btn_default_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:40.032 W/Resources(   70): Preloaded drawable resource #0x1080151 (android:drawable/btn_default_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:40.047 W/Resources(   70): Preloaded drawable resource #0x1080143 (android:drawable/btn_default_focused_holo_dark) that varies with configuration!!
+03-27 23:46:40.050 W/Resources(   70): Preloaded drawable resource #0x108014d (android:drawable/btn_default_normal_holo_dark) that varies with configuration!!
+03-27 23:46:40.059 W/Resources(   70): Preloaded drawable resource #0x108013d (android:drawable/btn_default_disabled_focused_holo_dark) that varies with configuration!!
+03-27 23:46:40.073 W/Resources(   70): Preloaded drawable resource #0x1080140 (android:drawable/btn_default_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:40.075 W/Resources(   70): Preloaded drawable resource #0x1080145 (android:drawable/btn_default_holo_dark) that varies with configuration!!
+03-27 23:46:40.154 I/art     (   70): Explicit concurrent mark sweep GC freed 333(45KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1583KB/3MB, paused 1.694ms total 74.492ms
+03-27 23:46:40.172 W/Resources(   70): Preloaded drawable resource #0x108014e (android:drawable/btn_default_normal_holo_light) that varies with configuration!!
+03-27 23:46:40.182 W/Resources(   70): Preloaded drawable resource #0x1080141 (android:drawable/btn_default_disabled_holo_light) that varies with configuration!!
+03-27 23:46:40.188 W/Resources(   70): Preloaded drawable resource #0x1080152 (android:drawable/btn_default_pressed_holo_light) that varies with configuration!!
+03-27 23:46:40.198 W/Resources(   70): Preloaded drawable resource #0x1080144 (android:drawable/btn_default_focused_holo_light) that varies with configuration!!
+03-27 23:46:40.202 W/Resources(   70): Preloaded drawable resource #0x108014e (android:drawable/btn_default_normal_holo_light) that varies with configuration!!
+03-27 23:46:40.213 W/Resources(   70): Preloaded drawable resource #0x108013e (android:drawable/btn_default_disabled_focused_holo_light) that varies with configuration!!
+03-27 23:46:40.219 W/Resources(   70): Preloaded drawable resource #0x1080141 (android:drawable/btn_default_disabled_holo_light) that varies with configuration!!
+03-27 23:46:40.221 W/Resources(   70): Preloaded drawable resource #0x1080146 (android:drawable/btn_default_holo_light) that varies with configuration!!
+03-27 23:46:40.237 W/Resources(   70): Preloaded drawable resource #0x1080224 (android:drawable/btn_star_off_normal_holo_light) that varies with configuration!!
+03-27 23:46:40.248 W/Resources(   70): Preloaded drawable resource #0x108022e (android:drawable/btn_star_on_normal_holo_light) that varies with configuration!!
+03-27 23:46:40.305 I/art     (   70): Explicit concurrent mark sweep GC freed 339(56KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1577KB/3MB, paused 1.374ms total 47.142ms
+03-27 23:46:40.327 W/Resources(   70): Preloaded drawable resource #0x108022a (android:drawable/btn_star_on_disabled_holo_light) that varies with configuration!!
+03-27 23:46:40.335 W/Resources(   70): Preloaded drawable resource #0x1080220 (android:drawable/btn_star_off_disabled_holo_light) that varies with configuration!!
+03-27 23:46:40.342 W/Resources(   70): Preloaded drawable resource #0x1080230 (android:drawable/btn_star_on_pressed_holo_light) that varies with configuration!!
+03-27 23:46:40.351 W/Resources(   70): Preloaded drawable resource #0x1080226 (android:drawable/btn_star_off_pressed_holo_light) that varies with configuration!!
+03-27 23:46:40.368 W/Resources(   70): Preloaded drawable resource #0x108022c (android:drawable/btn_star_on_focused_holo_light) that varies with configuration!!
+03-27 23:46:40.378 W/Resources(   70): Preloaded drawable resource #0x1080222 (android:drawable/btn_star_off_focused_holo_light) that varies with configuration!!
+03-27 23:46:40.382 W/Resources(   70): Preloaded drawable resource #0x1080228 (android:drawable/btn_star_on_disabled_focused_holo_light) that varies with configuration!!
+03-27 23:46:40.393 W/Resources(   70): Preloaded drawable resource #0x108021e (android:drawable/btn_star_off_disabled_focused_holo_light) that varies with configuration!!
+03-27 23:46:40.401 W/Resources(   70): Preloaded drawable resource #0x1080224 (android:drawable/btn_star_off_normal_holo_light) that varies with configuration!!
+03-27 23:46:40.412 W/Resources(   70): Preloaded drawable resource #0x108022e (android:drawable/btn_star_on_normal_holo_light) that varies with configuration!!
+03-27 23:46:40.419 W/Resources(   70): Preloaded drawable resource #0x108022a (android:drawable/btn_star_on_disabled_holo_light) that varies with configuration!!
+03-27 23:46:40.430 W/Resources(   70): Preloaded drawable resource #0x1080220 (android:drawable/btn_star_off_disabled_holo_light) that varies with configuration!!
+03-27 23:46:40.440 W/Resources(   70): Preloaded drawable resource #0x1080230 (android:drawable/btn_star_on_pressed_holo_light) that varies with configuration!!
+03-27 23:46:40.451 W/Resources(   70): Preloaded drawable resource #0x1080226 (android:drawable/btn_star_off_pressed_holo_light) that varies with configuration!!
+03-27 23:46:40.466 W/Resources(   70): Preloaded drawable resource #0x108022c (android:drawable/btn_star_on_focused_holo_light) that varies with configuration!!
+03-27 23:46:40.471 W/Resources(   70): Preloaded drawable resource #0x1080222 (android:drawable/btn_star_off_focused_holo_light) that varies with configuration!!
+03-27 23:46:40.484 W/Resources(   70): Preloaded drawable resource #0x1080228 (android:drawable/btn_star_on_disabled_focused_holo_light) that varies with configuration!!
+03-27 23:46:40.488 W/Resources(   70): Preloaded drawable resource #0x108022a (android:drawable/btn_star_on_disabled_holo_light) that varies with configuration!!
+03-27 23:46:40.491 W/Resources(   70): Preloaded drawable resource #0x108021e (android:drawable/btn_star_off_disabled_focused_holo_light) that varies with configuration!!
+03-27 23:46:40.500 W/Resources(   70): Preloaded drawable resource #0x1080220 (android:drawable/btn_star_off_disabled_holo_light) that varies with configuration!!
+03-27 23:46:40.506 W/Resources(   70): Preloaded drawable resource #0x1080224 (android:drawable/btn_star_off_normal_holo_light) that varies with configuration!!
+03-27 23:46:40.515 W/Resources(   70): Preloaded drawable resource #0x108022e (android:drawable/btn_star_on_normal_holo_light) that varies with configuration!!
+03-27 23:46:40.518 W/Resources(   70): Preloaded drawable resource #0x1080219 (android:drawable/btn_star_holo_light) that varies with configuration!!
+03-27 23:46:40.573 I/art     (   70): Explicit concurrent mark sweep GC freed 632(149KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1559KB/3MB, paused 1.464ms total 48.986ms
+03-27 23:46:40.588 W/Resources(   70): Preloaded drawable resource #0x1080223 (android:drawable/btn_star_off_normal_holo_dark) that varies with configuration!!
+03-27 23:46:40.592 W/Resources(   70): Preloaded drawable resource #0x108022d (android:drawable/btn_star_on_normal_holo_dark) that varies with configuration!!
+03-27 23:46:40.599 W/Resources(   70): Preloaded drawable resource #0x1080229 (android:drawable/btn_star_on_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:40.608 W/Resources(   70): Preloaded drawable resource #0x108021f (android:drawable/btn_star_off_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:40.617 W/Resources(   70): Preloaded drawable resource #0x108022f (android:drawable/btn_star_on_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:40.627 W/Resources(   70): Preloaded drawable resource #0x1080225 (android:drawable/btn_star_off_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:40.631 W/Resources(   70): Preloaded drawable resource #0x108022b (android:drawable/btn_star_on_focused_holo_dark) that varies with configuration!!
+03-27 23:46:40.642 W/Resources(   70): Preloaded drawable resource #0x1080221 (android:drawable/btn_star_off_focused_holo_dark) that varies with configuration!!
+03-27 23:46:40.649 W/Resources(   70): Preloaded drawable resource #0x1080227 (android:drawable/btn_star_on_disabled_focused_holo_dark) that varies with configuration!!
+03-27 23:46:40.697 I/art     (   70): Explicit concurrent mark sweep GC freed 339(55KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1556KB/3MB, paused 1.079ms total 44.971ms
+03-27 23:46:40.709 W/Resources(   70): Preloaded drawable resource #0x108021d (android:drawable/btn_star_off_disabled_focused_holo_dark) that varies with configuration!!
+03-27 23:46:40.721 W/Resources(   70): Preloaded drawable resource #0x1080223 (android:drawable/btn_star_off_normal_holo_dark) that varies with configuration!!
+03-27 23:46:40.730 W/Resources(   70): Preloaded drawable resource #0x108022d (android:drawable/btn_star_on_normal_holo_dark) that varies with configuration!!
+03-27 23:46:40.738 W/Resources(   70): Preloaded drawable resource #0x1080229 (android:drawable/btn_star_on_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:40.741 W/Resources(   70): Preloaded drawable resource #0x108021f (android:drawable/btn_star_off_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:40.753 W/Resources(   70): Preloaded drawable resource #0x108022f (android:drawable/btn_star_on_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:40.759 W/Resources(   70): Preloaded drawable resource #0x1080225 (android:drawable/btn_star_off_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:40.770 W/Resources(   70): Preloaded drawable resource #0x108022b (android:drawable/btn_star_on_focused_holo_dark) that varies with configuration!!
+03-27 23:46:40.778 W/Resources(   70): Preloaded drawable resource #0x1080221 (android:drawable/btn_star_off_focused_holo_dark) that varies with configuration!!
+03-27 23:46:40.788 W/Resources(   70): Preloaded drawable resource #0x1080227 (android:drawable/btn_star_on_disabled_focused_holo_dark) that varies with configuration!!
+03-27 23:46:40.792 W/Resources(   70): Preloaded drawable resource #0x1080229 (android:drawable/btn_star_on_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:40.801 W/Resources(   70): Preloaded drawable resource #0x108021d (android:drawable/btn_star_off_disabled_focused_holo_dark) that varies with configuration!!
+03-27 23:46:40.809 W/Resources(   70): Preloaded drawable resource #0x108021f (android:drawable/btn_star_off_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:40.812 W/Resources(   70): Preloaded drawable resource #0x1080223 (android:drawable/btn_star_off_normal_holo_dark) that varies with configuration!!
+03-27 23:46:40.822 W/Resources(   70): Preloaded drawable resource #0x108022d (android:drawable/btn_star_on_normal_holo_dark) that varies with configuration!!
+03-27 23:46:40.829 W/Resources(   70): Preloaded drawable resource #0x1080218 (android:drawable/btn_star_holo_dark) that varies with configuration!!
+03-27 23:46:40.883 I/art     (   70): Explicit concurrent mark sweep GC freed 437(86KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1558KB/3MB, paused 3.476ms total 47.877ms
+03-27 23:46:40.895 W/Resources(   70): Preloaded drawable resource #0x1080264 (android:drawable/btn_toggle_on_pressed_holo_light) that varies with configuration!!
+03-27 23:46:40.898 W/Resources(   70): Preloaded drawable resource #0x1080263 (android:drawable/btn_toggle_on_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:40.901 W/Resources(   70): Preloaded drawable resource #0x1080262 (android:drawable/btn_toggle_on_normal_holo_light) that varies with configuration!!
+03-27 23:46:40.912 W/Resources(   70): Preloaded drawable resource #0x1080261 (android:drawable/btn_toggle_on_normal_holo_dark) that varies with configuration!!
+03-27 23:46:40.919 W/Resources(   70): Preloaded drawable resource #0x1080260 (android:drawable/btn_toggle_on_focused_holo_light) that varies with configuration!!
+03-27 23:46:40.929 W/Resources(   70): Preloaded drawable resource #0x108025f (android:drawable/btn_toggle_on_focused_holo_dark) that varies with configuration!!
+03-27 23:46:40.935 W/Resources(   70): Preloaded drawable resource #0x108025e (android:drawable/btn_toggle_on_disabled_holo_light) that varies with configuration!!
+03-27 23:46:40.941 W/Resources(   70): Preloaded drawable resource #0x108025d (android:drawable/btn_toggle_on_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:40.948 W/Resources(   70): Preloaded drawable resource #0x108025c (android:drawable/btn_toggle_on_disabled_focused_holo_light) that varies with configuration!!
+03-27 23:46:40.952 W/Resources(   70): Preloaded drawable resource #0x108025b (android:drawable/btn_toggle_on_disabled_focused_holo_dark) that varies with configuration!!
+03-27 23:46:41.003 I/art     (   70): Explicit concurrent mark sweep GC freed 308(18KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1593KB/3MB, paused 2.913ms total 46.254ms
+03-27 23:46:41.016 W/Resources(   70): Preloaded drawable resource #0x1080259 (android:drawable/btn_toggle_off_pressed_holo_light) that varies with configuration!!
+03-27 23:46:41.020 W/Resources(   70): Preloaded drawable resource #0x1080258 (android:drawable/btn_toggle_off_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:41.029 W/Resources(   70): Preloaded drawable resource #0x1080257 (android:drawable/btn_toggle_off_normal_holo_light) that varies with configuration!!
+03-27 23:46:41.038 W/Resources(   70): Preloaded drawable resource #0x1080256 (android:drawable/btn_toggle_off_normal_holo_dark) that varies with configuration!!
+03-27 23:46:41.041 W/Resources(   70): Preloaded drawable resource #0x1080255 (android:drawable/btn_toggle_off_focused_holo_light) that varies with configuration!!
+03-27 23:46:41.050 W/Resources(   70): Preloaded drawable resource #0x1080254 (android:drawable/btn_toggle_off_focused_holo_dark) that varies with configuration!!
+03-27 23:46:41.058 W/Resources(   70): Preloaded drawable resource #0x1080253 (android:drawable/btn_toggle_off_disabled_holo_light) that varies with configuration!!
+03-27 23:46:41.066 W/Resources(   70): Preloaded drawable resource #0x1080252 (android:drawable/btn_toggle_off_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:41.074 W/Resources(   70): Preloaded drawable resource #0x1080251 (android:drawable/btn_toggle_off_disabled_focused_holo_light) that varies with configuration!!
+03-27 23:46:41.077 W/Resources(   70): Preloaded drawable resource #0x1080250 (android:drawable/btn_toggle_off_disabled_focused_holo_dark) that varies with configuration!!
+03-27 23:46:41.127 I/art     (   70): Explicit concurrent mark sweep GC freed 325(52KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1595KB/3MB, paused 1.111ms total 46.083ms
+03-27 23:46:41.140 W/Resources(   70): Preloaded drawable resource #0x1080262 (android:drawable/btn_toggle_on_normal_holo_light) that varies with configuration!!
+03-27 23:46:41.147 W/Resources(   70): Preloaded drawable resource #0x108025e (android:drawable/btn_toggle_on_disabled_holo_light) that varies with configuration!!
+03-27 23:46:41.159 W/Resources(   70): Preloaded drawable resource #0x1080264 (android:drawable/btn_toggle_on_pressed_holo_light) that varies with configuration!!
+03-27 23:46:41.168 W/Resources(   70): Preloaded drawable resource #0x1080260 (android:drawable/btn_toggle_on_focused_holo_light) that varies with configuration!!
+03-27 23:46:41.172 W/Resources(   70): Preloaded drawable resource #0x1080262 (android:drawable/btn_toggle_on_normal_holo_light) that varies with configuration!!
+03-27 23:46:41.180 W/Resources(   70): Preloaded drawable resource #0x108025c (android:drawable/btn_toggle_on_disabled_focused_holo_light) that varies with configuration!!
+03-27 23:46:41.191 W/Resources(   70): Preloaded drawable resource #0x108025e (android:drawable/btn_toggle_on_disabled_holo_light) that varies with configuration!!
+03-27 23:46:41.198 W/Resources(   70): Preloaded drawable resource #0x1080257 (android:drawable/btn_toggle_off_normal_holo_light) that varies with configuration!!
+03-27 23:46:41.206 W/Resources(   70): Preloaded drawable resource #0x1080253 (android:drawable/btn_toggle_off_disabled_holo_light) that varies with configuration!!
+03-27 23:46:41.211 W/Resources(   70): Preloaded drawable resource #0x1080259 (android:drawable/btn_toggle_off_pressed_holo_light) that varies with configuration!!
+03-27 23:46:41.218 W/Resources(   70): Preloaded drawable resource #0x1080255 (android:drawable/btn_toggle_off_focused_holo_light) that varies with configuration!!
+03-27 23:46:41.223 W/Resources(   70): Preloaded drawable resource #0x1080257 (android:drawable/btn_toggle_off_normal_holo_light) that varies with configuration!!
+03-27 23:46:41.230 W/Resources(   70): Preloaded drawable resource #0x1080251 (android:drawable/btn_toggle_off_disabled_focused_holo_light) that varies with configuration!!
+03-27 23:46:41.237 W/Resources(   70): Preloaded drawable resource #0x1080253 (android:drawable/btn_toggle_off_disabled_holo_light) that varies with configuration!!
+03-27 23:46:41.240 W/Resources(   70): Preloaded drawable resource #0x108024c (android:drawable/btn_toggle_holo_light) that varies with configuration!!
+03-27 23:46:41.294 I/art     (   70): Explicit concurrent mark sweep GC freed 468(60KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1611KB/3MB, paused 1.232ms total 47.011ms
+03-27 23:46:41.305 W/Resources(   70): Preloaded drawable resource #0x1080261 (android:drawable/btn_toggle_on_normal_holo_dark) that varies with configuration!!
+03-27 23:46:41.311 W/Resources(   70): Preloaded drawable resource #0x108025d (android:drawable/btn_toggle_on_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:41.317 W/Resources(   70): Preloaded drawable resource #0x1080263 (android:drawable/btn_toggle_on_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:41.322 W/Resources(   70): Preloaded drawable resource #0x108025f (android:drawable/btn_toggle_on_focused_holo_dark) that varies with configuration!!
+03-27 23:46:41.332 W/Resources(   70): Preloaded drawable resource #0x1080261 (android:drawable/btn_toggle_on_normal_holo_dark) that varies with configuration!!
+03-27 23:46:41.338 W/Resources(   70): Preloaded drawable resource #0x108025b (android:drawable/btn_toggle_on_disabled_focused_holo_dark) that varies with configuration!!
+03-27 23:46:41.342 W/Resources(   70): Preloaded drawable resource #0x108025d (android:drawable/btn_toggle_on_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:41.352 W/Resources(   70): Preloaded drawable resource #0x1080256 (android:drawable/btn_toggle_off_normal_holo_dark) that varies with configuration!!
+03-27 23:46:41.360 W/Resources(   70): Preloaded drawable resource #0x1080252 (android:drawable/btn_toggle_off_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:41.369 W/Resources(   70): Preloaded drawable resource #0x1080258 (android:drawable/btn_toggle_off_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:41.372 W/Resources(   70): Preloaded drawable resource #0x1080254 (android:drawable/btn_toggle_off_focused_holo_dark) that varies with configuration!!
+03-27 23:46:41.380 W/Resources(   70): Preloaded drawable resource #0x1080256 (android:drawable/btn_toggle_off_normal_holo_dark) that varies with configuration!!
+03-27 23:46:41.389 W/Resources(   70): Preloaded drawable resource #0x1080250 (android:drawable/btn_toggle_off_disabled_focused_holo_dark) that varies with configuration!!
+03-27 23:46:41.395 W/Resources(   70): Preloaded drawable resource #0x1080252 (android:drawable/btn_toggle_off_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:41.403 W/Resources(   70): Preloaded drawable resource #0x108024b (android:drawable/btn_toggle_holo_dark) that varies with configuration!!
+03-27 23:46:41.456 I/art     (   70): Explicit concurrent mark sweep GC freed 529(76KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1611KB/3MB, paused 1.475ms total 47.117ms
+03-27 23:46:41.488 W/Resources(   70): Preloaded drawable resource #0x1080726 (android:drawable/textfield_multiline_default_holo_light) that varies with configuration!!
+03-27 23:46:41.499 W/Resources(   70): Preloaded drawable resource #0x108072a (android:drawable/textfield_multiline_disabled_holo_light) that varies with configuration!!
+03-27 23:46:41.501 W/Resources(   70): Preloaded drawable resource #0x1080724 (android:drawable/textfield_multiline_activated_holo_light) that varies with configuration!!
+03-27 23:46:41.514 W/Resources(   70): Preloaded drawable resource #0x108072c (android:drawable/textfield_multiline_focused_holo_light) that varies with configuration!!
+03-27 23:46:41.517 W/Resources(   70): Preloaded drawable resource #0x1080726 (android:drawable/textfield_multiline_default_holo_light) that varies with configuration!!
+03-27 23:46:41.521 W/Resources(   70): Preloaded drawable resource #0x1080728 (android:drawable/textfield_multiline_disabled_focused_holo_light) that varies with configuration!!
+03-27 23:46:41.533 W/Resources(   70): Preloaded drawable resource #0x108072a (android:drawable/textfield_multiline_disabled_holo_light) that varies with configuration!!
+03-27 23:46:41.544 W/Resources(   70): Preloaded drawable resource #0x1080718 (android:drawable/textfield_default_holo_light) that varies with configuration!!
+03-27 23:46:41.548 W/Resources(   70): Preloaded drawable resource #0x108071e (android:drawable/textfield_disabled_holo_light) that varies with configuration!!
+03-27 23:46:41.557 W/Resources(   70): Preloaded drawable resource #0x108070f (android:drawable/textfield_activated_holo_light) that varies with configuration!!
+03-27 23:46:41.566 W/Resources(   70): Preloaded drawable resource #0x1080721 (android:drawable/textfield_focused_holo_light) that varies with configuration!!
+03-27 23:46:41.570 W/Resources(   70): Preloaded drawable resource #0x1080718 (android:drawable/textfield_default_holo_light) that varies with configuration!!
+03-27 23:46:41.579 W/Resources(   70): Preloaded drawable resource #0x108071c (android:drawable/textfield_disabled_focused_holo_light) that varies with configuration!!
+03-27 23:46:41.586 W/Resources(   70): Preloaded drawable resource #0x108071e (android:drawable/textfield_disabled_holo_light) that varies with configuration!!
+03-27 23:46:41.588 W/Resources(   70): Preloaded drawable resource #0x10802cc (android:drawable/edit_text_holo_light) that varies with configuration!!
+03-27 23:46:41.643 I/art     (   70): Explicit concurrent mark sweep GC freed 528(76KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1612KB/3MB, paused 3.760ms total 49.915ms
+03-27 23:46:41.658 W/Resources(   70): Preloaded drawable resource #0x1080725 (android:drawable/textfield_multiline_default_holo_dark) that varies with configuration!!
+03-27 23:46:41.662 W/Resources(   70): Preloaded drawable resource #0x1080729 (android:drawable/textfield_multiline_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:41.671 W/Resources(   70): Preloaded drawable resource #0x1080723 (android:drawable/textfield_multiline_activated_holo_dark) that varies with configuration!!
+03-27 23:46:41.679 W/Resources(   70): Preloaded drawable resource #0x108072b (android:drawable/textfield_multiline_focused_holo_dark) that varies with configuration!!
+03-27 23:46:41.688 W/Resources(   70): Preloaded drawable resource #0x1080725 (android:drawable/textfield_multiline_default_holo_dark) that varies with configuration!!
+03-27 23:46:41.692 W/Resources(   70): Preloaded drawable resource #0x1080727 (android:drawable/textfield_multiline_disabled_focused_holo_dark) that varies with configuration!!
+03-27 23:46:41.698 W/Resources(   70): Preloaded drawable resource #0x1080729 (android:drawable/textfield_multiline_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:41.707 W/Resources(   70): Preloaded drawable resource #0x1080717 (android:drawable/textfield_default_holo_dark) that varies with configuration!!
+03-27 23:46:41.711 W/Resources(   70): Preloaded drawable resource #0x108071d (android:drawable/textfield_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:41.720 W/Resources(   70): Preloaded drawable resource #0x108070e (android:drawable/textfield_activated_holo_dark) that varies with configuration!!
+03-27 23:46:41.728 W/Resources(   70): Preloaded drawable resource #0x1080720 (android:drawable/textfield_focused_holo_dark) that varies with configuration!!
+03-27 23:46:41.731 W/Resources(   70): Preloaded drawable resource #0x1080717 (android:drawable/textfield_default_holo_dark) that varies with configuration!!
+03-27 23:46:41.742 W/Resources(   70): Preloaded drawable resource #0x108071b (android:drawable/textfield_disabled_focused_holo_dark) that varies with configuration!!
+03-27 23:46:41.750 W/Resources(   70): Preloaded drawable resource #0x108071d (android:drawable/textfield_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:41.757 W/Resources(   70): Preloaded drawable resource #0x10802cb (android:drawable/edit_text_holo_dark) that varies with configuration!!
+03-27 23:46:41.809 I/art     (   70): Explicit concurrent mark sweep GC freed 528(75KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1614KB/3MB, paused 1.107ms total 45.535ms
+03-27 23:46:41.845 W/Resources(   70): Preloaded drawable resource #0x1080705 (android:drawable/text_select_handle_left) that varies with configuration!!
+03-27 23:46:41.849 W/Resources(   70): Preloaded drawable resource #0x108070b (android:drawable/text_select_handle_right) that varies with configuration!!
+03-27 23:46:41.862 W/Resources(   70): Preloaded drawable resource #0x1080702 (android:drawable/text_edit_paste_window) that varies with configuration!!
+03-27 23:46:41.870 W/Resources(   70): Preloaded drawable resource #0x10802e3 (android:drawable/expander_close_holo_dark) that varies with configuration!!
+03-27 23:46:41.880 W/Resources(   70): Preloaded drawable resource #0x10802e4 (android:drawable/expander_close_holo_light) that varies with configuration!!
+03-27 23:46:41.889 W/Resources(   70): Preloaded drawable resource #0x10802e3 (android:drawable/expander_close_holo_dark) that varies with configuration!!
+03-27 23:46:41.900 W/Resources(   70): Preloaded drawable resource #0x10802ec (android:drawable/expander_open_holo_dark) that varies with configuration!!
+03-27 23:46:41.902 W/Resources(   70): Preloaded drawable resource #0x10802e7 (android:drawable/expander_group_holo_dark) that varies with configuration!!
+03-27 23:46:41.952 I/art     (   70): Explicit concurrent mark sweep GC freed 362(87KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1587KB/3MB, paused 1.274ms total 43.772ms
+03-27 23:46:41.965 W/Resources(   70): Preloaded drawable resource #0x10802e4 (android:drawable/expander_close_holo_light) that varies with configuration!!
+03-27 23:46:41.970 W/Resources(   70): Preloaded drawable resource #0x10802ed (android:drawable/expander_open_holo_light) that varies with configuration!!
+03-27 23:46:41.971 W/Resources(   70): Preloaded drawable resource #0x10802e8 (android:drawable/expander_group_holo_light) that varies with configuration!!
+03-27 23:46:41.994 W/Resources(   70): Preloaded drawable resource #0x10804c3 (android:drawable/list_selector_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:41.998 W/Resources(   70): Preloaded drawable resource #0x10804c3 (android:drawable/list_selector_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:42.015 W/Resources(   70): Preloaded drawable resource #0x10804a2 (android:drawable/list_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:42.017 W/Resources(   70): Preloaded drawable resource #0x10804a0 (android:drawable/list_longpressed_holo_dark) that varies with configuration!!
+03-27 23:46:42.018 W/Resources(   70): Preloaded drawable resource #0x10804c0 (android:drawable/list_selector_background_transition_holo_dark) that varies with configuration!!
+03-27 23:46:42.029 W/Resources(   70): Preloaded drawable resource #0x10804a2 (android:drawable/list_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:42.031 W/Resources(   70): Preloaded drawable resource #0x10804a0 (android:drawable/list_longpressed_holo_dark) that varies with configuration!!
+03-27 23:46:42.031 W/Resources(   70): Preloaded drawable resource #0x10804c0 (android:drawable/list_selector_background_transition_holo_dark) that varies with configuration!!
+03-27 23:46:42.041 W/Resources(   70): Preloaded drawable resource #0x108049b (android:drawable/list_focused_holo) that varies with configuration!!
+03-27 23:46:42.044 W/Resources(   70): Preloaded drawable resource #0x10804c7 (android:drawable/list_selector_holo_dark) that varies with configuration!!
+03-27 23:46:42.059 W/Resources(   70): Preloaded drawable resource #0x10804c4 (android:drawable/list_selector_disabled_holo_light) that varies with configuration!!
+03-27 23:46:42.067 W/Resources(   70): Preloaded drawable resource #0x10804c4 (android:drawable/list_selector_disabled_holo_light) that varies with configuration!!
+03-27 23:46:42.071 W/Resources(   70): Preloaded drawable resource #0x10804a3 (android:drawable/list_pressed_holo_light) that varies with configuration!!
+03-27 23:46:42.082 W/Resources(   70): Preloaded drawable resource #0x10804a1 (android:drawable/list_longpressed_holo_light) that varies with configuration!!
+03-27 23:46:42.085 W/Resources(   70): Preloaded drawable resource #0x10804c1 (android:drawable/list_selector_background_transition_holo_light) that varies with configuration!!
+03-27 23:46:42.097 W/Resources(   70): Preloaded drawable resource #0x10804a3 (android:drawable/list_pressed_holo_light) that varies with configuration!!
+03-27 23:46:42.100 W/Resources(   70): Preloaded drawable resource #0x10804a1 (android:drawable/list_longpressed_holo_light) that varies with configuration!!
+03-27 23:46:42.101 W/Resources(   70): Preloaded drawable resource #0x10804c1 (android:drawable/list_selector_background_transition_holo_light) that varies with configuration!!
+03-27 23:46:42.111 W/Resources(   70): Preloaded drawable resource #0x108049b (android:drawable/list_focused_holo) that varies with configuration!!
+03-27 23:46:42.115 W/Resources(   70): Preloaded drawable resource #0x10804c8 (android:drawable/list_selector_holo_light) that varies with configuration!!
+03-27 23:46:42.166 I/art     (   70): Explicit concurrent mark sweep GC freed 599(55KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1594KB/3MB, paused 1.217ms total 42.323ms
+03-27 23:46:42.179 W/Resources(   70): Preloaded drawable resource #0x10804a5 (android:drawable/list_section_divider_holo_light) that varies with configuration!!
+03-27 23:46:42.189 W/Resources(   70): Preloaded drawable resource #0x10804a4 (android:drawable/list_section_divider_holo_dark) that varies with configuration!!
+03-27 23:46:42.196 W/Resources(   70): Preloaded drawable resource #0x10804d8 (android:drawable/menu_hardkey_panel_holo_dark) that varies with configuration!!
+03-27 23:46:42.203 W/Resources(   70): Preloaded drawable resource #0x10804d9 (android:drawable/menu_hardkey_panel_holo_light) that varies with configuration!!
+03-27 23:46:42.212 W/Resources(   70): Preloaded drawable resource #0x10804e0 (android:drawable/menu_submenu_background) that varies with configuration!!
+03-27 23:46:42.225 W/Resources(   70): Preloaded drawable resource #0x10804d7 (android:drawable/menu_dropdown_panel_holo_light) that varies with configuration!!
+03-27 23:46:42.229 W/Resources(   70): Preloaded drawable resource #0x10804d6 (android:drawable/menu_dropdown_panel_holo_dark) that varies with configuration!!
+03-27 23:46:42.284 I/art     (   70): Explicit concurrent mark sweep GC freed 399(37KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1609KB/3MB, paused 4.205ms total 52.944ms
+03-27 23:46:42.311 W/Resources(   70): Preloaded drawable resource #0x10804dd (android:drawable/menu_popup_panel_holo_light) that varies with configuration!!
+03-27 23:46:42.320 W/Resources(   70): Preloaded drawable resource #0x10804dc (android:drawable/menu_popup_panel_holo_dark) that varies with configuration!!
+03-27 23:46:42.332 W/Resources(   70): Preloaded drawable resource #0x10804dd (android:drawable/menu_popup_panel_holo_light) that varies with configuration!!
+03-27 23:46:42.340 W/Resources(   70): Preloaded drawable resource #0x10804d7 (android:drawable/menu_dropdown_panel_holo_light) that varies with configuration!!
+03-27 23:46:42.341 W/Resources(   70): Preloaded drawable resource #0x10804db (android:drawable/menu_panel_holo_light) that varies with configuration!!
+03-27 23:46:42.354 W/Resources(   70): Preloaded drawable resource #0x10804dc (android:drawable/menu_popup_panel_holo_dark) that varies with configuration!!
+03-27 23:46:42.359 W/Resources(   70): Preloaded drawable resource #0x10804d6 (android:drawable/menu_dropdown_panel_holo_dark) that varies with configuration!!
+03-27 23:46:42.360 W/Resources(   70): Preloaded drawable resource #0x10804da (android:drawable/menu_panel_holo_dark) that varies with configuration!!
+03-27 23:46:42.413 I/art     (   70): Explicit concurrent mark sweep GC freed 259(53KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1620KB/3MB, paused 1.270ms total 49.414ms
+03-27 23:46:42.427 W/Resources(   70): Preloaded drawable resource #0x108060e (android:drawable/spinner_16_outer_holo) that varies with configuration!!
+03-27 23:46:42.430 W/Resources(   70): Preloaded drawable resource #0x108060d (android:drawable/spinner_16_inner_holo) that varies with configuration!!
+03-27 23:46:42.445 W/Resources(   70): Preloaded drawable resource #0x1080610 (android:drawable/spinner_48_outer_holo) that varies with configuration!!
+03-27 23:46:42.451 W/Resources(   70): Preloaded drawable resource #0x108060f (android:drawable/spinner_48_inner_holo) that varies with configuration!!
+03-27 23:46:42.464 W/Resources(   70): Preloaded drawable resource #0x1080612 (android:drawable/spinner_76_outer_holo) that varies with configuration!!
+03-27 23:46:42.516 I/art     (   70): Explicit concurrent mark sweep GC freed 208(101KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1570KB/3MB, paused 1.250ms total 48.004ms
+03-27 23:46:42.533 W/Resources(   70): Preloaded drawable resource #0x1080611 (android:drawable/spinner_76_inner_holo) that varies with configuration!!
+03-27 23:46:42.543 W/Resources(   70): Preloaded drawable resource #0x1080566 (android:drawable/progress_bg_holo_dark) that varies with configuration!!
+03-27 23:46:42.546 W/Resources(   70): Preloaded drawable resource #0x1080567 (android:drawable/progress_bg_holo_light) that varies with configuration!!
+03-27 23:46:42.559 W/Resources(   70): Preloaded drawable resource #0x1080566 (android:drawable/progress_bg_holo_dark) that varies with configuration!!
+03-27 23:46:42.569 W/Resources(   70): Preloaded drawable resource #0x1080578 (android:drawable/progress_secondary_holo_dark) that varies with configuration!!
+03-27 23:46:42.580 W/Resources(   70): Preloaded drawable resource #0x1080576 (android:drawable/progress_primary_holo_dark) that varies with configuration!!
+03-27 23:46:42.581 W/Resources(   70): Preloaded drawable resource #0x1080568 (android:drawable/progress_horizontal_holo_dark) that varies with configuration!!
+03-27 23:46:42.593 W/Resources(   70): Preloaded drawable resource #0x1080567 (android:drawable/progress_bg_holo_light) that varies with configuration!!
+03-27 23:46:42.596 W/Resources(   70): Preloaded drawable resource #0x1080579 (android:drawable/progress_secondary_holo_light) that varies with configuration!!
+03-27 23:46:42.601 W/Resources(   70): Preloaded drawable resource #0x1080577 (android:drawable/progress_primary_holo_light) that varies with configuration!!
+03-27 23:46:42.602 W/Resources(   70): Preloaded drawable resource #0x1080569 (android:drawable/progress_horizontal_holo_light) that varies with configuration!!
+03-27 23:46:42.654 I/art     (   70): Explicit concurrent mark sweep GC freed 286(39KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1579KB/3MB, paused 1.463ms total 50.086ms
+03-27 23:46:42.677 W/Resources(   70): Preloaded drawable resource #0x1080582 (android:drawable/progressbar_indeterminate_holo1) that varies with configuration!!
+03-27 23:46:42.687 W/Resources(   70): Preloaded drawable resource #0x1080583 (android:drawable/progressbar_indeterminate_holo2) that varies with configuration!!
+03-27 23:46:42.692 W/Resources(   70): Preloaded drawable resource #0x1080584 (android:drawable/progressbar_indeterminate_holo3) that varies with configuration!!
+03-27 23:46:42.704 W/Resources(   70): Preloaded drawable resource #0x1080585 (android:drawable/progressbar_indeterminate_holo4) that varies with configuration!!
+03-27 23:46:42.708 W/Resources(   70): Preloaded drawable resource #0x1080586 (android:drawable/progressbar_indeterminate_holo5) that varies with configuration!!
+03-27 23:46:42.776 W/Resources(   70): Preloaded drawable resource #0x1080587 (android:drawable/progressbar_indeterminate_holo6) that varies with configuration!!
+03-27 23:46:42.782 W/Resources(   70): Preloaded drawable resource #0x1080588 (android:drawable/progressbar_indeterminate_holo7) that varies with configuration!!
+03-27 23:46:42.793 W/Resources(   70): Preloaded drawable resource #0x1080589 (android:drawable/progressbar_indeterminate_holo8) that varies with configuration!!
+03-27 23:46:42.795 W/Resources(   70): Preloaded drawable resource #0x108056b (android:drawable/progress_indeterminate_horizontal_holo) that varies with configuration!!
+03-27 23:46:42.845 I/art     (   70): Explicit concurrent mark sweep GC freed 332(325KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1574KB/3MB, paused 1.565ms total 44.081ms
+03-27 23:46:42.862 W/Resources(   70): Preloaded drawable resource #0x1080612 (android:drawable/spinner_76_outer_holo) that varies with configuration!!
+03-27 23:46:42.873 W/Resources(   70): Preloaded drawable resource #0x1080611 (android:drawable/spinner_76_inner_holo) that varies with configuration!!
+03-27 23:46:42.873 W/Resources(   70): Preloaded drawable resource #0x108056e (android:drawable/progress_large_holo) that varies with configuration!!
+03-27 23:46:42.927 I/art     (   70): Explicit concurrent mark sweep GC freed 138(52KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1573KB/3MB, paused 1.071ms total 46.815ms
+03-27 23:46:42.942 W/Resources(   70): Preloaded drawable resource #0x1080610 (android:drawable/spinner_48_outer_holo) that varies with configuration!!
+03-27 23:46:42.954 W/Resources(   70): Preloaded drawable resource #0x108060f (android:drawable/spinner_48_inner_holo) that varies with configuration!!
+03-27 23:46:42.954 W/Resources(   70): Preloaded drawable resource #0x1080572 (android:drawable/progress_medium_holo) that varies with configuration!!
+03-27 23:46:42.958 W/Resources(   70): Preloaded drawable resource #0x1080576 (android:drawable/progress_primary_holo_dark) that varies with configuration!!
+03-27 23:46:42.962 W/Resources(   70): Preloaded drawable resource #0x1080577 (android:drawable/progress_primary_holo_light) that varies with configuration!!
+03-27 23:46:42.972 W/Resources(   70): Preloaded drawable resource #0x1080578 (android:drawable/progress_secondary_holo_dark) that varies with configuration!!
+03-27 23:46:42.979 W/Resources(   70): Preloaded drawable resource #0x1080579 (android:drawable/progress_secondary_holo_light) that varies with configuration!!
+03-27 23:46:42.992 W/Resources(   70): Preloaded drawable resource #0x108060e (android:drawable/spinner_16_outer_holo) that varies with configuration!!
+03-27 23:46:42.999 W/Resources(   70): Preloaded drawable resource #0x108060d (android:drawable/spinner_16_inner_holo) that varies with configuration!!
+03-27 23:46:42.999 W/Resources(   70): Preloaded drawable resource #0x108057b (android:drawable/progress_small_holo) that varies with configuration!!
+03-27 23:46:43.010 W/Resources(   70): Preloaded drawable resource #0x10805f5 (android:drawable/scrubber_track_holo_dark) that varies with configuration!!
+03-27 23:46:43.018 W/Resources(   70): Preloaded drawable resource #0x10805f4 (android:drawable/scrubber_secondary_holo) that varies with configuration!!
+03-27 23:46:43.028 W/Resources(   70): Preloaded drawable resource #0x10805ef (android:drawable/scrubber_primary_holo) that varies with configuration!!
+03-27 23:46:43.028 W/Resources(   70): Preloaded drawable resource #0x10805f1 (android:drawable/scrubber_progress_horizontal_holo_dark) that varies with configuration!!
+03-27 23:46:43.082 I/art     (   70): Explicit concurrent mark sweep GC freed 344(41KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1583KB/3MB, paused 1.123ms total 48.343ms
+03-27 23:46:43.096 W/Resources(   70): Preloaded drawable resource #0x10805f6 (android:drawable/scrubber_track_holo_light) that varies with configuration!!
+03-27 23:46:43.100 W/Resources(   70): Preloaded drawable resource #0x10805f4 (android:drawable/scrubber_secondary_holo) that varies with configuration!!
+03-27 23:46:43.109 W/Resources(   70): Preloaded drawable resource #0x10805ef (android:drawable/scrubber_primary_holo) that varies with configuration!!
+03-27 23:46:43.110 W/Resources(   70): Preloaded drawable resource #0x10805f2 (android:drawable/scrubber_progress_horizontal_holo_light) that varies with configuration!!
+03-27 23:46:43.140 W/Resources(   70): Preloaded drawable resource #0x10805d2 (android:drawable/scrollbar_handle_holo_dark) that varies with configuration!!
+03-27 23:46:43.149 W/Resources(   70): Preloaded drawable resource #0x10805d3 (android:drawable/scrollbar_handle_holo_light) that varies with configuration!!
+03-27 23:46:43.168 W/Resources(   70): Preloaded drawable resource #0x1080635 (android:drawable/spinner_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:43.172 W/Resources(   70): Preloaded drawable resource #0x1080643 (android:drawable/spinner_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:43.186 W/Resources(   70): Preloaded drawable resource #0x108063b (android:drawable/spinner_focused_holo_dark) that varies with configuration!!
+03-27 23:46:43.191 W/Resources(   70): Preloaded drawable resource #0x1080630 (android:drawable/spinner_default_holo_dark) that varies with configuration!!
+03-27 23:46:43.192 W/Resources(   70): Preloaded drawable resource #0x1080629 (android:drawable/spinner_background_holo_dark) that varies with configuration!!
+03-27 23:46:43.207 W/Resources(   70): Preloaded drawable resource #0x1080637 (android:drawable/spinner_disabled_holo_light) that varies with configuration!!
+03-27 23:46:43.211 W/Resources(   70): Preloaded drawable resource #0x1080645 (android:drawable/spinner_pressed_holo_light) that varies with configuration!!
+03-27 23:46:43.221 W/Resources(   70): Preloaded drawable resource #0x108063d (android:drawable/spinner_focused_holo_light) that varies with configuration!!
+03-27 23:46:43.233 W/Resources(   70): Preloaded drawable resource #0x1080632 (android:drawable/spinner_default_holo_light) that varies with configuration!!
+03-27 23:46:43.235 W/Resources(   70): Preloaded drawable resource #0x108062a (android:drawable/spinner_background_holo_light) that varies with configuration!!
+03-27 23:46:43.294 I/art     (   70): Explicit concurrent mark sweep GC freed 536(35KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1617KB/3MB, paused 1.142ms total 50.979ms
+03-27 23:46:43.308 W/Resources(   70): Preloaded drawable resource #0x1080615 (android:drawable/spinner_ab_default_holo_dark) that varies with configuration!!
+03-27 23:46:43.312 W/Resources(   70): Preloaded drawable resource #0x1080617 (android:drawable/spinner_ab_default_holo_light) that varies with configuration!!
+03-27 23:46:43.325 W/Resources(   70): Preloaded drawable resource #0x1080619 (android:drawable/spinner_ab_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:43.329 W/Resources(   70): Preloaded drawable resource #0x108061b (android:drawable/spinner_ab_disabled_holo_light) that varies with configuration!!
+03-27 23:46:43.336 W/Resources(   70): Preloaded drawable resource #0x108061d (android:drawable/spinner_ab_focused_holo_dark) that varies with configuration!!
+03-27 23:46:43.350 W/Resources(   70): Preloaded drawable resource #0x108061f (android:drawable/spinner_ab_focused_holo_light) that varies with configuration!!
+03-27 23:46:43.361 W/Resources(   70): Preloaded drawable resource #0x1080623 (android:drawable/spinner_ab_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:43.371 W/Resources(   70): Preloaded drawable resource #0x1080625 (android:drawable/spinner_ab_pressed_holo_light) that varies with configuration!!
+03-27 23:46:43.385 W/Resources(   70): Preloaded drawable resource #0x1080619 (android:drawable/spinner_ab_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:43.390 W/Resources(   70): Preloaded drawable resource #0x1080623 (android:drawable/spinner_ab_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:43.401 W/Resources(   70): Preloaded drawable resource #0x108061d (android:drawable/spinner_ab_focused_holo_dark) that varies with configuration!!
+03-27 23:46:43.411 W/Resources(   70): Preloaded drawable resource #0x1080615 (android:drawable/spinner_ab_default_holo_dark) that varies with configuration!!
+03-27 23:46:43.418 W/Resources(   70): Preloaded drawable resource #0x1080621 (android:drawable/spinner_ab_holo_dark) that varies with configuration!!
+03-27 23:46:43.473 I/art     (   70): Explicit concurrent mark sweep GC freed 635(57KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1625KB/3MB, paused 1.529ms total 52.119ms
+03-27 23:46:43.492 W/Resources(   70): Preloaded drawable resource #0x108061b (android:drawable/spinner_ab_disabled_holo_light) that varies with configuration!!
+03-27 23:46:43.503 W/Resources(   70): Preloaded drawable resource #0x1080625 (android:drawable/spinner_ab_pressed_holo_light) that varies with configuration!!
+03-27 23:46:43.509 W/Resources(   70): Preloaded drawable resource #0x108061f (android:drawable/spinner_ab_focused_holo_light) that varies with configuration!!
+03-27 23:46:43.516 W/Resources(   70): Preloaded drawable resource #0x1080617 (android:drawable/spinner_ab_default_holo_light) that varies with configuration!!
+03-27 23:46:43.523 W/Resources(   70): Preloaded drawable resource #0x1080622 (android:drawable/spinner_ab_holo_light) that varies with configuration!!
+03-27 23:46:43.529 W/Resources(   70): Preloaded drawable resource #0x1080630 (android:drawable/spinner_default_holo_dark) that varies with configuration!!
+03-27 23:46:43.539 W/Resources(   70): Preloaded drawable resource #0x1080632 (android:drawable/spinner_default_holo_light) that varies with configuration!!
+03-27 23:46:43.549 W/Resources(   70): Preloaded drawable resource #0x1080635 (android:drawable/spinner_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:43.560 W/Resources(   70): Preloaded drawable resource #0x1080637 (android:drawable/spinner_disabled_holo_light) that varies with configuration!!
+03-27 23:46:43.569 W/Resources(   70): Preloaded drawable resource #0x108063b (android:drawable/spinner_focused_holo_dark) that varies with configuration!!
+03-27 23:46:43.579 W/Resources(   70): Preloaded drawable resource #0x108063d (android:drawable/spinner_focused_holo_light) that varies with configuration!!
+03-27 23:46:43.633 I/art     (   70): Explicit concurrent mark sweep GC freed 502(59KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1618KB/3MB, paused 1.500ms total 48.925ms
+03-27 23:46:43.648 W/Resources(   70): Preloaded drawable resource #0x1080643 (android:drawable/spinner_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:43.661 W/Resources(   70): Preloaded drawable resource #0x1080645 (android:drawable/spinner_pressed_holo_light) that varies with configuration!!
+03-27 23:46:43.669 W/Resources(   70): Preloaded drawable resource #0x1080275 (android:drawable/cab_background_bottom_holo_dark) that varies with configuration!!
+03-27 23:46:43.672 W/Resources(   70): Preloaded drawable resource #0x108027a (android:drawable/cab_background_top_holo_light) that varies with configuration!!
+03-27 23:46:43.680 W/Resources(   70): Preloaded drawable resource #0x1080276 (android:drawable/cab_background_bottom_holo_light) that varies with configuration!!
+03-27 23:46:43.714 W/Resources(   70): Preloaded drawable resource #0x1080337 (android:drawable/ic_cab_done_holo_dark) that varies with configuration!!
+03-27 23:46:43.718 W/Resources(   70): Preloaded drawable resource #0x1080279 (android:drawable/cab_background_top_holo_dark) that varies with configuration!!
+03-27 23:46:43.721 W/Resources(   70): Preloaded drawable resource #0x1080338 (android:drawable/ic_cab_done_holo_light) that varies with configuration!!
+03-27 23:46:43.735 W/Resources(   70): Preloaded drawable resource #0x10800d7 (android:drawable/btn_cab_done_default_holo_dark) that varies with configuration!!
+03-27 23:46:43.738 W/Resources(   70): Preloaded drawable resource #0x10800da (android:drawable/btn_cab_done_focused_holo_light) that varies with configuration!!
+03-27 23:46:43.741 W/Resources(   70): Preloaded drawable resource #0x10800d8 (android:drawable/btn_cab_done_default_holo_light) that varies with configuration!!
+03-27 23:46:43.753 W/Resources(   70): Preloaded drawable resource #0x10800df (android:drawable/btn_cab_done_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:43.756 W/Resources(   70): Preloaded drawable resource #0x10800d9 (android:drawable/btn_cab_done_focused_holo_dark) that varies with configuration!!
+03-27 23:46:43.803 I/art     (   70): Explicit concurrent mark sweep GC freed 485(62KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1605KB/3MB, paused 1.653ms total 42.797ms
+03-27 23:46:43.816 W/Resources(   70): Preloaded drawable resource #0x10800e0 (android:drawable/btn_cab_done_pressed_holo_light) that varies with configuration!!
+03-27 23:46:43.827 W/Resources(   70): Preloaded drawable resource #0x10804a3 (android:drawable/list_pressed_holo_light) that varies with configuration!!
+03-27 23:46:43.831 W/Resources(   70): Preloaded drawable resource #0x10800da (android:drawable/btn_cab_done_focused_holo_light) that varies with configuration!!
+03-27 23:46:43.842 W/Resources(   70): Preloaded drawable resource #0x10800d8 (android:drawable/btn_cab_done_default_holo_light) that varies with configuration!!
+03-27 23:46:43.845 W/Resources(   70): Preloaded drawable resource #0x10800dc (android:drawable/btn_cab_done_holo_light) that varies with configuration!!
+03-27 23:46:43.855 W/Resources(   70): Preloaded drawable resource #0x10804a2 (android:drawable/list_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:43.859 W/Resources(   70): Preloaded drawable resource #0x10800d9 (android:drawable/btn_cab_done_focused_holo_dark) that varies with configuration!!
+03-27 23:46:43.861 W/Resources(   70): Preloaded drawable resource #0x10800d7 (android:drawable/btn_cab_done_default_holo_dark) that varies with configuration!!
+03-27 23:46:43.861 W/Resources(   70): Preloaded drawable resource #0x10800db (android:drawable/btn_cab_done_holo_dark) that varies with configuration!!
+03-27 23:46:43.870 W/Resources(   70): Preloaded drawable resource #0x1080038 (android:drawable/ic_menu_close_clear_cancel) that varies with configuration!!
+03-27 23:46:43.878 W/Resources(   70): Preloaded drawable resource #0x10803d9 (android:drawable/ic_menu_copy_holo_dark) that varies with configuration!!
+03-27 23:46:43.881 W/Resources(   70): Preloaded drawable resource #0x10803da (android:drawable/ic_menu_copy_holo_light) that varies with configuration!!
+03-27 23:46:43.888 W/Resources(   70): Preloaded drawable resource #0x10803dd (android:drawable/ic_menu_cut_holo_dark) that varies with configuration!!
+03-27 23:46:43.898 W/Resources(   70): Preloaded drawable resource #0x10803de (android:drawable/ic_menu_cut_holo_light) that varies with configuration!!
+03-27 23:46:43.902 W/Resources(   70): Preloaded drawable resource #0x1080045 (android:drawable/ic_menu_more) that varies with configuration!!
+03-27 23:46:43.954 I/art     (   70): Explicit concurrent mark sweep GC freed 476(67KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1592KB/3MB, paused 1.052ms total 47.536ms
+03-27 23:46:43.968 W/Resources(   70): Preloaded drawable resource #0x10803f5 (android:drawable/ic_menu_moreoverflow_normal_holo_dark) that varies with configuration!!
+03-27 23:46:43.968 W/Resources(   70): Preloaded drawable resource #0x10803f2 (android:drawable/ic_menu_moreoverflow_holo_dark) that varies with configuration!!
+03-27 23:46:43.973 W/Resources(   70): Preloaded drawable resource #0x10803f6 (android:drawable/ic_menu_moreoverflow_normal_holo_light) that varies with configuration!!
+03-27 23:46:43.978 W/Resources(   70): Preloaded drawable resource #0x10803f3 (android:drawable/ic_menu_moreoverflow_holo_light) that varies with configuration!!
+03-27 23:46:43.987 W/Resources(   70): Preloaded drawable resource #0x10803f9 (android:drawable/ic_menu_paste_holo_dark) that varies with configuration!!
+03-27 23:46:43.991 W/Resources(   70): Preloaded drawable resource #0x10803fa (android:drawable/ic_menu_paste_holo_light) that varies with configuration!!
+03-27 23:46:43.998 W/Resources(   70): Preloaded drawable resource #0x1080403 (android:drawable/ic_menu_selectall_holo_light) that varies with configuration!!
+03-27 23:46:44.009 W/Resources(   70): Preloaded drawable resource #0x1080402 (android:drawable/ic_menu_selectall_holo_dark) that varies with configuration!!
+03-27 23:46:44.021 W/Resources(   70): Preloaded drawable resource #0x108033c (android:drawable/ic_clear_disabled) that varies with configuration!!
+03-27 23:46:44.028 W/Resources(   70): Preloaded drawable resource #0x1080341 (android:drawable/ic_clear_normal) that varies with configuration!!
+03-27 23:46:44.030 W/Resources(   70): Preloaded drawable resource #0x108033b (android:drawable/ic_clear) that varies with configuration!!
+03-27 23:46:44.080 I/art     (   70): Explicit concurrent mark sweep GC freed 382(57KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1592KB/3MB, paused 1.103ms total 45.662ms
+03-27 23:46:44.100 W/Resources(   70): Preloaded drawable resource #0x108033c (android:drawable/ic_clear_disabled) that varies with configuration!!
+03-27 23:46:44.110 W/Resources(   70): Preloaded drawable resource #0x1080341 (android:drawable/ic_clear_normal) that varies with configuration!!
+03-27 23:46:44.120 W/Resources(   70): Preloaded drawable resource #0x1080436 (android:drawable/ic_search_api_holo_dark) that varies with configuration!!
+03-27 23:46:44.126 W/Resources(   70): Preloaded drawable resource #0x1080437 (android:drawable/ic_search_api_holo_light) that varies with configuration!!
+03-27 23:46:44.136 W/Resources(   70): Preloaded drawable resource #0x1080369 (android:drawable/ic_go) that varies with configuration!!
+03-27 23:46:44.139 W/Resources(   70): Preloaded drawable resource #0x1080442 (android:drawable/ic_voice_search_api_holo_dark) that varies with configuration!!
+03-27 23:46:44.142 W/Resources(   70): Preloaded drawable resource #0x1080443 (android:drawable/ic_voice_search_api_holo_light) that varies with configuration!!
+03-27 23:46:44.156 W/Resources(   70): Preloaded drawable resource #0x1080295 (android:drawable/dialog_bottom_holo_dark) that varies with configuration!!
+03-27 23:46:44.160 W/Resources(   70): Preloaded drawable resource #0x1080296 (android:drawable/dialog_bottom_holo_light) that varies with configuration!!
+03-27 23:46:44.209 I/art     (   70): Explicit concurrent mark sweep GC freed 275(37KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1608KB/3MB, paused 1.101ms total 45.643ms
+03-27 23:46:44.223 W/Resources(   70): Preloaded drawable resource #0x108029a (android:drawable/dialog_full_holo_dark) that varies with configuration!!
+03-27 23:46:44.228 W/Resources(   70): Preloaded drawable resource #0x108029b (android:drawable/dialog_full_holo_light) that varies with configuration!!
+03-27 23:46:44.230 W/Resources(   70): Preloaded drawable resource #0x10802a3 (android:drawable/dialog_middle_holo_dark) that varies with configuration!!
+03-27 23:46:44.243 W/Resources(   70): Preloaded drawable resource #0x10802a4 (android:drawable/dialog_middle_holo_light) that varies with configuration!!
+03-27 23:46:44.292 I/art     (   70): Explicit concurrent mark sweep GC freed 151(24KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1633KB/3MB, paused 967us total 43.478ms
+03-27 23:46:44.301 W/Resources(   70): Preloaded drawable resource #0x10802a5 (android:drawable/dialog_top_holo_dark) that varies with configuration!!
+03-27 23:46:44.310 W/Resources(   70): Preloaded drawable resource #0x10802a6 (android:drawable/dialog_top_holo_light) that varies with configuration!!
+03-27 23:46:44.317 W/Resources(   70): Preloaded drawable resource #0x1080358 (android:drawable/ic_dialog_alert_holo_dark) that varies with configuration!!
+03-27 23:46:44.320 W/Resources(   70): Preloaded drawable resource #0x1080359 (android:drawable/ic_dialog_alert_holo_light) that varies with configuration!!
+03-27 23:46:44.332 W/Resources(   70): Preloaded drawable resource #0x1080496 (android:drawable/list_divider_holo_dark) that varies with configuration!!
+03-27 23:46:44.338 W/Resources(   70): Preloaded drawable resource #0x1080497 (android:drawable/list_divider_holo_light) that varies with configuration!!
+03-27 23:46:44.341 W/Resources(   70): Preloaded drawable resource #0x1080497 (android:drawable/list_divider_holo_light) that varies with configuration!!
+03-27 23:46:44.360 W/Resources(   70): Preloaded drawable resource #0x10800c2 (android:drawable/ab_transparent_dark_holo) that varies with configuration!!
+03-27 23:46:44.369 W/Resources(   70): Preloaded drawable resource #0x10800c0 (android:drawable/ab_stacked_transparent_dark_holo) that varies with configuration!!
+03-27 23:46:44.376 W/Resources(   70): Preloaded drawable resource #0x10800a1 (android:drawable/ab_bottom_transparent_dark_holo) that varies with configuration!!
+03-27 23:46:44.431 I/art     (   70): Explicit concurrent mark sweep GC freed 249(65KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1619KB/3MB, paused 1.311ms total 50.104ms
+03-27 23:46:44.444 W/Resources(   70): Preloaded drawable resource #0x10800b7 (android:drawable/ab_solid_dark_holo) that varies with configuration!!
+03-27 23:46:44.447 W/Resources(   70): Preloaded drawable resource #0x10800bd (android:drawable/ab_stacked_solid_dark_holo) that varies with configuration!!
+03-27 23:46:44.451 W/Resources(   70): Preloaded drawable resource #0x108009e (android:drawable/ab_bottom_solid_dark_holo) that varies with configuration!!
+03-27 23:46:44.461 W/Resources(   70): Preloaded drawable resource #0x10800c3 (android:drawable/ab_transparent_light_holo) that varies with configuration!!
+03-27 23:46:44.468 W/Resources(   70): Preloaded drawable resource #0x10800c1 (android:drawable/ab_stacked_transparent_light_holo) that varies with configuration!!
+03-27 23:46:44.472 W/Resources(   70): Preloaded drawable resource #0x10800a2 (android:drawable/ab_bottom_transparent_light_holo) that varies with configuration!!
+03-27 23:46:44.480 W/Resources(   70): Preloaded drawable resource #0x10800b8 (android:drawable/ab_solid_light_holo) that varies with configuration!!
+03-27 23:46:44.487 W/Resources(   70): Preloaded drawable resource #0x10800bf (android:drawable/ab_stacked_solid_light_holo) that varies with configuration!!
+03-27 23:46:44.490 W/Resources(   70): Preloaded drawable resource #0x10800a0 (android:drawable/ab_bottom_solid_light_holo) that varies with configuration!!
+03-27 23:46:44.499 W/Resources(   70): Preloaded drawable resource #0x10800b9 (android:drawable/ab_solid_shadow_holo) that varies with configuration!!
+03-27 23:46:44.507 W/Resources(   70): Preloaded drawable resource #0x10804c3 (android:drawable/list_selector_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:44.515 W/Resources(   70): Preloaded drawable resource #0x10804c3 (android:drawable/list_selector_disabled_holo_dark) that varies with configuration!!
+03-27 23:46:44.524 W/Resources(   70): Preloaded drawable resource #0x10804a2 (android:drawable/list_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:44.527 W/Resources(   70): Preloaded drawable resource #0x10804a0 (android:drawable/list_longpressed_holo_dark) that varies with configuration!!
+03-27 23:46:44.527 W/Resources(   70): Preloaded drawable resource #0x10804c0 (android:drawable/list_selector_background_transition_holo_dark) that varies with configuration!!
+03-27 23:46:44.532 W/Resources(   70): Preloaded drawable resource #0x10804a2 (android:drawable/list_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:44.539 W/Resources(   70): Preloaded drawable resource #0x10804a0 (android:drawable/list_longpressed_holo_dark) that varies with configuration!!
+03-27 23:46:44.540 W/Resources(   70): Preloaded drawable resource #0x10804c0 (android:drawable/list_selector_background_transition_holo_dark) that varies with configuration!!
+03-27 23:46:44.546 W/Resources(   70): Preloaded drawable resource #0x108049b (android:drawable/list_focused_holo) that varies with configuration!!
+03-27 23:46:44.551 W/Resources(   70): Preloaded drawable resource #0x1080454 (android:drawable/item_background_holo_dark) that varies with configuration!!
+03-27 23:46:44.603 I/art     (   70): Explicit concurrent mark sweep GC freed 524(55KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1628KB/3MB, paused 1.101ms total 44.905ms
+03-27 23:46:44.618 W/Resources(   70): Preloaded drawable resource #0x10804c4 (android:drawable/list_selector_disabled_holo_light) that varies with configuration!!
+03-27 23:46:44.620 W/Resources(   70): Preloaded drawable resource #0x10804c4 (android:drawable/list_selector_disabled_holo_light) that varies with configuration!!
+03-27 23:46:44.628 W/Resources(   70): Preloaded drawable resource #0x10804a3 (android:drawable/list_pressed_holo_light) that varies with configuration!!
+03-27 23:46:44.631 W/Resources(   70): Preloaded drawable resource #0x10804a1 (android:drawable/list_longpressed_holo_light) that varies with configuration!!
+03-27 23:46:44.636 W/Resources(   70): Preloaded drawable resource #0x10804c1 (android:drawable/list_selector_background_transition_holo_light) that varies with configuration!!
+03-27 23:46:44.643 W/Resources(   70): Preloaded drawable resource #0x10804a3 (android:drawable/list_pressed_holo_light) that varies with configuration!!
+03-27 23:46:44.646 W/Resources(   70): Preloaded drawable resource #0x10804a1 (android:drawable/list_longpressed_holo_light) that varies with configuration!!
+03-27 23:46:44.646 W/Resources(   70): Preloaded drawable resource #0x10804c1 (android:drawable/list_selector_background_transition_holo_light) that varies with configuration!!
+03-27 23:46:44.648 W/Resources(   70): Preloaded drawable resource #0x108049b (android:drawable/list_focused_holo) that varies with configuration!!
+03-27 23:46:44.652 W/Resources(   70): Preloaded drawable resource #0x1080455 (android:drawable/item_background_holo_light) that varies with configuration!!
+03-27 23:46:44.663 W/Resources(   70): Preloaded drawable resource #0x10802f9 (android:drawable/fastscroll_thumb_pressed_holo) that varies with configuration!!
+03-27 23:46:44.666 W/Resources(   70): Preloaded drawable resource #0x10802f5 (android:drawable/fastscroll_thumb_default_holo) that varies with configuration!!
+03-27 23:46:44.666 W/Resources(   70): Preloaded drawable resource #0x10802f6 (android:drawable/fastscroll_thumb_holo) that varies with configuration!!
+03-27 23:46:44.672 W/Resources(   70): Preloaded drawable resource #0x10802f9 (android:drawable/fastscroll_thumb_pressed_holo) that varies with configuration!!
+03-27 23:46:44.721 I/art     (   70): Explicit concurrent mark sweep GC freed 544(75KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1604KB/3MB, paused 1.133ms total 43.351ms
+03-27 23:46:44.731 W/Resources(   70): Preloaded drawable resource #0x10802f5 (android:drawable/fastscroll_thumb_default_holo) that varies with configuration!!
+03-27 23:46:44.746 W/Resources(   70): Preloaded drawable resource #0x1080300 (android:drawable/fastscroll_track_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:44.748 W/Resources(   70): Preloaded drawable resource #0x10802fa (android:drawable/fastscroll_track_default_holo_dark) that varies with configuration!!
+03-27 23:46:44.750 W/Resources(   70): Preloaded drawable resource #0x10802fc (android:drawable/fastscroll_track_holo_dark) that varies with configuration!!
+03-27 23:46:44.760 W/Resources(   70): Preloaded drawable resource #0x1080300 (android:drawable/fastscroll_track_pressed_holo_dark) that varies with configuration!!
+03-27 23:46:44.768 W/Resources(   70): Preloaded drawable resource #0x10802fa (android:drawable/fastscroll_track_default_holo_dark) that varies with configuration!!
+03-27 23:46:44.776 W/Resources(   70): Preloaded drawable resource #0x10802ef (android:drawable/fastscroll_label_left_holo_dark) that varies with configuration!!
+03-27 23:46:44.781 W/Resources(   70): Preloaded drawable resource #0x10802f2 (android:drawable/fastscroll_label_right_holo_dark) that varies with configuration!!
+03-27 23:46:44.830 I/art     (   70): Explicit concurrent mark sweep GC freed 306(28KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1640KB/3MB, paused 1.005ms total 45.004ms
+03-27 23:46:44.841 W/Resources(   70): Preloaded drawable resource #0x1080301 (android:drawable/fastscroll_track_pressed_holo_light) that varies with configuration!!
+03-27 23:46:44.847 W/Resources(   70): Preloaded drawable resource #0x10802fb (android:drawable/fastscroll_track_default_holo_light) that varies with configuration!!
+03-27 23:46:44.850 W/Resources(   70): Preloaded drawable resource #0x10802fd (android:drawable/fastscroll_track_holo_light) that varies with configuration!!
+03-27 23:46:44.852 W/Resources(   70): Preloaded drawable resource #0x1080301 (android:drawable/fastscroll_track_pressed_holo_light) that varies with configuration!!
+03-27 23:46:44.862 W/Resources(   70): Preloaded drawable resource #0x10802fb (android:drawable/fastscroll_track_default_holo_light) that varies with configuration!!
+03-27 23:46:44.869 W/Resources(   70): Preloaded drawable resource #0x10802f0 (android:drawable/fastscroll_label_left_holo_light) that varies with configuration!!
+03-27 23:46:44.875 W/Resources(   70): Preloaded drawable resource #0x10802f3 (android:drawable/fastscroll_label_right_holo_light) that varies with configuration!!
+03-27 23:46:44.923 I/art     (   70): Explicit concurrent mark sweep GC freed 235(56KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1641KB/3MB, paused 3.430ms total 39.532ms
+03-27 23:46:44.934 W/Resources(   70): Preloaded drawable resource #0x10802d0 (android:drawable/editbox_dropdown_background_dark) that varies with configuration!!
+03-27 23:46:44.938 W/Resources(   70): Preloaded drawable resource #0x108073f (android:drawable/textfield_search_selected_holo_dark) that varies with configuration!!
+03-27 23:46:44.940 W/Resources(   70): Preloaded drawable resource #0x1080731 (android:drawable/textfield_search_default_holo_dark) that varies with configuration!!
+03-27 23:46:44.942 W/Resources(   70): Preloaded drawable resource #0x1080741 (android:drawable/textfield_searchview_holo_dark) that varies with configuration!!
+03-27 23:46:44.953 W/Resources(   70): Preloaded drawable resource #0x108073c (android:drawable/textfield_search_right_selected_holo_dark) that varies with configuration!!
+03-27 23:46:44.959 W/Resources(   70): Preloaded drawable resource #0x108073a (android:drawable/textfield_search_right_default_holo_dark) that varies with configuration!!
+03-27 23:46:44.960 W/Resources(   70): Preloaded drawable resource #0x1080743 (android:drawable/textfield_searchview_right_holo_dark) that varies with configuration!!
+03-27 23:46:44.971 W/Resources(   70): Preloaded drawable resource #0x1080740 (android:drawable/textfield_search_selected_holo_light) that varies with configuration!!
+03-27 23:46:44.975 W/Resources(   70): Preloaded drawable resource #0x1080732 (android:drawable/textfield_search_default_holo_light) that varies with configuration!!
+03-27 23:46:44.979 W/Resources(   70): Preloaded drawable resource #0x1080742 (android:drawable/textfield_searchview_holo_light) that varies with configuration!!
+03-27 23:46:44.989 W/Resources(   70): Preloaded drawable resource #0x108073d (android:drawable/textfield_search_right_selected_holo_light) that varies with configuration!!
+03-27 23:46:44.991 W/Resources(   70): Preloaded drawable resource #0x108073b (android:drawable/textfield_search_right_default_holo_light) that varies with configuration!!
+03-27 23:46:44.993 W/Resources(   70): Preloaded drawable resource #0x1080744 (android:drawable/textfield_searchview_right_holo_light) that varies with configuration!!
+03-27 23:46:45.002 W/Resources(   70): Preloaded drawable resource #0x108073f (android:drawable/textfield_search_selected_holo_dark) that varies with configuration!!
+03-27 23:46:45.007 W/Resources(   70): Preloaded drawable resource #0x1080731 (android:drawable/textfield_search_default_holo_dark) that varies with configuration!!
+03-27 23:46:45.010 W/Resources(   70): Preloaded drawable resource #0x108073c (android:drawable/textfield_search_right_selected_holo_dark) that varies with configuration!!
+03-27 23:46:45.017 W/Resources(   70): Preloaded drawable resource #0x108073a (android:drawable/textfield_search_right_default_holo_dark) that varies with configuration!!
+03-27 23:46:45.024 W/Resources(   70): Preloaded drawable resource #0x1080740 (android:drawable/textfield_search_selected_holo_light) that varies with configuration!!
+03-27 23:46:45.026 W/Resources(   70): Preloaded drawable resource #0x1080732 (android:drawable/textfield_search_default_holo_light) that varies with configuration!!
+03-27 23:46:45.029 W/Resources(   70): Preloaded drawable resource #0x108073d (android:drawable/textfield_search_right_selected_holo_light) that varies with configuration!!
+03-27 23:46:45.030 W/Resources(   70): Preloaded drawable resource #0x108073b (android:drawable/textfield_search_right_default_holo_light) that varies with configuration!!
+03-27 23:46:45.085 I/art     (   70): Explicit concurrent mark sweep GC freed 513(76KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1614KB/3MB, paused 1.202ms total 47.241ms
+03-27 23:46:45.097 W/Resources(   70): Preloaded drawable resource #0x10806fb (android:drawable/tab_unselected_holo) that varies with configuration!!
+03-27 23:46:45.104 W/Resources(   70): Preloaded drawable resource #0x10806f6 (android:drawable/tab_selected_holo) that varies with configuration!!
+03-27 23:46:45.109 W/Resources(   70): Preloaded drawable resource #0x10806fa (android:drawable/tab_unselected_focused_holo) that varies with configuration!!
+03-27 23:46:45.112 W/Resources(   70): Preloaded drawable resource #0x10806f5 (android:drawable/tab_selected_focused_holo) that varies with configuration!!
+03-27 23:46:45.117 W/Resources(   70): Preloaded drawable resource #0x10806fc (android:drawable/tab_unselected_pressed_holo) that varies with configuration!!
+03-27 23:46:45.120 W/Resources(   70): Preloaded drawable resource #0x10806f7 (android:drawable/tab_selected_pressed_holo) that varies with configuration!!
+03-27 23:46:45.130 W/Resources(   70): Preloaded drawable resource #0x10806fc (android:drawable/tab_unselected_pressed_holo) that varies with configuration!!
+03-27 23:46:45.133 W/Resources(   70): Preloaded drawable resource #0x10806f7 (android:drawable/tab_selected_pressed_holo) that varies with configuration!!
+03-27 23:46:45.137 W/Resources(   70): Preloaded drawable resource #0x10806e8 (android:drawable/tab_indicator_holo) that varies with configuration!!
+03-27 23:46:45.146 W/Resources(   70): Preloaded drawable resource #0x10806fb (android:drawable/tab_unselected_holo) that varies with configuration!!
+03-27 23:46:45.149 W/Resources(   70): Preloaded drawable resource #0x10806f6 (android:drawable/tab_selected_holo) that varies with configuration!!
+03-27 23:46:45.151 W/Resources(   70): Preloaded drawable resource #0x10806fa (android:drawable/tab_unselected_focused_holo) that varies with configuration!!
+03-27 23:46:45.161 W/Resources(   70): Preloaded drawable resource #0x10806f5 (android:drawable/tab_selected_focused_holo) that varies with configuration!!
+03-27 23:46:45.169 W/Resources(   70): Preloaded drawable resource #0x10806fc (android:drawable/tab_unselected_pressed_holo) that varies with configuration!!
+03-27 23:46:45.173 W/Resources(   70): Preloaded drawable resource #0x10806f7 (android:drawable/tab_selected_pressed_holo) that varies with configuration!!
+03-27 23:46:45.185 W/Resources(   70): Preloaded drawable resource #0x108059c (android:drawable/quickcontact_badge_overlay_pressed_dark) that varies with configuration!!
+03-27 23:46:45.190 W/Resources(   70): Preloaded drawable resource #0x1080593 (android:drawable/quickcontact_badge_overlay_focused_dark) that varies with configuration!!
+03-27 23:46:45.198 W/Resources(   70): Preloaded drawable resource #0x1080598 (android:drawable/quickcontact_badge_overlay_normal_dark) that varies with configuration!!
+03-27 23:46:45.202 W/Resources(   70): Preloaded drawable resource #0x1080592 (android:drawable/quickcontact_badge_overlay_dark) that varies with configuration!!
+03-27 23:46:45.209 W/Resources(   70): Preloaded drawable resource #0x1080598 (android:drawable/quickcontact_badge_overlay_normal_dark) that varies with configuration!!
+03-27 23:46:45.265 I/art     (   70): Explicit concurrent mark sweep GC freed 678(45KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1620KB/3MB, paused 1.103ms total 47.902ms
+03-27 23:46:45.277 W/Resources(   70): Preloaded drawable resource #0x108059c (android:drawable/quickcontact_badge_overlay_pressed_dark) that varies with configuration!!
+03-27 23:46:45.288 W/Resources(   70): Preloaded drawable resource #0x108059e (android:drawable/quickcontact_badge_overlay_pressed_light) that varies with configuration!!
+03-27 23:46:45.297 W/Resources(   70): Preloaded drawable resource #0x1080595 (android:drawable/quickcontact_badge_overlay_focused_light) that varies with configuration!!
+03-27 23:46:45.309 W/Resources(   70): Preloaded drawable resource #0x108059a (android:drawable/quickcontact_badge_overlay_normal_light) that varies with configuration!!
+03-27 23:46:45.310 W/Resources(   70): Preloaded drawable resource #0x1080597 (android:drawable/quickcontact_badge_overlay_light) that varies with configuration!!
+03-27 23:46:45.321 W/Resources(   70): Preloaded drawable resource #0x108059a (android:drawable/quickcontact_badge_overlay_normal_light) that varies with configuration!!
+03-27 23:46:45.328 W/Resources(   70): Preloaded drawable resource #0x108059e (android:drawable/quickcontact_badge_overlay_pressed_light) that varies with configuration!!
+03-27 23:46:45.332 W/Resources(   70): Preloaded drawable resource #0x10800b6 (android:drawable/ab_share_pack_mtrl_alpha) that varies with configuration!!
+03-27 23:46:45.341 W/Resources(   70): Preloaded drawable resource #0x10800bc (android:drawable/ab_solid_shadow_mtrl_alpha) that varies with configuration!!
+03-27 23:46:45.347 W/Resources(   70): Preloaded drawable resource #0x10800de (android:drawable/btn_cab_done_mtrl_alpha) that varies with configuration!!
+03-27 23:46:45.350 W/Resources(   70): Preloaded drawable resource #0x1080113 (android:drawable/btn_check_to_off_mtrl_000) that varies with configuration!!
+03-27 23:46:45.361 W/Resources(   70): Preloaded drawable resource #0x1080114 (android:drawable/btn_check_to_off_mtrl_001) that varies with configuration!!
+03-27 23:46:45.411 I/art     (   70): Explicit concurrent mark sweep GC freed 529(46KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1624KB/3MB, paused 968us total 44.394ms
+03-27 23:46:45.428 W/Resources(   70): Preloaded drawable resource #0x1080115 (android:drawable/btn_check_to_off_mtrl_002) that varies with configuration!!
+03-27 23:46:45.432 W/Resources(   70): Preloaded drawable resource #0x1080116 (android:drawable/btn_check_to_off_mtrl_003) that varies with configuration!!
+03-27 23:46:45.444 W/Resources(   70): Preloaded drawable resource #0x1080117 (android:drawable/btn_check_to_off_mtrl_004) that varies with configuration!!
+03-27 23:46:45.447 W/Resources(   70): Preloaded drawable resource #0x1080118 (android:drawable/btn_check_to_off_mtrl_005) that varies with configuration!!
+03-27 23:46:45.450 W/Resources(   70): Preloaded drawable resource #0x1080119 (android:drawable/btn_check_to_off_mtrl_006) that varies with configuration!!
+03-27 23:46:45.460 W/Resources(   70): Preloaded drawable resource #0x108011a (android:drawable/btn_check_to_off_mtrl_007) that varies with configuration!!
+03-27 23:46:45.467 W/Resources(   70): Preloaded drawable resource #0x108011b (android:drawable/btn_check_to_off_mtrl_008) that varies with configuration!!
+03-27 23:46:45.469 W/Resources(   70): Preloaded drawable resource #0x108011c (android:drawable/btn_check_to_off_mtrl_009) that varies with configuration!!
+03-27 23:46:45.476 W/Resources(   70): Preloaded drawable resource #0x108011d (android:drawable/btn_check_to_off_mtrl_010) that varies with configuration!!
+03-27 23:46:45.523 I/art     (   70): Explicit concurrent mark sweep GC freed 360(71KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1605KB/3MB, paused 969us total 39.986ms
+03-27 23:46:45.535 W/Resources(   70): Preloaded drawable resource #0x108011e (android:drawable/btn_check_to_off_mtrl_011) that varies with configuration!!
+03-27 23:46:45.538 W/Resources(   70): Preloaded drawable resource #0x108011f (android:drawable/btn_check_to_off_mtrl_012) that varies with configuration!!
+03-27 23:46:45.541 W/Resources(   70): Preloaded drawable resource #0x1080120 (android:drawable/btn_check_to_off_mtrl_013) that varies with configuration!!
+03-27 23:46:45.550 W/Resources(   70): Preloaded drawable resource #0x1080121 (android:drawable/btn_check_to_off_mtrl_014) that varies with configuration!!
+03-27 23:46:45.556 W/Resources(   70): Preloaded drawable resource #0x1080122 (android:drawable/btn_check_to_off_mtrl_015) that varies with configuration!!
+03-27 23:46:45.565 W/Resources(   70): Preloaded drawable resource #0x1080123 (android:drawable/btn_check_to_on_mtrl_000) that varies with configuration!!
+03-27 23:46:45.569 W/Resources(   70): Preloaded drawable resource #0x1080124 (android:drawable/btn_check_to_on_mtrl_001) that varies with configuration!!
+03-27 23:46:45.571 W/Resources(   70): Preloaded drawable resource #0x1080125 (android:drawable/btn_check_to_on_mtrl_002) that varies with configuration!!
+03-27 23:46:45.580 W/Resources(   70): Preloaded drawable resource #0x1080126 (android:drawable/btn_check_to_on_mtrl_003) that varies with configuration!!
+03-27 23:46:45.624 I/art     (   70): Explicit concurrent mark sweep GC freed 248(51KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1606KB/3MB, paused 1.089ms total 40.941ms
+03-27 23:46:45.638 W/Resources(   70): Preloaded drawable resource #0x1080127 (android:drawable/btn_check_to_on_mtrl_004) that varies with configuration!!
+03-27 23:46:45.641 W/Resources(   70): Preloaded drawable resource #0x1080128 (android:drawable/btn_check_to_on_mtrl_005) that varies with configuration!!
+03-27 23:46:45.651 W/Resources(   70): Preloaded drawable resource #0x1080129 (android:drawable/btn_check_to_on_mtrl_006) that varies with configuration!!
+03-27 23:46:45.658 W/Resources(   70): Preloaded drawable resource #0x108012a (android:drawable/btn_check_to_on_mtrl_007) that varies with configuration!!
+03-27 23:46:45.661 W/Resources(   70): Preloaded drawable resource #0x108012b (android:drawable/btn_check_to_on_mtrl_008) that varies with configuration!!
+03-27 23:46:45.671 W/Resources(   70): Preloaded drawable resource #0x108012c (android:drawable/btn_check_to_on_mtrl_009) that varies with configuration!!
+03-27 23:46:45.678 W/Resources(   70): Preloaded drawable resource #0x108012d (android:drawable/btn_check_to_on_mtrl_010) that varies with configuration!!
+03-27 23:46:45.681 W/Resources(   70): Preloaded drawable resource #0x108012e (android:drawable/btn_check_to_on_mtrl_011) that varies with configuration!!
+03-27 23:46:45.690 W/Resources(   70): Preloaded drawable resource #0x108012f (android:drawable/btn_check_to_on_mtrl_012) that varies with configuration!!
+03-27 23:46:45.734 I/art     (   70): Explicit concurrent mark sweep GC freed 248(51KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1607KB/3MB, paused 1.101ms total 40.996ms
+03-27 23:46:45.748 W/Resources(   70): Preloaded drawable resource #0x1080130 (android:drawable/btn_check_to_on_mtrl_013) that varies with configuration!!
+03-27 23:46:45.752 W/Resources(   70): Preloaded drawable resource #0x1080131 (android:drawable/btn_check_to_on_mtrl_014) that varies with configuration!!
+03-27 23:46:45.762 W/Resources(   70): Preloaded drawable resource #0x1080132 (android:drawable/btn_check_to_on_mtrl_015) that varies with configuration!!
+03-27 23:46:45.769 W/Resources(   70): Preloaded drawable resource #0x10801c6 (android:drawable/btn_radio_to_off_mtrl_000) that varies with configuration!!
+03-27 23:46:45.777 W/Resources(   70): Preloaded drawable resource #0x10801c7 (android:drawable/btn_radio_to_off_mtrl_001) that varies with configuration!!
+03-27 23:46:45.780 W/Resources(   70): Preloaded drawable resource #0x10801c8 (android:drawable/btn_radio_to_off_mtrl_002) that varies with configuration!!
+03-27 23:46:45.790 W/Resources(   70): Preloaded drawable resource #0x10801c9 (android:drawable/btn_radio_to_off_mtrl_003) that varies with configuration!!
+03-27 23:46:45.797 W/Resources(   70): Preloaded drawable resource #0x10801ca (android:drawable/btn_radio_to_off_mtrl_004) that varies with configuration!!
+03-27 23:46:45.801 W/Resources(   70): Preloaded drawable resource #0x10801cb (android:drawable/btn_radio_to_off_mtrl_005) that varies with configuration!!
+03-27 23:46:45.850 I/art     (   70): Explicit concurrent mark sweep GC freed 248(51KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1608KB/3MB, paused 1.263ms total 45.688ms
+03-27 23:46:45.859 W/Resources(   70): Preloaded drawable resource #0x10801cc (android:drawable/btn_radio_to_off_mtrl_006) that varies with configuration!!
+03-27 23:46:45.867 W/Resources(   70): Preloaded drawable resource #0x10801cd (android:drawable/btn_radio_to_off_mtrl_007) that varies with configuration!!
+03-27 23:46:45.872 W/Resources(   70): Preloaded drawable resource #0x10801ce (android:drawable/btn_radio_to_off_mtrl_008) that varies with configuration!!
+03-27 23:46:45.880 W/Resources(   70): Preloaded drawable resource #0x10801cf (android:drawable/btn_radio_to_off_mtrl_009) that varies with configuration!!
+03-27 23:46:45.888 W/Resources(   70): Preloaded drawable resource #0x10801d0 (android:drawable/btn_radio_to_off_mtrl_010) that varies with configuration!!
+03-27 23:46:45.891 W/Resources(   70): Preloaded drawable resource #0x10801d1 (android:drawable/btn_radio_to_off_mtrl_011) that varies with configuration!!
+03-27 23:46:45.900 W/Resources(   70): Preloaded drawable resource #0x10801d2 (android:drawable/btn_radio_to_off_mtrl_012) that varies with configuration!!
+03-27 23:46:45.903 W/Resources(   70): Preloaded drawable resource #0x10801d3 (android:drawable/btn_radio_to_off_mtrl_013) that varies with configuration!!
+03-27 23:46:45.910 W/Resources(   70): Preloaded drawable resource #0x10801d4 (android:drawable/btn_radio_to_off_mtrl_014) that varies with configuration!!
+03-27 23:46:45.961 I/art     (   70): Explicit concurrent mark sweep GC freed 248(51KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1610KB/3MB, paused 1.062ms total 46.447ms
+03-27 23:46:45.976 W/Resources(   70): Preloaded drawable resource #0x10801d5 (android:drawable/btn_radio_to_off_mtrl_015) that varies with configuration!!
+03-27 23:46:45.979 W/Resources(   70): Preloaded drawable resource #0x10801d6 (android:drawable/btn_radio_to_on_mtrl_000) that varies with configuration!!
+03-27 23:46:45.988 W/Resources(   70): Preloaded drawable resource #0x10801d7 (android:drawable/btn_radio_to_on_mtrl_001) that varies with configuration!!
+03-27 23:46:45.992 W/Resources(   70): Preloaded drawable resource #0x10801d8 (android:drawable/btn_radio_to_on_mtrl_002) that varies with configuration!!
+03-27 23:46:46.001 W/Resources(   70): Preloaded drawable resource #0x10801d9 (android:drawable/btn_radio_to_on_mtrl_003) that varies with configuration!!
+03-27 23:46:46.008 W/Resources(   70): Preloaded drawable resource #0x10801da (android:drawable/btn_radio_to_on_mtrl_004) that varies with configuration!!
+03-27 23:46:46.011 W/Resources(   70): Preloaded drawable resource #0x10801db (android:drawable/btn_radio_to_on_mtrl_005) that varies with configuration!!
+03-27 23:46:46.020 W/Resources(   70): Preloaded drawable resource #0x10801dc (android:drawable/btn_radio_to_on_mtrl_006) that varies with configuration!!
+03-27 23:46:46.026 W/Resources(   70): Preloaded drawable resource #0x10801dd (android:drawable/btn_radio_to_on_mtrl_007) that varies with configuration!!
+03-27 23:46:46.074 I/art     (   70): Explicit concurrent mark sweep GC freed 248(51KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1611KB/3MB, paused 1.626ms total 44.689ms
+03-27 23:46:46.085 W/Resources(   70): Preloaded drawable resource #0x10801de (android:drawable/btn_radio_to_on_mtrl_008) that varies with configuration!!
+03-27 23:46:46.089 W/Resources(   70): Preloaded drawable resource #0x10801df (android:drawable/btn_radio_to_on_mtrl_009) that varies with configuration!!
+03-27 23:46:46.092 W/Resources(   70): Preloaded drawable resource #0x10801e0 (android:drawable/btn_radio_to_on_mtrl_010) that varies with configuration!!
+03-27 23:46:46.100 W/Resources(   70): Preloaded drawable resource #0x10801e1 (android:drawable/btn_radio_to_on_mtrl_011) that varies with configuration!!
+03-27 23:46:46.109 W/Resources(   70): Preloaded drawable resource #0x10801e2 (android:drawable/btn_radio_to_on_mtrl_012) that varies with configuration!!
+03-27 23:46:46.115 W/Resources(   70): Preloaded drawable resource #0x10801e3 (android:drawable/btn_radio_to_on_mtrl_013) that varies with configuration!!
+03-27 23:46:46.124 W/Resources(   70): Preloaded drawable resource #0x10801e4 (android:drawable/btn_radio_to_on_mtrl_014) that varies with configuration!!
+03-27 23:46:46.127 W/Resources(   70): Preloaded drawable resource #0x10801e5 (android:drawable/btn_radio_to_on_mtrl_015) that varies with configuration!!
+03-27 23:46:46.131 W/Resources(   70): Preloaded drawable resource #0x10801ec (android:drawable/btn_rating_star_off_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.180 I/art     (   70): Explicit concurrent mark sweep GC freed 248(56KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1612KB/3MB, paused 1.307ms total 43.739ms
+03-27 23:46:46.191 W/Resources(   70): Preloaded drawable resource #0x10801fa (android:drawable/btn_rating_star_on_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.198 W/Resources(   70): Preloaded drawable resource #0x108021c (android:drawable/btn_star_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.206 W/Resources(   70): Preloaded drawable resource #0x1080231 (android:drawable/btn_switch_to_off_mtrl_00001) that varies with configuration!!
+03-27 23:46:46.209 W/Resources(   70): Preloaded drawable resource #0x1080232 (android:drawable/btn_switch_to_off_mtrl_00002) that varies with configuration!!
+03-27 23:46:46.213 W/Resources(   70): Preloaded drawable resource #0x1080233 (android:drawable/btn_switch_to_off_mtrl_00003) that varies with configuration!!
+03-27 23:46:46.223 W/Resources(   70): Preloaded drawable resource #0x1080234 (android:drawable/btn_switch_to_off_mtrl_00004) that varies with configuration!!
+03-27 23:46:46.229 W/Resources(   70): Preloaded drawable resource #0x1080235 (android:drawable/btn_switch_to_off_mtrl_00005) that varies with configuration!!
+03-27 23:46:46.237 W/Resources(   70): Preloaded drawable resource #0x1080236 (android:drawable/btn_switch_to_off_mtrl_00006) that varies with configuration!!
+03-27 23:46:46.241 W/Resources(   70): Preloaded drawable resource #0x1080237 (android:drawable/btn_switch_to_off_mtrl_00007) that varies with configuration!!
+03-27 23:46:46.292 I/art     (   70): Explicit concurrent mark sweep GC freed 241(27KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1635KB/3MB, paused 1.184ms total 43.687ms
+03-27 23:46:46.301 W/Resources(   70): Preloaded drawable resource #0x1080238 (android:drawable/btn_switch_to_off_mtrl_00008) that varies with configuration!!
+03-27 23:46:46.310 W/Resources(   70): Preloaded drawable resource #0x1080239 (android:drawable/btn_switch_to_off_mtrl_00009) that varies with configuration!!
+03-27 23:46:46.316 W/Resources(   70): Preloaded drawable resource #0x108023a (android:drawable/btn_switch_to_off_mtrl_00010) that varies with configuration!!
+03-27 23:46:46.327 W/Resources(   70): Preloaded drawable resource #0x108023b (android:drawable/btn_switch_to_off_mtrl_00011) that varies with configuration!!
+03-27 23:46:46.330 W/Resources(   70): Preloaded drawable resource #0x108023c (android:drawable/btn_switch_to_off_mtrl_00012) that varies with configuration!!
+03-27 23:46:46.336 W/Resources(   70): Preloaded drawable resource #0x108023d (android:drawable/btn_switch_to_on_mtrl_00001) that varies with configuration!!
+03-27 23:46:46.346 W/Resources(   70): Preloaded drawable resource #0x108023e (android:drawable/btn_switch_to_on_mtrl_00002) that varies with configuration!!
+03-27 23:46:46.350 W/Resources(   70): Preloaded drawable resource #0x108023f (android:drawable/btn_switch_to_on_mtrl_00003) that varies with configuration!!
+03-27 23:46:46.359 W/Resources(   70): Preloaded drawable resource #0x1080240 (android:drawable/btn_switch_to_on_mtrl_00004) that varies with configuration!!
+03-27 23:46:46.365 W/Resources(   70): Preloaded drawable resource #0x1080241 (android:drawable/btn_switch_to_on_mtrl_00005) that varies with configuration!!
+03-27 23:46:46.373 W/Resources(   70): Preloaded drawable resource #0x1080242 (android:drawable/btn_switch_to_on_mtrl_00006) that varies with configuration!!
+03-27 23:46:46.423 I/art     (   70): Explicit concurrent mark sweep GC freed 321(39KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1650KB/3MB, paused 3.549ms total 46.321ms
+03-27 23:46:46.436 W/Resources(   70): Preloaded drawable resource #0x1080243 (android:drawable/btn_switch_to_on_mtrl_00007) that varies with configuration!!
+03-27 23:46:46.439 W/Resources(   70): Preloaded drawable resource #0x1080244 (android:drawable/btn_switch_to_on_mtrl_00008) that varies with configuration!!
+03-27 23:46:46.442 W/Resources(   70): Preloaded drawable resource #0x1080245 (android:drawable/btn_switch_to_on_mtrl_00009) that varies with configuration!!
+03-27 23:46:46.452 W/Resources(   70): Preloaded drawable resource #0x1080246 (android:drawable/btn_switch_to_on_mtrl_00010) that varies with configuration!!
+03-27 23:46:46.459 W/Resources(   70): Preloaded drawable resource #0x1080247 (android:drawable/btn_switch_to_on_mtrl_00011) that varies with configuration!!
+03-27 23:46:46.468 W/Resources(   70): Preloaded drawable resource #0x1080248 (android:drawable/btn_switch_to_on_mtrl_00012) that varies with configuration!!
+03-27 23:46:46.472 W/Resources(   70): Preloaded drawable resource #0x108024d (android:drawable/btn_toggle_indicator_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.479 W/Resources(   70): Preloaded drawable resource #0x10802e5 (android:drawable/expander_close_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.481 W/Resources(   70): Preloaded drawable resource #0x10802ee (android:drawable/expander_open_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.490 W/Resources(   70): Preloaded drawable resource #0x10802f8 (android:drawable/fastscroll_thumb_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.539 I/art     (   70): Explicit concurrent mark sweep GC freed 335(56KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1644KB/3MB, paused 1.101ms total 43.021ms
+03-27 23:46:46.549 W/Resources(   70): Preloaded drawable resource #0x10802ff (android:drawable/fastscroll_track_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.567 W/Resources(   70): Preloaded drawable resource #0x1080339 (android:drawable/ic_cab_done_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.572 W/Resources(   70): Preloaded drawable resource #0x1080340 (android:drawable/ic_clear_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.579 W/Resources(   70): Preloaded drawable resource #0x108034c (android:drawable/ic_commit_search_api_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.592 W/Resources(   70): Preloaded drawable resource #0x1080364 (android:drawable/ic_find_next_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.597 W/Resources(   70): Preloaded drawable resource #0x1080368 (android:drawable/ic_find_previous_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.608 W/Resources(   70): Preloaded drawable resource #0x10803b6 (android:drawable/ic_media_route_disabled_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.653 I/art     (   70): Explicit concurrent mark sweep GC freed 574(71KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1625KB/3MB, paused 963us total 42.088ms
+03-27 23:46:46.666 W/Resources(   70): Preloaded drawable resource #0x10803bc (android:drawable/ic_media_route_off_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.669 W/Resources(   70): Preloaded drawable resource #0x10803bf (android:drawable/ic_media_route_on_0_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.682 W/Resources(   70): Preloaded drawable resource #0x10803c2 (android:drawable/ic_media_route_on_1_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.689 W/Resources(   70): Preloaded drawable resource #0x10803c5 (android:drawable/ic_media_route_on_2_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.697 W/Resources(   70): Preloaded drawable resource #0x10803c8 (android:drawable/ic_media_route_on_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.767 I/art     (   70): Explicit concurrent mark sweep GC freed 1268(67KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1632KB/3MB, paused 1.681ms total 42.190ms
+03-27 23:46:46.779 W/Resources(   70): Preloaded drawable resource #0x10803e6 (android:drawable/ic_menu_find_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.803 W/Resources(   70): Preloaded drawable resource #0x1080401 (android:drawable/ic_menu_search_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.863 I/art     (   70): Explicit concurrent mark sweep GC freed 1550(60KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1645KB/3MB, paused 1.317ms total 40.696ms
+03-27 23:46:46.934 I/art     (   70): Explicit concurrent mark sweep GC freed 1382(48KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1652KB/3MB, paused 1.077ms total 39.633ms
+03-27 23:46:46.945 W/Resources(   70): Preloaded drawable resource #0x108049a (android:drawable/list_divider_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.948 W/Resources(   70): Preloaded drawable resource #0x10804a7 (android:drawable/list_section_divider_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.957 W/Resources(   70): Preloaded drawable resource #0x108054e (android:drawable/popup_background_mtrl_mult) that varies with configuration!!
+03-27 23:46:46.961 W/Resources(   70): Preloaded drawable resource #0x1080575 (android:drawable/progress_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.969 W/Resources(   70): Preloaded drawable resource #0x10805d6 (android:drawable/scrollbar_handle_mtrl_alpha) that varies with configuration!!
+03-27 23:46:46.972 W/Resources(   70): Preloaded drawable resource #0x10805da (android:drawable/scrubber_control_from_pressed_mtrl_000) that varies with configuration!!
+03-27 23:46:46.981 W/Resources(   70): Preloaded drawable resource #0x10805db (android:drawable/scrubber_control_from_pressed_mtrl_001) that varies with configuration!!
+03-27 23:46:46.988 W/Resources(   70): Preloaded drawable resource #0x10805dc (android:drawable/scrubber_control_from_pressed_mtrl_002) that varies with configuration!!
+03-27 23:46:46.991 W/Resources(   70): Preloaded drawable resource #0x10805dd (android:drawable/scrubber_control_from_pressed_mtrl_003) that varies with configuration!!
+03-27 23:46:47.000 W/Resources(   70): Preloaded drawable resource #0x10805de (android:drawable/scrubber_control_from_pressed_mtrl_004) that varies with configuration!!
+03-27 23:46:47.006 W/Resources(   70): Preloaded drawable resource #0x10805df (android:drawable/scrubber_control_from_pressed_mtrl_005) that varies with configuration!!
+03-27 23:46:47.012 W/Resources(   70): Preloaded drawable resource #0x10805e3 (android:drawable/scrubber_control_off_pressed_mtrl_alpha) that varies with configuration!!
+03-27 23:46:47.021 W/Resources(   70): Preloaded drawable resource #0x10805e2 (android:drawable/scrubber_control_off_mtrl_alpha) that varies with configuration!!
+03-27 23:46:47.027 W/Resources(   70): Preloaded drawable resource #0x10805e5 (android:drawable/scrubber_control_on_pressed_mtrl_alpha) that varies with configuration!!
+03-27 23:46:47.079 I/art     (   70): Explicit concurrent mark sweep GC freed 359(39KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1664KB/3MB, paused 1.423ms total 46.339ms
+03-27 23:46:47.089 W/Resources(   70): Preloaded drawable resource #0x10805e4 (android:drawable/scrubber_control_on_mtrl_alpha) that varies with configuration!!
+03-27 23:46:47.097 W/Resources(   70): Preloaded drawable resource #0x10805e9 (android:drawable/scrubber_control_to_pressed_mtrl_000) that varies with configuration!!
+03-27 23:46:47.101 W/Resources(   70): Preloaded drawable resource #0x10805ea (android:drawable/scrubber_control_to_pressed_mtrl_001) that varies with configuration!!
+03-27 23:46:47.110 W/Resources(   70): Preloaded drawable resource #0x10805eb (android:drawable/scrubber_control_to_pressed_mtrl_002) that varies with configuration!!
+03-27 23:46:47.117 W/Resources(   70): Preloaded drawable resource #0x10805ec (android:drawable/scrubber_control_to_pressed_mtrl_003) that varies with configuration!!
+03-27 23:46:47.120 W/Resources(   70): Preloaded drawable resource #0x10805ed (android:drawable/scrubber_control_to_pressed_mtrl_004) that varies with configuration!!
+03-27 23:46:47.129 W/Resources(   70): Preloaded drawable resource #0x10805ee (android:drawable/scrubber_control_to_pressed_mtrl_005) that varies with configuration!!
+03-27 23:46:47.132 W/Resources(   70): Preloaded drawable resource #0x10805f0 (android:drawable/scrubber_primary_mtrl_alpha) that varies with configuration!!
+03-27 23:46:47.138 W/Resources(   70): Preloaded drawable resource #0x10805f7 (android:drawable/scrubber_track_mtrl_alpha) that varies with configuration!!
+03-27 23:46:47.146 W/Resources(   70): Preloaded drawable resource #0x108063f (android:drawable/spinner_mtrl_am_alpha) that varies with configuration!!
+03-27 23:46:47.152 W/Resources(   70): Preloaded drawable resource #0x10806c0 (android:drawable/switch_track_mtrl_alpha) that varies with configuration!!
+03-27 23:46:47.159 W/Resources(   70): Preloaded drawable resource #0x1080701 (android:drawable/text_cursor_mtrl_alpha) that varies with configuration!!
+03-27 23:46:47.168 W/Resources(   70): Preloaded drawable resource #0x1080710 (android:drawable/textfield_activated_mtrl_alpha) that varies with configuration!!
+03-27 23:46:47.171 W/Resources(   70): Preloaded drawable resource #0x1080719 (android:drawable/textfield_default_mtrl_alpha) that varies with configuration!!
+03-27 23:46:47.177 W/Resources(   70): Preloaded drawable resource #0x108072f (android:drawable/textfield_search_activated_mtrl_alpha) that varies with configuration!!
+03-27 23:46:47.187 W/Resources(   70): Preloaded drawable resource #0x1080733 (android:drawable/textfield_search_default_mtrl_alpha) that varies with configuration!!
+03-27 23:46:47.190 W/Resources(   70): Preloaded drawable resource #0x1080707 (android:drawable/text_select_handle_left_mtrl_alpha) that varies with configuration!!
+03-27 23:46:47.242 I/art     (   70): Explicit concurrent mark sweep GC freed 458(48KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1664KB/3MB, paused 1.252ms total 46.149ms
+03-27 23:46:47.254 W/Resources(   70): Preloaded drawable resource #0x108070a (android:drawable/text_select_handle_middle_mtrl_alpha) that varies with configuration!!
+03-27 23:46:47.258 W/Resources(   70): Preloaded drawable resource #0x108070d (android:drawable/text_select_handle_right_mtrl_alpha) that varies with configuration!!
+03-27 23:46:47.258 I/Zygote  (   70): ...preloaded 430 resources in 8538ms.
+03-27 23:46:47.383 I/art     (   70): Explicit concurrent mark sweep GC freed 406(34KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1679KB/3MB, paused 1.096ms total 43.479ms
+03-27 23:46:47.400 I/Zygote  (   70): ...preloaded 41 resources in 142ms.
+03-27 23:46:47.401 I/art     (   70): Counter: 0
+03-27 23:46:47.401 D/libEGL  (   70): Emulator without GPU support detected. Fallback to software renderer.
+03-27 23:46:47.421 D/libEGL  (   70): loaded /system/lib/egl/libGLES_android.so
+03-27 23:46:47.792 I/Zygote  (   70): Preloading shared libraries...
+03-27 23:46:47.860 D/Zygote  (   70): end preload
+03-27 23:46:47.909 I/art     (   70): Explicit concurrent mark sweep GC freed 459(21KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 1665KB/3MB, paused 953us total 43.422ms
+03-27 23:46:47.981 I/art     (   70): Explicit concurrent mark sweep GC freed 74(2912B) AllocSpace objects, 0(0B) LOS objects, 50% free, 1662KB/3MB, paused 3.332ms total 39.507ms
+03-27 23:46:48.031 I/art     (   70): Explicit concurrent mark sweep GC freed 5(160B) AllocSpace objects, 0(0B) LOS objects, 50% free, 1662KB/3MB, paused 1.082ms total 39.386ms
+03-27 23:46:48.374 I/Zygote  (   70): System server process 343 has been created
+03-27 23:46:48.446 I/Zygote  (   70): Accepting command socket connections
+03-27 23:46:48.562 I/art     (  343): DexFile_isDexOptNeeded failed to open oat file '/data/dalvik-cache/arm/system@framework@services.jar@classes.dex' for file location '/system/framework/services.jar': Failed to open oat filename for reading: No such file or directory
+03-27 23:46:48.605 I/art     (  343): DexFile_isDexOptNeeded file /system/framework/arm/services.odex needs to be relocated for /system/framework/services.jar
+03-27 23:46:48.609 I/InstallerConnection(  343): connecting...
+03-27 23:46:48.635 I/installd(   66): new connection
+03-27 23:46:48.657 E/installd(  356): Running /system/bin/patchoat isa=arm in-fd=6 (/system/framework/arm/services.odex) out-fd=7 (/data/dalvik-cache/arm/system@framework@services.jar@classes.dex)
+03-27 23:46:50.057 I/art     (  343): DexFile_isDexOptNeeded failed to open oat file '/data/dalvik-cache/arm/system@framework@ethernet-service.jar@classes.dex' for file location '/system/framework/ethernet-service.jar': Failed to open oat filename for reading: No such file or directory
+03-27 23:46:50.097 I/art     (  343): DexFile_isDexOptNeeded file /system/framework/arm/ethernet-service.odex needs to be relocated for /system/framework/ethernet-service.jar
+03-27 23:46:50.117 E/installd(  357): Running /system/bin/patchoat isa=arm in-fd=6 (/system/framework/arm/ethernet-service.odex) out-fd=7 (/data/dalvik-cache/arm/system@framework@ethernet-service.jar@classes.dex)
+03-27 23:46:50.356 I/art     (  343): DexFile_isDexOptNeeded failed to open oat file '/data/dalvik-cache/arm/system@framework@wifi-service.jar@classes.dex' for file location '/system/framework/wifi-service.jar': Failed to open oat filename for reading: No such file or directory
+03-27 23:46:50.396 I/art     (  343): DexFile_isDexOptNeeded file /system/framework/arm/wifi-service.odex needs to be relocated for /system/framework/wifi-service.jar
+03-27 23:46:50.415 E/installd(  358): Running /system/bin/patchoat isa=arm in-fd=6 (/system/framework/arm/wifi-service.odex) out-fd=7 (/data/dalvik-cache/arm/system@framework@wifi-service.jar@classes.dex)
+03-27 23:46:50.856 I/InstallerConnection(  343): disconnecting...
+03-27 23:46:50.857 E/installd(   66): eof
+03-27 23:46:50.857 E/installd(   66): failed to read size
+03-27 23:46:50.857 I/installd(   66): closing connection
+03-27 23:46:51.127 I/SystemServer(  343): Entered the Android system server!
+03-27 23:46:51.819 V/Fingerprint-JNI(  343): FingerprintManager JNI ready.
+03-27 23:46:51.841 D/SensorService(  343): nuSensorService starting...
+03-27 23:46:51.900 D/SensorService(  343): nuSensorService thread starting...
+03-27 23:46:51.913 D/SensorService(  343): new thread SensorEventAckReceiver
+03-27 23:46:52.001 I/SystemServiceManager(  343): Starting com.android.server.pm.Installer
+03-27 23:46:52.019 I/Installer(  343): Waiting for installd to be ready.
+03-27 23:46:52.020 I/InstallerConnection(  343): connecting...
+03-27 23:46:52.022 I/installd(   66): new connection
+03-27 23:46:52.027 I/SystemServiceManager(  343): Starting com.android.server.am.ActivityManagerService$Lifecycle
+03-27 23:46:52.509 I/ActivityManager(  343): Memory class: 48
+03-27 23:46:52.546 I/ServiceThread(  343): Enabled StrictMode logging for ActivityManager looper.
+03-27 23:46:52.718 I/AppOps  (  343): No existing app ops /data/system/appops.xml; starting empty
+03-27 23:46:53.016 I/IntentFirewall(  343): Read new rules (A:0 B:0 S:0)
+03-27 23:46:53.106 I/ServiceThread(  343): Enabled StrictMode logging for android.ui looper.
+03-27 23:46:53.140 I/ServiceThread(  343): Enabled StrictMode logging for android.display looper.
+03-27 23:46:53.189 D/AppOps  (  343): AppOpsService published
+03-27 23:46:53.192 I/SystemServiceManager(  343): Starting com.android.server.power.PowerManagerService
+03-27 23:46:53.216 I/ServiceThread(  343): Enabled StrictMode logging for PowerManagerService looper.
+03-27 23:46:53.232 E/PowerManagerService-JNI(  343): Couldn't load power module (No such file or directory)
+03-27 23:46:53.235 W/libsuspend(  343): Error writing 'on' to /sys/power/state: Invalid argument
+03-27 23:46:53.240 I/libsuspend(  343): Selected wakeup count
+03-27 23:46:53.283 I/SystemServiceManager(  343): Starting com.android.server.display.DisplayManagerService
+03-27 23:46:53.357 E/SurfaceFlinger(   54): ro.sf.lcd_density must be defined as a build property
+03-27 23:46:53.388 I/SystemServiceManager(  343): Starting phase 100
+03-27 23:46:53.428 I/DisplayManagerService(  343): Display device added: DisplayDeviceInfo{"Built-in Screen": 1080 x 1920, 48.225 fps, supportedRefreshRates [48.225], density 160, 160.0 x 160.0 dpi, appVsyncOff 0, presDeadline 21736133, touch INTERNAL, rotation 0, type BUILT_IN, state UNKNOWN, FLAG_DEFAULT_DISPLAY, FLAG_ROTATES_WITH_CONTENT, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS}
+03-27 23:46:53.441 I/SystemServer(  343): Package Manager

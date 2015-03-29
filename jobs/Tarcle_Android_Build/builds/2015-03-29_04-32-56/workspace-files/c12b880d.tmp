@@ -1,0 +1,29 @@
+Copying the source file '/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res' from the workspace to the build folder 'c12b880d.tmp' on the Jenkins master failed.
+Is the file '/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res' a valid filename?
+If you are building on a slave: please check if the file is accessible under '$JENKINS_HOME/[job-name]//var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res'
+If you are building on the master: please check if the file is accessible under '$JENKINS_HOME/[job-name]/workspace//var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res'
+java.io.IOException: Failed to copy /var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res to /var/jenkins_home/jobs/Tarcle_Android_Build/builds/2015-03-29_04-32-56/workspace-files/c12b880d.tmp
+	at hudson.FilePath.copyTo(FilePath.java:1905)
+	at hudson.plugins.analysis.util.Files.copyFilesWithAnnotationsToBuildFolder(Files.java:80)
+	at hudson.plugins.analysis.core.HealthAwareRecorder.copyFilesWithAnnotationsToBuildFolder(HealthAwareRecorder.java:401)
+	at hudson.plugins.analysis.core.HealthAwarePublisher.perform(HealthAwarePublisher.java:173)
+	at hudson.plugins.analysis.core.HealthAwareRecorder.perform(HealthAwareRecorder.java:349)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:770)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:734)
+	at hudson.model.Build$BuildExecution.post2(Build.java:183)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:683)
+	at hudson.model.Run.execute(Run.java:1770)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:89)
+	at hudson.model.Executor.run(Executor.java:240)
+Caused by: java.io.FileNotFoundException: /var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res (Is a directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at hudson.FilePath$39.invoke(FilePath.java:1931)
+	at hudson.FilePath$39.invoke(FilePath.java:1926)
+	at hudson.FilePath.act(FilePath.java:980)
+	at hudson.FilePath.act(FilePath.java:958)
+	at hudson.FilePath.copyTo(FilePath.java:1926)
+	at hudson.FilePath.copyTo(FilePath.java:1900)
+	... 13 more

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>Unit test build for tarcle Android</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>BUILD_ENVIRONMENT</name>
+          <description></description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>dev</string>
+              <string>production</string>
+              <string>qa</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@2.3.5">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/gongmingqm10/tarcle-tdd</url>
+        <credentialsId>b4319842-71ef-4683-835b-ad352613dcee</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <jenkins.triggers.ReverseBuildTrigger>
+      <spec></spec>
+      <upstreamProjects>Tarcle_Android_Build</upstreamProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </jenkins.triggers.ReverseBuildTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.plugins.copyartifact.CopyArtifact plugin="copyartifact@1.35">
+      <project>Tarcle_Android_Build</project>
+      <filter>**/app-$BUILD_ENVIRONMENT-release.apk</filter>
+      <target></target>
+      <excludes></excludes>
+      <selector class="hudson.plugins.copyartifact.StatusBuildSelector">
+        <stable>true</stable>
+      </selector>
+      <flatten>true</flatten>
+      <doNotFingerprintArtifacts>false</doNotFingerprintArtifacts>
+    </hudson.plugins.copyartifact.CopyArtifact>
+  </builders>
+  <publishers>
+    <hockeyapp.HockeyappRecorder schemaVersion="2">
+      <applications>
+        <hockeyapp.HockeyappApplication plugin="hockeyapp@1.2.0" schemaVersion="1">
+          <apiToken>631be3e0bc204757a150f00a6cc8eb49</apiToken>
+          <notifyTeam>false</notifyTeam>
+          <filePath>app-$BUILD_ENVIRONMENT-release.apk</filePath>
+          <downloadAllowed>false</downloadAllowed>
+          <releaseNotesMethod class="net.hockeyapp.jenkins.releaseNotes.NoReleaseNotes"/>
+          <uploadMethod class="net.hockeyapp.jenkins.uploadMethod.AppCreation"/>
+        </hockeyapp.HockeyappApplication>
+      </applications>
+      <debugMode>false</debugMode>
+      <failGracefully>false</failGracefully>
+    </hockeyapp.HockeyappRecorder>
+  </publishers>
+  <buildWrappers/>
+</project>

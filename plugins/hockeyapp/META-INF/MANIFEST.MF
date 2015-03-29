@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: dkochetkov
+Build-Jdk: 1.7.0_71
+Extension-Name: hockeyapp
+Specification-Title: Uploads iOS, Mac or Android apps to hockeyapp.net
+Implementation-Title: hockeyapp
+Implementation-Version: 1.2.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: hockeyapp
+Long-Name: HockeyApp Plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/HockeyApp+Plugin
+Plugin-Version: 1.2.0
+Hudson-Version: 1.532.1
+Jenkins-Version: 1.532.1
+Plugin-Developers: Oliver Hoeltke:ohoeltke:ohoeltke@gmail.com
+

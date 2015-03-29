@@ -1,0 +1,11 @@
+commit d84edb487b4d8505d45f41f949c129274c3a991b
+tree 6433e4dd8c6d665f1eea44a71c4bed52d3457fa9
+parent d09ec8dd516a206b69d45b629bb79cdb5f799bfe
+author gongming <gongmingqm10@foxmail.com> 1427091819 -0500
+committer gongming <gongmingqm10@foxmail.com> 1427091819 -0500
+
+    Upgrade gradle to 2.3 and fix compitibility issue between Robolectric and Gradle
+
+:100644 100644 45b7d4250e49f9b2def444333117c1b64147cefb d06b4489a66fbb2dc3e7417420e0904def36beb3 M	app/build.gradle
+:100644 100644 8a3a6ae786441a7c324591ed243088088ba27014 b52e1c9d1cfe0060e29d39f11f5f4adac081210c M	build.gradle
+:100644 100644 0c71e760dc93830dd3411fe50d6f5c86bf0a8f4d 76bab2782036d505055c9c63ef3ed55f1ca1f340 M	gradle/wrapper/gradle-wrapper.properties

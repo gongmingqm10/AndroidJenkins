@@ -1,0 +1,42 @@
+Started by user [8mha:AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAxOoBn6pcWpRfrp+XnpuUADCnMNDQAICJNKxwAAAA==[0mMing Gong
+Building in workspace /var/jenkins_home/jobs/Tarcle Android Build/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/gongmingqm10/tarcle-tdd # timeout=10
+Fetching upstream changes from https://github.com/gongmingqm10/tarcle-tdd
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.helper store --file=/tmp/git8871268823799281059.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/gongmingqm10/tarcle-tdd +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 21a059de2985533836340973fd42ee1df5f75710 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 21a059de2985533836340973fd42ee1df5f75710
+ > git rev-list 21a059de2985533836340973fd42ee1df5f75710 # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson3204805621142582171.sh
++ ./gradlew clean test
+
+                    Plugin is too old, please update to a more recent version,
+                    or set ANDROID_DAILY_OVERRIDE environment variable to
+                    "374a18736d5f8e842840c00c827ab637d5363d91"
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/var/jenkins_home/jobs/Tarcle Android Build/workspace/app/build.gradle' line: 1
+
+* What went wrong:
+A problem occurred evaluating project ':app'.
+> Failed to apply plugin [id 'com.android.application']
+   > Could not create plugin of type 'AppPlugin'.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 3.993 secs
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

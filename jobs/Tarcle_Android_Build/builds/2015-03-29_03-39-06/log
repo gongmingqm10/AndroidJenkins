@@ -1,0 +1,261 @@
+Started by an SCM change
+Building in workspace /var/jenkins_home/jobs/Tarcle_Android_Build/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/gongmingqm10/tarcle-tdd # timeout=10
+Fetching upstream changes from https://github.com/gongmingqm10/tarcle-tdd
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.helper store --file=/tmp/git5637910585677818750.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/gongmingqm10/tarcle-tdd +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision f458c63512a10cb286b85b84e51ae683deff3447 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f458c63512a10cb286b85b84e51ae683deff3447
+ > git rev-list 72e15d91e813362ce6d2c30b79554d295cf3166f # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson4427875053045774765.sh
++ ./gradlew clean test
+:app:clean
+:app:preBuild UP-TO-DATE
+:app:preDevDebugBuild UP-TO-DATE
+:app:checkDevDebugManifest
+:app:preDevReleaseBuild UP-TO-DATE
+:app:preProductionDebugBuild UP-TO-DATE
+:app:preProductionReleaseBuild UP-TO-DATE
+:app:preQaDebugBuild UP-TO-DATE
+:app:preQaReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72103Library
+:app:prepareComAndroidSupportSupportV42103Library
+:app:prepareDevDebugDependencies
+:app:compileDevDebugAidl
+:app:compileDevDebugRenderscript
+:app:generateDevDebugBuildConfig
+:app:generateDevDebugAssets UP-TO-DATE
+:app:mergeDevDebugAssets
+:app:generateDevDebugResValues
+:app:generateDevDebugResources
+:app:mergeDevDebugResources/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-hdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-xhdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-mdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:app:processDevDebugManifest
+:app:processDevDebugResources
+:app:generateDevDebugSources
+:app:compileDevDebugJava
+:app:preCompileDevDebugUnitTestJava
+:app:compileDevDebugUnitTestJava
+:app:compileDevDebugUnitTestSources
+:app:mockableAndroidJar
+:app:assembleDevDebugUnitTest
+:app:testDevDebug
+:app:checkDevReleaseManifest
+:app:prepareDevReleaseDependencies
+:app:compileDevReleaseAidl
+:app:compileDevReleaseRenderscript
+:app:generateDevReleaseBuildConfig
+:app:generateDevReleaseAssets UP-TO-DATE
+:app:mergeDevReleaseAssets
+:app:generateDevReleaseResValues
+:app:generateDevReleaseResources
+:app:mergeDevReleaseResources/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-hdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-xhdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-mdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:app:processDevReleaseManifest
+:app:processDevReleaseResources
+:app:generateDevReleaseSources
+:app:compileDevReleaseJava
+:app:preCompileDevReleaseUnitTestJava
+:app:compileDevReleaseUnitTestJava
+:app:compileDevReleaseUnitTestSources
+:app:assembleDevReleaseUnitTest
+:app:testDevRelease
+:app:checkProductionDebugManifest
+:app:prepareProductionDebugDependencies
+:app:compileProductionDebugAidl
+:app:compileProductionDebugRenderscript
+:app:generateProductionDebugBuildConfig
+:app:generateProductionDebugAssets UP-TO-DATE
+:app:mergeProductionDebugAssets
+:app:generateProductionDebugResValues
+:app:generateProductionDebugResources
+:app:mergeProductionDebugResources/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-hdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-xhdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-mdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:app:processProductionDebugManifest
+:app:processProductionDebugResources
+:app:generateProductionDebugSources
+:app:compileProductionDebugJava
+:app:preCompileProductionDebugUnitTestJava
+:app:compileProductionDebugUnitTestJava
+:app:compileProductionDebugUnitTestSources
+:app:assembleProductionDebugUnitTest
+:app:testProductionDebug
+:app:checkProductionReleaseManifest
+:app:prepareProductionReleaseDependencies
+:app:compileProductionReleaseAidl
+:app:compileProductionReleaseRenderscript
+:app:generateProductionReleaseBuildConfig
+:app:generateProductionReleaseAssets UP-TO-DATE
+:app:mergeProductionReleaseAssets
+:app:generateProductionReleaseResValues
+:app:generateProductionReleaseResources
+:app:mergeProductionReleaseResources/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-hdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-xhdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-mdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:app:processProductionReleaseManifest
+:app:processProductionReleaseResources
+:app:generateProductionReleaseSources
+:app:compileProductionReleaseJava
+:app:preCompileProductionReleaseUnitTestJava
+:app:compileProductionReleaseUnitTestJava
+:app:compileProductionReleaseUnitTestSources
+:app:assembleProductionReleaseUnitTest
+:app:testProductionRelease
+:app:checkQaDebugManifest
+:app:prepareQaDebugDependencies
+:app:compileQaDebugAidl
+:app:compileQaDebugRenderscript
+:app:generateQaDebugBuildConfig
+:app:generateQaDebugAssets UP-TO-DATE
+:app:mergeQaDebugAssets
+:app:generateQaDebugResValues
+:app:generateQaDebugResources
+:app:mergeQaDebugResources/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-hdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-xhdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-mdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:app:processQaDebugManifest
+:app:processQaDebugResources
+:app:generateQaDebugSources
+:app:compileQaDebugJava
+:app:preCompileQaDebugUnitTestJava
+:app:compileQaDebugUnitTestJava
+:app:compileQaDebugUnitTestSources
+:app:assembleQaDebugUnitTest
+:app:testQaDebug
+:app:checkQaReleaseManifest
+:app:prepareQaReleaseDependencies
+:app:compileQaReleaseAidl
+:app:compileQaReleaseRenderscript
+:app:generateQaReleaseBuildConfig
+:app:generateQaReleaseAssets UP-TO-DATE
+:app:mergeQaReleaseAssets
+:app:generateQaReleaseResValues
+:app:generateQaReleaseResources
+:app:mergeQaReleaseResources/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-hdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-xhdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/src/main/res/drawable-mdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle_Android_Build/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:app:processQaReleaseManifest
+:app:processQaReleaseResources
+:app:generateQaReleaseSources
+:app:compileQaReleaseJava
+:app:preCompileQaReleaseUnitTestJava
+:app:compileQaReleaseUnitTestJava
+:app:compileQaReleaseUnitTestSources
+:app:assembleQaReleaseUnitTest
+:app:testQaRelease
+:app:test
+
+BUILD SUCCESSFUL
+
+Total time: 3 mins 41.306 secs
+Warning: you have no plugins providing access control for builds, so falling back to legacy behavior of permitting any downstream builds to be triggered
+Triggering a new build of [8mha:AAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzxEgZZ/az8JP2QxKLknNR4x7yUovzMlHiP/OTsSseCAn0AGQy779IAAAA=[0mTarcle_Android_HockyApp
+Triggering a new build of [8mha:AAAAsB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy5EgYV/az8JP2QxKLknNR4x7yUovzMlHi30rzkksz8vMSc+JDU4hJ9AKcMANrZAAAA[0mTarcle_Android_Functional_Test
+Finished: SUCCESS

@@ -1,0 +1,10 @@
+commit 72e15d91e813362ce6d2c30b79554d295cf3166f
+tree 79234d6ae27a372d53445a1d463bf282c87161c9
+parent 57c92d3bd2bdb2f25fa542f2854e66e291b4d526
+author gongming <gongmingqm10@foxmail.com> 1427174147 -0500
+committer gongming <gongmingqm10@foxmail.com> 1427174147 -0500
+
+    Add keystore to source
+
+:100644 100644 02d8f7fc0bcffd651320a1316dc5877b9cf9bb1d 2084d0f404562dbf0223f40dfcf6af5fee2c00c5 M	.gitignore
+:000000 100644 0000000000000000000000000000000000000000 a23342d70a58dc82d4e9fc79a4d21dbf670e2ab9 A	app/my-release-key.keystore

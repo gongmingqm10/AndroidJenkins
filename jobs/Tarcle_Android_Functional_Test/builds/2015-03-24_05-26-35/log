@@ -1,0 +1,104 @@
+Started by user [8mha:AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAxOoBn6pcWpRfrp+XnpuUADCnMNDQAICJNKxwAAAA==[0mMing Gong
+Building in workspace /var/jenkins_home/jobs/Tarcle Android Functional Test/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/gongmingqm10/tarcle-tdd # timeout=10
+Fetching upstream changes from https://github.com/gongmingqm10/tarcle-tdd
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.helper store --file=/tmp/git6209288682060014949.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/gongmingqm10/tarcle-tdd +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 72e15d91e813362ce6d2c30b79554d295cf3166f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 72e15d91e813362ce6d2c30b79554d295cf3166f
+ > git rev-list 72e15d91e813362ce6d2c30b79554d295cf3166f # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson2756123726661214197.sh
++ ./gradlew clean connectedAndroidTest
+:app:clean UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72103Library
+:app:prepareComAndroidSupportSupportV42103Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources/var/jenkins_home/jobs/Tarcle Android Functional Test/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Functional Test/workspace/app/src/main/res/drawable-hdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Functional Test/workspace/app/src/main/res/drawable-xhdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Functional Test/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Functional Test/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Functional Test/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Functional Test/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Functional Test/workspace/app/src/main/res/drawable-mdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+/var/jenkins_home/jobs/Tarcle Android Functional Test/workspace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:preDebugAndroidTestBuild UP-TO-DATE
+:app:compileDebugAndroidTestNdk UP-TO-DATE
+:app:prepareComAndroidSupportTestEspressoEspressoCore20Library
+:app:prepareComAndroidSupportTestEspressoEspressoIdlingResource20Library
+:app:prepareComAndroidSupportTestTestingSupportLib01Library
+:app:prepareDebugAndroidTestDependencies
+:app:compileDebugAndroidTestAidl
+:app:processDebugAndroidTestManifest
+:app:compileDebugAndroidTestRenderscript
+:app:generateDebugAndroidTestBuildConfig
+:app:generateDebugAndroidTestAssets UP-TO-DATE
+:app:mergeDebugAndroidTestAssets
+:app:generateDebugAndroidTestResValues
+:app:generateDebugAndroidTestResources
+:app:mergeDebugAndroidTestResources
+:app:processDebugAndroidTestResources
+:app:generateDebugAndroidTestSources
+:app:compileDebugAndroidTestJava
+:app:preDexDebugAndroidTest
+:app:dexDebugAndroidTest
+:app:processDebugAndroidTestJavaRes UP-TO-DATE
+:app:packageDebugAndroidTest
+:app:assembleDebugAndroidTest
+:app:connectedAndroidTest FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:connectedAndroidTest'.
+> com.android.builder.testing.api.DeviceException: java.lang.RuntimeException: No connected devices!
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 1 mins 50.698 secs
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

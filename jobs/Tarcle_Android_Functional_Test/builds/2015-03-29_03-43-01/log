@@ -1,0 +1,70 @@
+Started by upstream project "[8mha:AAAAph+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgYp/az8JP2QxKLknNR4x7yUovzMlHin0sycFH0AdrFBTM8AAAA=[0mTarcle_Android_Build" build number [8mha:AAAAqB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYZ/az8JP2QxKLknNR4x7yUovzMlHin0sycFH1DMwCwOEpI0QAAAA==[0m16
+originally caused by:
+ Started by an SCM change
+Building in workspace /var/jenkins_home/jobs/Tarcle_Android_Functional_Test/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/gongmingqm10/tarcle-tdd # timeout=10
+Fetching upstream changes from https://github.com/gongmingqm10/tarcle-tdd
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.helper store --file=/tmp/git4530415037575911345.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/gongmingqm10/tarcle-tdd +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision f458c63512a10cb286b85b84e51ae683deff3447 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f458c63512a10cb286b85b84e51ae683deff3447
+ > git rev-list 72e15d91e813362ce6d2c30b79554d295cf3166f # timeout=10
+$ /opt/android-sdk-linux/tools/android list target
+[android] Using Android SDK: /opt/android-sdk-linux
+$ /opt/android-sdk-linux/platform-tools/adb start-server
+* daemon not running. starting it now on port 7555 *
+* daemon started successfully *
+$ /opt/android-sdk-linux/platform-tools/adb start-server
+[android] Starting Android emulator
+$ /opt/android-sdk-linux/tools/emulator -no-boot-anim -ports 7553,7554 -avd Nexus_5_API_21 -no-snapshot-load -no-snapshot-save -no-window
+emulator: ERROR: Could not load OpenGLES emulation library: libX11.so.6: cannot open shared object file: No such file or directory
+emulator: WARNING: Could not initialize OpenglES emulation, using software renderer.
+emulator: warning: opening audio output failed
+
+$ /opt/android-sdk-linux/platform-tools/adb connect localhost:7554
+connected to localhost:7554
+[android] Waiting for emulator to finish booting...
+$ /opt/android-sdk-linux/platform-tools/adb -s localhost:7554 shell getprop init.svc.bootanim
+error: device offline
+$ /opt/android-sdk-linux/platform-tools/adb connect localhost:7554
+$ /opt/android-sdk-linux/platform-tools/adb -s localhost:7554 shell getprop init.svc.bootanim
+error: device offline
+$ /opt/android-sdk-linux/platform-tools/adb connect localhost:7554
+$ /opt/android-sdk-linux/platform-tools/adb -s localhost:7554 shell getprop init.svc.bootanim
+error: device offline
+$ /opt/android-sdk-linux/platform-tools/adb disconnect localhost:7554
+$ /opt/android-sdk-linux/platform-tools/adb connect localhost:7554
+$ /opt/android-sdk-linux/platform-tools/adb -s localhost:7554 shell getprop init.svc.bootanim
+error: device offline
+$ /opt/android-sdk-linux/platform-tools/adb connect localhost:7554
+$ /opt/android-sdk-linux/platform-tools/adb -s localhost:7554 shell getprop init.svc.bootanim
+error: device offline
+$ /opt/android-sdk-linux/platform-tools/adb connect localhost:7554
+$ /opt/android-sdk-linux/platform-tools/adb -s localhost:7554 shell getprop init.svc.bootanim
+error: device offline
+$ /opt/android-sdk-linux/platform-tools/adb disconnect localhost:7554
+$ /opt/android-sdk-linux/platform-tools/adb connect localhost:7554
+$ /opt/android-sdk-linux/platform-tools/adb -s localhost:7554 shell getprop init.svc.bootanim
+error: device offline
+$ /opt/android-sdk-linux/platform-tools/adb connect localhost:7554
+$ /opt/android-sdk-linux/platform-tools/adb -s localhost:7554 shell getprop init.svc.bootanim
+error: device offline
+$ /opt/android-sdk-linux/platform-tools/adb connect localhost:7554
+$ /opt/android-sdk-linux/platform-tools/adb -s localhost:7554 shell getprop init.svc.bootanim
+error: device offline
+$ /opt/android-sdk-linux/platform-tools/adb disconnect localhost:7554
+$ /opt/android-sdk-linux/platform-tools/adb connect localhost:7554
+[android] Emulator was shut down before it finished booting
+$ /opt/android-sdk-linux/platform-tools/adb disconnect localhost:7554
+[android] Stopping Android emulator
+$ /opt/android-sdk-linux/platform-tools/adb kill-server
+Archiving artifacts
+Finished: NOT_BUILT

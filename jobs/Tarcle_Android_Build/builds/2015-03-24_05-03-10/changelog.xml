@@ -1,0 +1,9 @@
+commit 57c92d3bd2bdb2f25fa542f2854e66e291b4d526
+tree 160198f0a83f75f7167b9d4fa1c2d2dc507ffe83
+parent d84edb487b4d8505d45f41f949c129274c3a991b
+author gongming <gongmingqm10@foxmail.com> 1427172087 -0500
+committer gongming <gongmingqm10@foxmail.com> 1427172087 -0500
+
+    Move keystore to app directory
+
+:100644 100644 d06b4489a66fbb2dc3e7417420e0904def36beb3 adb165f64fa56305fb66fb7955a9881e6bcb8653 M	app/build.gradle

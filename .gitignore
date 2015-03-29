@@ -1,0 +1,5 @@
+*.apk
+*.log
+.owner
+*.key
+identity.key.enc
